@@ -1,0 +1,23 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The original data compilation and organization in this repository are licensed
+by Wasay Ijaz under CC BY 4.0:
+https://creativecommons.org/licenses/by/4.0/
+Legal terms: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You may share and adapt this compilation, including commercially, subject to
+the license: provide appropriate attribution, link to the license and indicate
+changes. Do not imply endorsement or impose additional legal/technical restrictions.
+
+Attribution: Wasay Ijaz, PSX financial statements, wasayijaz/psx-financials,
+the version/commit and data cutoff used. Original financial-data sources:
+Pakistan Stock Exchange (PSX DPS) and the individual issuers identified by
+the source URL, document identifier and page attached to each observation.
+
+No ownership or relicensing of the original filings is claimed. Their original
+rights remain with PSX and the issuers. Source documents are linked only and
+are not distributed in this repository. The license applies only to rights
+the compiler can grant, including the original compilation and organization.
+
+The compilation is supplied without warranty; see the full CC BY 4.0 legal terms.
+Code is separately licensed under MIT in LICENSE.

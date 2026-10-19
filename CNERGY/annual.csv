@@ -1,0 +1,10 @@
+statement,line_item,reported_label,basis,unit,currency,2025-06-30|annual
+balance_sheet,property_plant_equipment,"Property, plant and equipment",standalone,PKR,PKR,287916583000
+balance_sheet,short_term_borrowings,Short Term Borrowings - secured,standalone,PKR,PKR,10855175000
+balance_sheet,stock_in_trade,Stock-in-trade,standalone,PKR,PKR,37061230000
+balance_sheet,supplemental_reported_cash_and_bank_balances,Cash and bank balances,standalone,PKR,PKR,2619805000
+balance_sheet,supplemental_reported_trade_and_other_payables,Trade and other payables,standalone,PKR,PKR,82168179000
+balance_sheet,total_assets,Total assets,standalone,PKR,PKR,376307015000
+balance_sheet,total_equity,"219,950,854",standalone,PKR,PKR,202242868000
+balance_sheet,total_equity_and_liabilities,Total equity and liabilities,standalone,PKR,PKR,376307015000
+balance_sheet,trade_receivables,Trade debts,standalone,PKR,PKR,25026588000

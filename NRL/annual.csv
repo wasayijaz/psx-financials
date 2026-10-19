@@ -1,0 +1,22 @@
+statement,line_item,reported_label,basis,unit,currency,2024-06-30|annual,2025-06-30|annual,2026-06-30|annual
+balance_sheet,cash_and_cash_equivalents,Cash and bank balances,standalone,PKR,PKR,564360000,679940000,1217782000
+balance_sheet,total_assets,Total assets,standalone,PKR,PKR,103172339000,149495621000,166241558000
+balance_sheet,total_equity,Total equity,standalone,PKR,PKR,19216555000,50316381000,56448263000
+balance_sheet,total_liabilities,Total liabilities,standalone,PKR,PKR,83955784000,99179240000,109793295000
+income_statement,administrative_expenses,Administrative expenses,standalone,PKR,PKR,-1180566000,-1117601000,-1358462000
+income_statement,basic_eps,Earnings / (loss) per share — basic and diluted,standalone,PKR/share,PKR,-197.46,-185.91,77.09
+income_statement,cost_of_sales,Cost of sales,standalone,PKR,PKR,-316609825000,-313897084000,-417299949000
+income_statement,finance_cost,Finance cost,standalone,PKR,PKR,-9310053000,-10331167000,-9281202000
+income_statement,gross_profit,Gross profit / (loss),standalone,PKR,PKR,-7767997000,-6234231000,23544857000
+income_statement,levy,Levies,standalone,PKR,PKR,-224418000,-414235000,-665661000
+income_statement,operating_profit,Operating profit / (loss),standalone,PKR,PKR,-9345894000,-7696489000,20157164000
+income_statement,other_expenses,Other operating expenses,standalone,PKR,PKR,-95470000,-15797000,-824861000
+income_statement,other_income,Other income,standalone,PKR,PKR,347398000,562152000,373531000
+income_statement,profit_after_tax,Profit / (loss) for the period,standalone,PKR,PKR,-15790215000,-14866922000,6164414000
+income_statement,profit_before_tax,Profit / (loss) before taxation,standalone,PKR,PKR,-18880365000,-18441891000,10210301000
+income_statement,revenue,Revenue from contracts with customers,standalone,PKR,PKR,308841828000,307662853000,440844806000
+income_statement,selling_distribution_expenses,Distribution cost,standalone,PKR,PKR,-649259000,-891012000,-1577901000
+income_statement,supplemental_reported_gross_revenue,Gross revenue,standalone,PKR,PKR,396927746000,408074583000,588552491000
+income_statement,supplemental_reported_profit_before_tax_and_levies,Profit / (loss) before taxation and levies,standalone,PKR,PKR,-18655947000,-18027656000,10875962000
+income_statement,supplemental_reported_sales_deductions,Sales deductions,standalone,PKR,PKR,-88085918000,-100411730000,-147707685000
+income_statement,tax_expense,Taxation,standalone,PKR,PKR,3090150000,3574969000,-4045887000

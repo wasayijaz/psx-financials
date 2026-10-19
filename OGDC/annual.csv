@@ -1,0 +1,27 @@
+statement,line_item,reported_label,basis,unit,currency,2024-06-30|annual,2025-06-30|annual,2026-06-30|annual
+balance_sheet,cash_and_cash_equivalents,Cash and bank balances,consolidated,PKR,PKR,,,62143548000
+balance_sheet,property_plant_equipment,"Property, plant and equipment",consolidated,PKR,PKR,,,133556515000
+balance_sheet,supplemental_reported_total_equity_operand,SHARE CAPITAL AND RESERVES,consolidated,PKR,PKR,,,1519547299000
+balance_sheet,total_current_assets,CURRENT ASSETS,consolidated,PKR,PKR,,,1231836380000
+balance_sheet,total_equity,Share capital and reserves total,consolidated,PKR,PKR,1250496218000,1348236596000,1519547299000
+balance_sheet,total_liabilities,TOTAL LIABILITIES,consolidated,PKR,PKR,,,333279290000
+balance_sheet,trade_receivables,Trade debts,consolidated,PKR,PKR,,,594845141000
+cash_flow,capital_expenditure,Capital expenditure,consolidated,PKR,PKR,-45438635000,-73260627000,-108200448000
+cash_flow,cash_and_cash_equivalents_beginning,Cash and cash equivalents at beginning of the year,consolidated,PKR,PKR,,,204923032000
+cash_flow,cash_and_cash_equivalents_end,Cash and cash equivalents at end of the year,consolidated,PKR,PKR,258613241000,204923032000,291124043000
+cash_flow,dividends_paid,Dividends paid,consolidated,PKR,PKR,-34392203000,-101222926000,-68763302000
+cash_flow,exchange_rate_effect_on_cash,Effect of movements in exchange rate on cash and cash equivalents,consolidated,PKR,PKR,,,-1896201000
+cash_flow,net_cash_from_financing_activities,Net cash used in financing activities,consolidated,PKR,PKR,,,-70020952000
+cash_flow,net_cash_from_investing_activities,Net cash (used in) / generated from investing activities,consolidated,PKR,PKR,78537704000,4930620000,-2427487000
+cash_flow,net_change_in_cash,Net increase in cash and cash equivalents,consolidated,PKR,PKR,,,88097212000
+cash_flow,operating_cash_flow,Net cash generated from operating activities,consolidated,PKR,PKR,105166135000,40827177000,160545651000
+cash_flow,ops_note_amortization,Amortization,consolidated,PKR,PKR,24241911000,23058571000,
+cash_flow,ops_note_depreciation,Depreciation,consolidated,PKR,PKR,10497044000,10696090000,
+income_statement,basic_eps,Earnings per share,consolidated,PKR/share,PKR,48.59,39.5,56.35
+income_statement,finance_cost,Finance cost,consolidated,PKR,PKR,-7143130000,-5806270000,-5100614000
+income_statement,gross_profit,Gross profit,consolidated,PKR,PKR,,,246763886000
+income_statement,profit_after_tax,Profit for the year,consolidated,PKR,PKR,208975771000,169902514000,242371881000
+income_statement,profit_before_tax,Profit before income tax,consolidated,PKR,PKR,293787094000,279313761000,259133104000
+income_statement,revenue,Revenue from contracts with customers,consolidated,PKR,PKR,463697861000,401177969000,449190752000
+income_statement,supplemental_reported_profit_after_tax_operand,Profit for the year,consolidated,PKR,PKR,,,242371881000
+income_statement,tax_expense,Taxation,consolidated,PKR,PKR,-84811323000,-109411247000,-16761223000

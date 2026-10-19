@@ -1,0 +1,41 @@
+statement,line_item,reported_label,basis,unit,currency,2024-06-30|annual,2025-06-30|annual,2026-06-30|annual
+balance_sheet,cash_and_bank_balances,Cash and bank balances,consolidated,PKR,PKR,,,56302894000
+balance_sheet,cash_and_cash_equivalents,Cash and bank balances,consolidated,PKR,PKR,33926591000,39585346000,
+balance_sheet,property_plant_equipment,"PROPERTY, PLANT AND EQUIPMENT",consolidated,PKR,PKR,,,71419270000
+balance_sheet,total_assets,TOTAL ASSETS,consolidated,PKR,PKR,229840986000,220143508000,293173169000
+balance_sheet,total_equity,Share capital and reserves,consolidated,PKR,PKR,229840986000,220143508000,186398731000
+balance_sheet,total_equity_and_liabilities,TOTAL EQUITY AND LIABILITIES,consolidated,PKR,PKR,229840986000,220143508000,293173169000
+balance_sheet,trade_debts,Trade debts,consolidated,PKR,PKR,,,18697064000
+balance_sheet,trade_receivables,Trade debts,consolidated,PKR,PKR,37036362000,15505526000,
+cash_flow,capital_expenditure,"Additions to property, plant and equipment",consolidated,PKR,PKR,-880329000,-1069540000,-4253368000
+cash_flow,cash_and_cash_equivalents_beginning,CASH AND CASH EQUIVALENTS AT BEGINNING OF THE YEAR,consolidated,PKR,PKR,28037622000,67369802000,87435891000
+cash_flow,cash_and_cash_equivalents_end,CASH AND CASH EQUIVALENTS AT END OF THE YEAR,consolidated,PKR,PKR,67369802000,87435891000,115782465000
+cash_flow,dividends_paid,Dividends paid,consolidated,PKR,PKR,-2099197000,-1862811000,-798436000
+cash_flow,exchange_rate_effect_on_cash,Effects of exchange rate changes on cash and cash equivalents,consolidated,PKR,PKR,,,1989788000
+cash_flow,net_cash_from_financing_activities,Net cash outflow from financing activities,consolidated,PKR,PKR,-2529704000,-1444985000,-1132827000
+cash_flow,net_cash_from_investing_activities,Net cash generated from investing activities,consolidated,PKR,PKR,14610716000,12006043000,4764864000
+cash_flow,net_change_in_cash,NET INCREASE IN CASH AND CASH EQUIVALENTS DURING THE YEAR,consolidated,PKR,PKR,,,26356786000
+cash_flow,operating_cash_flow,Net cash inflow from operating activities,consolidated,PKR,PKR,27247442000,7219458000,22724749000
+income_statement,basic_eps,Earnings per share,consolidated,PKR/share,PKR,234.96,83.93,244.45
+income_statement,cost_of_sales,Cost of sales,consolidated,PKR,PKR,-354126203000,-291592115000,-310303798000
+income_statement,finance_cost,Finance cost,consolidated,PKR,PKR,,,-377192000
+income_statement,gross_profit,Gross profit,consolidated,PKR,PKR,28945707000,9927840000,31490588000
+income_statement,operating_profit,Operating profit,consolidated,PKR,PKR,39499384000,18780175000,36322980000
+income_statement,other_income,Other income,consolidated,PKR,PKR,15052216000,12244752000,9709405000
+income_statement,profit_after_tax,Profit for the year,consolidated,PKR,PKR,25049738000,8948467000,26062169000
+income_statement,profit_before_income_tax,Profit before income tax,consolidated,PKR,PKR,39335332000,18067097000,35945788000
+income_statement,profit_before_tax,Profit before income tax,consolidated,PKR,PKR,39499559000,18253969000,
+income_statement,revenue,Net sales,consolidated,PKR,PKR,383071910000,301519955000,341794386000
+income_statement,selling_distribution_expenses,Distribution costs,consolidated,PKR,PKR,103191000,114465000,
+income_statement,supplemental_reported_administration_expenses,Administration expenses,consolidated,PKR,PKR,,,1978477000
+income_statement,supplemental_reported_distribution_costs,Distribution costs,consolidated,PKR,PKR,,,127170000
+income_statement,supplemental_reported_eps_non_refinery_operations,Non-refinery operations (under Earnings per share - basic and diluted),consolidated,PKR/share,PKR,,,42.58
+income_statement,supplemental_reported_eps_refinery_operations_and_subsidiary,Refinery operations and subsidiary (under Earnings per share - basic and diluted),consolidated,PKR/share,PKR,,,201.87
+income_statement,supplemental_reported_impairment_loss_on_associated_company,Impairment (loss) / reversal on investment in an associated company,consolidated,PKR,PKR,,,-353710000
+income_statement,supplemental_reported_net_impairment_loss_reversal_financial_assets,Net impairment (loss) / reversal on financial assets,consolidated,PKR,PKR,,,-17629000
+income_statement,supplemental_reported_other_charges,Other charges,consolidated,PKR,PKR,,,2753737000
+income_statement,supplemental_reported_profit_after_tax_non_refinery_operations,Profit / (loss) for the year from non-refinery operations,consolidated,PKR,PKR,,,4539697000
+income_statement,supplemental_reported_profit_after_tax_refinery_operations_and_subsidiary,Profit for the year from refinery operations and subsidiary,consolidated,PKR,PKR,,,21522472000
+income_statement,supplemental_reported_share_in_profit_of_associated_companies,Share in profit / (loss) of associated companies,consolidated,PKR,PKR,,,4893407000
+income_statement,tax_expense,Taxation,consolidated,PKR,PKR,-14927033000,-6921515000,-14423316000
+other,dividend,Total cash dividend per share for the year (Rs 15.00 final recommended plus Rs 2.50 interim already paid),standalone,PKR/share,PKR,,,17.5

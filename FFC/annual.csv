@@ -1,0 +1,21 @@
+statement,line_item,reported_label,basis,unit,currency,2024-12-31|annual,2025-12-31|annual
+balance_sheet,cash_and_cash_equivalents,Cash and bank balances,consolidated,PKR,PKR,,13965276000
+balance_sheet,long_term_borrowings,Long term borrowings - secured,consolidated,PKR,PKR,,50817992000
+balance_sheet,property_plant_equipment,"Property, plant and equipment",consolidated,PKR,PKR,,132494031000
+balance_sheet,short_term_borrowings,Short term borrowings - secured,consolidated,PKR,PKR,,22009674000
+balance_sheet,total_assets,TOTAL ASSETS,consolidated,PKR,PKR,573683408000,613298162000
+balance_sheet,total_current_assets,Total current assets,consolidated,PKR,PKR,,327864310000
+balance_sheet,total_equity,Total under EQUITY AND RESERVES,consolidated,PKR,PKR,244890587000,264804952000
+balance_sheet,total_equity_and_liabilities,TOTAL EQUITY AND LIABILITIES,consolidated,PKR,PKR,,613298162000
+balance_sheet,total_liabilities,TOTAL LIABILITIES,consolidated,PKR,PKR,328792821000,348493210000
+balance_sheet,trade_receivables,Trade debts,consolidated,PKR,PKR,,33901558000
+income_statement,basic_eps,Earnings per share - basic and diluted (Rupees),consolidated,PKR/share,PKR,59.29,58.44
+income_statement,cost_of_sales,Cost of sales,consolidated,PKR,PKR,-267509156000,-334927990000
+income_statement,finance_cost,Finance costs,consolidated,PKR,PKR,-7852760000,-7115236000
+income_statement,non_controlling_interest,Non-controlling interest,consolidated,PKR,PKR,1145851000,1775488000
+income_statement,profit_after_tax,PROFIT FOR THE YEAR,consolidated,PKR,PKR,85525344000,84946307000
+income_statement,profit_after_tax_attributable,Profit attributable to owners of the Holding Company,consolidated,PKR,PKR,84379493000,83170819000
+income_statement,profit_after_tax_non_controlling,Non-controlling interest,consolidated,PKR,PKR,1145851000,1775488000
+income_statement,profit_before_tax,PROFIT BEFORE INCOME TAX,consolidated,PKR,PKR,140589545000,136181769000
+income_statement,revenue,Turnover - net,consolidated,PKR,PKR,411254410000,483807560000
+income_statement,tax_expense,Provision for taxation,consolidated,PKR,PKR,-55064201000,-51235462000

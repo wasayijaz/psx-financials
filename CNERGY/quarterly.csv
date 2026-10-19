@@ -1,0 +1,32 @@
+statement,line_item,reported_label,basis,unit,currency,2024-12-31|half_year,2024-12-31|quarter,2025-03-31|nine_months,2025-03-31|quarter,2025-12-31|half_year,2025-12-31|quarter,2026-03-31|nine_months,2026-03-31|quarter
+balance_sheet,property_plant_equipment,"Property, plant and equipment",standalone,PKR,PKR,,,,,286728435000,,285876077000,
+balance_sheet,short_term_borrowings,Short Term Borrowings - secured,standalone,PKR,PKR,,,,,11465096000,,1600000000,
+balance_sheet,stock_in_trade,Stock-in-trade,standalone,PKR,PKR,,,,,52306465000,,101423647000,
+balance_sheet,supplemental_reported_cash_and_bank_balances,Cash and bank balances,standalone,PKR,PKR,,,,,4242828000,,2655998000,
+balance_sheet,supplemental_reported_trade_and_other_payables,Trade and other payables,standalone,PKR,PKR,,,,,103454057000,,150209295000,
+balance_sheet,total_assets,Total assets,standalone,PKR,PKR,,,,,399350911000,,456146566000,
+balance_sheet,total_equity,"205,373,710",standalone,PKR,PKR,,,,,205373710000,,219950854000,
+balance_sheet,total_equity_and_liabilities,Total equity and liabilities,standalone,PKR,PKR,,,,,399350911000,,456146566000,
+balance_sheet,trade_receivables,Trade debts,standalone,PKR,PKR,,,,,30206734000,,38673455000,
+cash_flow,capital_expenditure,"Acquisition of property, plant and equipment and intangible",standalone,PKR,PKR,-1884808000,,-3790968000,,-2284339000,,-2803745000,
+cash_flow,depreciation_amortization,Depreciation / Amortisation,standalone,PKR,PKR,3427080000,,5136549000,,3467914000,,5215749000,
+cash_flow,operating_cash_flow,Net Cash  generated from / (used in) operations,standalone,PKR,PKR,946801000,,2766360000,,1684008000,,13082701000,
+cash_flow,supplemental_reported_cash_closing,Cash and cash equivalents - at the end of the period,standalone,PKR,PKR,1667609000,,479588000,,2642828000,,1055998000,
+cash_flow,supplemental_reported_cash_opening,Cash and cash equivalents - at the beginning of the period,standalone,PKR,PKR,799632000,,799632000,,7853212000,,1019805000,
+cash_flow,supplemental_reported_net_cash_financing,Net cash (used in) / generated from financing activities,standalone,PKR,PKR,1819964000,,651381000,,-4611180000,,-10343907000,
+cash_flow,supplemental_reported_net_cash_investing,Net cash used in investing activities,standalone,PKR,PKR,-1898788000,,-3737785000,,-2283212000,,-2702601000,
+cash_flow,supplemental_reported_net_change_in_cash,Net (decrease) / increase in cash and cash equivalents,standalone,PKR,PKR,867977000,,-320044000,,-5210384000,,36193000,
+income_statement,administrative_expenses,Administrative expenses,standalone,PKR,PKR,-880642000,-459124000,-1334522000,-453880000,-973477000,-508227000,-1453456000,-479979000
+income_statement,basic_eps,Basic / diluted earnings per share,standalone,PKR/share,PKR,0.3,0.59,-0.2,-0.5,0.68,0.78,3.22,2.68
+income_statement,cost_of_sales,Cost of sales,standalone,PKR,PKR,-137838419000,-81063627000,-213128501000,-75290082000,-138940461000,-78259072000,-233974655000,-95034194000
+income_statement,finance_cost,Finance costs,standalone,PKR,PKR,-2452992000,-1244572000,-3750098000,-1297106000,-1690284000,-854162000,-2551495000,-861243000
+income_statement,gross_profit,Gross profit,standalone,PKR,PKR,5652313000,5323084000,4941846000,-710467000,7340780000,6409192000,27881217000,20540437000
+income_statement,operating_profit,Operating profit,standalone,PKR,PKR,4407090000,4734743000,3144167000,-1262923000,6116061000,5759209000,26062272000,19946243000
+income_statement,other_expenses,Other expenses,standalone,PKR,PKR,-257286000,-128643000,-385930000,-128644000,0,0,0,0
+income_statement,other_income,Other income - net,standalone,PKR,PKR,214699000,167840000,418251000,203552000,99864000,43757000,187360000,87528000
+income_statement,profit_after_tax,Profit / (loss) after taxation,standalone,PKR,PKR,1652738000,3251001000,-1110546000,-2763284000,3720296000,4309766000,17707986000,14740830000
+income_statement,profit_before_tax,Profit / (loss) before taxation,standalone,PKR,PKR,1954098000,3490171000,-605931000,-2560029000,4425777000,4905047000,23510777000,19085000000
+income_statement,revenue,Revenue from contract with customers - net,standalone,PKR,PKR,143490732000,86386711000,218070347000,74579615000,146281241000,84668264000,261855872000,115574631000
+income_statement,selling_distribution_expenses,Selling and distribution expenses,standalone,PKR,PKR,-321994000,-168414000,-495478000,-173484000,-351106000,-185513000,-552849000,-201743000
+income_statement,supplemental_reported_income_tax,Income tax,standalone,PKR,PKR,458581000,229291000,687871000,229290000,467958000,231311000,-5802791000,-5155165000
+income_statement,supplemental_reported_minimum_taxes,Minimum taxes,standalone,PKR,PKR,-759941000,-468461000,-1192486000,-432545000,-1173439000,-826592000,0,810995000

@@ -1,0 +1,25 @@
+statement,line_item,reported_label,basis,unit,currency,2024-06-30|quarter,2024-09-30|nine_months,2024-09-30|quarter,2025-03-31|quarter,2025-06-30|half_year,2025-06-30|quarter,2025-09-30|nine_months,2025-09-30|quarter,2026-03-31|quarter
+income_statement,basic_eps,Basic earnings per Share - Rupees,consolidated,PKR/share,PKR,0.94,2.53,1.09,0.53,1.98,1.45,3.52,1.54,1.43
+income_statement,credit_loss_charge,(Reversal) / charge of credit loss allowance and write offs - net,consolidated,PKR,PKR,-1661397000,-3565614000,-128096000,997898000,464751000,-533147000,2196591000,1731840000,-179274000
+income_statement,financing_income,Mark-up / return / interest earned,consolidated,PKR,PKR,88507019000,265538449000,92756558000,68975451000,135014658000,66039207000,202125947000,67111289000,66926048000
+income_statement,funding_expense,Mark-up / return / interest expensed,consolidated,PKR,PKR,80457511000,234802895000,78655272000,53922860000,99196416000,45273556000,143646794000,44450378000,44814879000
+income_statement,net_interest_income,Net mark-up / interest income,consolidated,PKR,PKR,8049508000,30735554000,14101286000,15052591000,35818242000,20765651000,58479153000,22660911000,22111169000
+income_statement,non_interest_income,Total non-markup / interest income,consolidated,PKR,PKR,6302185000,15823117000,5857665000,4508551000,9533406000,5024855000,15168019000,5634613000,5736713000
+income_statement,other_expenses,Total non-markup / interest expenses,consolidated,PKR,PKR,11997535000,35462831000,12941391000,14539301000,30000276000,15460975000,45389871000,15389595000,17867870000
+income_statement,other_income,Other income,consolidated,PKR,PKR,485086000,1084714000,51256000,74132000,172772000,98640000,510866000,338094000,223903000
+income_statement,profit_after_tax,PROFIT AFTER TAXATION,consolidated,PKR,PKR,3117459000,8467348000,3654410000,1794312000,6519124000,4724812000,11601262000,5082138000,4689117000
+income_statement,profit_after_tax_attributable,Equity holders of the Bank,consolidated,PKR,PKR,3058472000,8273728000,3566397000,1729312000,6480523000,4751211000,11512333000,5031810000,4682576000
+income_statement,profit_after_tax_non_controlling,Non controlling interest,consolidated,PKR,PKR,58987000,193620000,88013000,65000000,38601000,-26399000,88929000,50328000,6541000
+income_statement,profit_before_credit_loss_allowance,Profit before credit loss allowance,consolidated,PKR,PKR,2354158000,11095840000,7017560000,5021841000,15351372000,10329531000,28257301000,12905929000,9980012000
+income_statement,profit_before_tax,PROFIT BEFORE TAXATION,consolidated,PKR,PKR,4015555000,14661454000,7145656000,4023943000,14886621000,10862678000,26060710000,11174089000,10160392000
+income_statement,supplemental_reported_associate_profit,Share of profit from associate,consolidated,PKR,PKR,,,,,,,,,1106000
+income_statement,supplemental_reported_dividend_income,Dividend income,consolidated,PKR,PKR,48069000,262578000,99872000,106546000,169343000,62797000,220688000,51345000,117299000
+income_statement,supplemental_reported_fee_commission_income,Fee and commission income,consolidated,PKR,PKR,2463806000,7630076000,3075141000,3257241000,6373940000,3116699000,9976895000,3602955000,5062122000
+income_statement,supplemental_reported_financial_assets_derecognition,Net (loss) / gain on derecognition of financial assets measured at amortised cost,consolidated,PKR,PKR,1362018000,1261041000,-100977000,-276737000,-569049000,-292312000,-783315000,-214266000,-302931000
+income_statement,supplemental_reported_foreign_exchange_income,Foreign exchange income,consolidated,PKR,PKR,555551000,661594000,-101457000,577056000,723253000,146197000,1631427000,908174000,741417000
+income_statement,supplemental_reported_gain_on_securities,(Loss) / gain on securities - net,consolidated,PKR,PKR,1387655000,4923114000,2833830000,770313000,2663147000,1892834000,3611458000,948311000,-105097000
+income_statement,supplemental_reported_operating_expenses,Operating expenses,consolidated,PKR,PKR,11962400000,35081232000,12648455000,14413480000,29462942000,15049462000,44538034000,15075092000,17647512000
+income_statement,supplemental_reported_other_charges,Other charges,consolidated,PKR,PKR,1495000,6046000,4393000,656000,3986000,3330000,68224000,64238000,961000
+income_statement,supplemental_reported_workers_welfare_fund,Workers' Welfare Fund,consolidated,PKR,PKR,33640000,375553000,288543000,125165000,533348000,408183000,783613000,250265000,219397000
+income_statement,tax_expense,Taxation - net,consolidated,PKR,PKR,898096000,6194106000,3491246000,2229631000,8367497000,6137866000,14459448000,6091951000,5471275000
+income_statement,total_operating_income,Total income,consolidated,PKR,PKR,14351693000,46558671000,19958951000,19561142000,45351648000,25790506000,73647172000,28295524000,27847882000

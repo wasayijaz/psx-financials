@@ -1,0 +1,18 @@
+statement,line_item,reported_label,basis,unit,currency,2024-12-31|annual,2025-12-31|annual
+balance_sheet,total_equity,NET ASSETS,consolidated,PKR,PKR,,103321032000
+balance_sheet,total_liabilities,Total liabilities,consolidated,PKR,PKR,,2847418754000
+cash_flow,operating_cash_flow,Net cash flow from operating activities,consolidated,PKR,PKR,345139793000,316643187000
+cash_flow,ops_note_amortization,Amortization,consolidated,PKR,PKR,412344000,474548000
+cash_flow,ops_note_depreciation,Depreciation,consolidated,PKR,PKR,2538179000,3426016000
+income_statement,basic_eps,earnings per share,consolidated,PKR/share,PKR,4,4.71
+income_statement,financing_income,Mark-up / return / interest earned,consolidated,PKR,PKR,343864915000,266388664000
+income_statement,funding_expense,Mark-up / return / interest expensed,consolidated,PKR,PKR,299604752000,185253112000
+income_statement,net_interest_income,Net mark-up / interest income,consolidated,PKR,PKR,44260163000,81135552000
+income_statement,non_controlling_interest,Non controlling interest,consolidated,PKR,PKR,,136077000
+income_statement,non_interest_income,Total non-markup / interest income,consolidated,PKR,PKR,,19995391000
+income_statement,other_income,Other income,consolidated,PKR,PKR,1207674000,754872000
+income_statement,profit_after_tax,PROFIT AFTER TAXATION,consolidated,PKR,PKR,13280057000,15530034000
+income_statement,profit_before_credit_loss_allowance,Profit before credit loss allowance,consolidated,PKR,PKR,20363873000,40374093000
+income_statement,profit_before_tax,PROFIT BEFORE TAXATION,consolidated,PKR,PKR,24437162000,35394368000
+income_statement,tax_expense,Taxation,consolidated,PKR,PKR,11157105000,19864334000
+income_statement,total_operating_income,Total income,consolidated,PKR,PKR,71073971000,101130943000

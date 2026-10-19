@@ -1,0 +1,31 @@
+statement,line_item,reported_label,basis,unit,currency,2024-06-30|annual,2025-06-30|annual
+balance_sheet,cash_and_bank_balances,Cash and bank balances,consolidated,PKR,PKR,20389901000,60896001000
+balance_sheet,long_term_borrowings,Long-term borrowings,consolidated,PKR,PKR,3000000000,9200000000
+balance_sheet,short_term_borrowings,Short-term borrowings,consolidated,PKR,PKR,429987487000,371537732000
+balance_sheet,supplemental_reported_equity_attributable_to_owners,Equity attributable to the owners of the Holding Company,consolidated,PKR,PKR,242318090000,256864203000
+balance_sheet,supplemental_reported_non_controlling_interest_equity,Non-controlling interest,consolidated,PKR,PKR,8714439000,6070659000
+balance_sheet,total_assets,TOTAL ASSETS,consolidated,PKR,PKR,1063519173000,1095611255000
+balance_sheet,total_liabilities,TOTAL LIABILITIES,consolidated,PKR,PKR,812486644000,832676393000
+cash_flow,capital_expenditure,Capital expenditure,consolidated,PKR,PKR,-9465047000,-8876777000
+cash_flow,operating_cash_flow,Net cash generated from operating activities,consolidated,PKR,PKR,15907699000,152900839000
+cash_flow,supplemental_reported_net_cash_from_financing_activities,Net cash used in financing activities,consolidated,PKR,PKR,-31853247000,-47450269000
+cash_flow,supplemental_reported_net_cash_from_investing_activities,Net cash used in investing activities,consolidated,PKR,PKR,-8338415000,-6529206000
+cash_flow,supplemental_reported_net_change_in_cash,Net increase / (decrease) in cash and cash equivalents,consolidated,PKR,PKR,-24283963000,98921364000
+income_statement,administrative_expenses,Administrative expenses,consolidated,PKR,PKR,-7699698000,-9012463000
+income_statement,associate_income,Share of profit from associates - net of tax,consolidated,PKR,PKR,1645162000,315687000
+income_statement,basic_eps,Earning per share - basic and diluted,consolidated,PKR/share,PKR,39.04,35.03
+income_statement,cost_of_sales,Cost of products sold,consolidated,PKR,PKR,-3630817899000,-3221632883000
+income_statement,distribution_cost,Distribution and marketing expenses,consolidated,PKR,PKR,-18585450000,-21955481000
+income_statement,finance_cost,Finance costs,consolidated,PKR,PKR,-55967767000,-37413932000
+income_statement,gross_profit,Gross profit,consolidated,PKR,PKR,111264070000,97150957000
+income_statement,non_controlling_interest,Non-controlling interest,consolidated,PKR,PKR,1323452000,-2202574000
+income_statement,other_income,Other income,consolidated,PKR,PKR,28290100000,24365022000
+income_statement,other_operating_expenses,Other expenses,consolidated,PKR,PKR,-10777861000,-6584375000
+income_statement,profit_after_tax,Profit for the year,consolidated,PKR,PKR,19650175000,14241917000
+income_statement,profit_after_tax_attributable,Owners of the Holding Company,consolidated,PKR,PKR,18326723000,16444491000
+income_statement,profit_before_tax,Profit before taxation,consolidated,PKR,PKR,36091761000,33274693000
+income_statement,revenue,Net sales,consolidated,PKR,PKR,3742081969000,3318783840000
+income_statement,supplemental_reported_final_taxes,Final taxes,consolidated,PKR,PKR,-473330000,-375000000
+income_statement,supplemental_reported_minimum_tax_differential,Minimum tax differential,consolidated,PKR,PKR,-11603465000,-13215722000
+income_statement,supplemental_reported_profit_before_tax_before_minimum_and_final_taxes,"Profit before taxation, minimum tax differential and final taxes",consolidated,PKR,PKR,48168556000,46865415000
+income_statement,tax_expense,Taxation,consolidated,PKR,PKR,-16441586000,-19032776000

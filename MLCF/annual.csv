@@ -1,0 +1,113 @@
+statement,line_item,reported_label,basis,unit,currency,2022-06-30|annual,2023-06-30|annual,2024-06-30|annual,2025-06-30|annual,2026-06-30|annual
+balance_sheet,bills_payable_secured,Bills payable - secured,consolidated,PKR,PKR,,1416937000,474442000,,
+balance_sheet,cash_and_cash_equivalents,Cash and bank balances,consolidated,PKR,PKR,,750252000,1279424000,1861551000,3733356000
+balance_sheet,equity_attributable_to_parent,Attributable to owners of the Holding Company,consolidated,PKR,PKR,,,,70959782000,83002324000
+balance_sheet,issued_ordinary_shares,"Issued, subscribed and paid-up share capital 1,047,562,608 (June 30, 2025: 1,047,562,608) Ordinary shares of Rs 10 each",consolidated,shares,PKR,,,,1047562608,
+balance_sheet,long_term_borrowings,Long term loans from financial institutions - secured,consolidated,PKR,PKR,,15233337000,9785786000,9781639000,76246486000
+balance_sheet,long_term_borrowings_current_portion,Current portion shown under current liabilities,consolidated,PKR,PKR,,,,-3933328000,
+balance_sheet,non_controlling_interest_equity,Non-controlling interests,consolidated,PKR,PKR,,,,-496000,11202543000
+balance_sheet,property_plant_equipment,"Property, plant and equipment",consolidated,PKR,PKR,,66746105000,72786438000,72109615000,140121890000
+balance_sheet,short_term_borrowings,Short term borrowings from financial institutions - secured,consolidated,PKR,PKR,,,1645316000,822285000,2498597000
+balance_sheet,stock_in_trade,STOCK-IN-TRADE,consolidated,PKR,PKR,,3814163000,3176688000,4278247000,6999560000
+balance_sheet,stores_spare_parts_loose_tools,"STORES, SPARE PARTS AND LOOSE TOOLS",consolidated,PKR,PKR,,10462363000,12836410000,13010204000,19014734000
+balance_sheet,supplemental_reported_accrued_profit,Accrued profit,consolidated,PKR,PKR,,,,42880000,59376000
+balance_sheet,supplemental_reported_advance_income_tax,Advance income tax,consolidated,PKR,PKR,,,,,1138285000
+balance_sheet,supplemental_reported_authorised_share_capital,Authorised share capital,consolidated,PKR,PKR,,,,15000000000,15000000000
+balance_sheet,supplemental_reported_capital_reserves,Capital reserves,consolidated,PKR,PKR,,,,34998282000,34112261000
+balance_sheet,supplemental_reported_current_assets_total,[unlabelled printed subtotal: current assets],consolidated,PKR,PKR,,,,36638577000,49096682000
+balance_sheet,supplemental_reported_current_liabilities_total,[unlabelled printed subtotal: current liabilities],consolidated,PKR,PKR,,,,23364680000,39359623000
+balance_sheet,supplemental_reported_current_portion_deferred_grant,Current portion of: Deferred government grant,consolidated,PKR,PKR,,,,128183000,105295000
+balance_sheet,supplemental_reported_current_portion_lease,Current portion of: Lease liabilities,consolidated,PKR,PKR,,,,39970000,36807000
+balance_sheet,supplemental_reported_current_portion_long_term_loans,Current portion of: Long term loans from financial institutions - secured,consolidated,PKR,PKR,,,,3933328000,4425492000
+balance_sheet,supplemental_reported_deferred_government_grant,Deferred government grant,consolidated,PKR,PKR,,,,322304000,217009000
+balance_sheet,supplemental_reported_deferred_taxation,Deferred tax liabilities,consolidated,PKR,PKR,,,,13837046000,31180132000
+balance_sheet,supplemental_reported_employee_benefits_obligations,Employee benefits obligations,consolidated,PKR,PKR,,,,350638000,880508000
+balance_sheet,supplemental_reported_intangible_assets,Intangible assets,consolidated,PKR,PKR,,,,62426000,39426638000
+balance_sheet,supplemental_reported_investment_property,Investment property,consolidated,PKR,PKR,,,,,1081995000
+balance_sheet,supplemental_reported_issued_subscribed_paid_up,"Issued, subscribed and paid-up share capital",consolidated,PKR,PKR,,,,10475626000,10475626000
+balance_sheet,supplemental_reported_lease_liabilities_non_current,Lease liabilities,consolidated,PKR,PKR,,,,53292000,45329000
+balance_sheet,supplemental_reported_loans_and_advances,Loans and advances,consolidated,PKR,PKR,,,,908542000,869515000
+balance_sheet,supplemental_reported_long_term_advances_prepayments,Long term advances and prepayments,consolidated,PKR,PKR,,,,310264000,2773728000
+balance_sheet,supplemental_reported_long_term_deposits_asset,Long term deposits,consolidated,PKR,PKR,,,,88212000,193463000
+balance_sheet,supplemental_reported_long_term_deposits_payable,Long term deposits,consolidated,PKR,PKR,,,,8214000,49685000
+balance_sheet,supplemental_reported_long_term_investments,Long term investments,consolidated,PKR,PKR,,,,9505895000,9665204000
+balance_sheet,supplemental_reported_long_term_loans_employees,Long term loans to employees - secured,consolidated,PKR,PKR,,,,16610000,9741000
+balance_sheet,supplemental_reported_markup_accrued,Mark-up accrued on borrowings,consolidated,PKR,PKR,,,,320434000,1355540000
+balance_sheet,supplemental_reported_non_current_assets_total,[unlabelled printed subtotal: non-current assets],consolidated,PKR,PKR,,,,82093022000,193272659000
+balance_sheet,supplemental_reported_non_current_liabilities_total,[unlabelled printed subtotal: non-current liabilities],consolidated,PKR,PKR,,,,24407633000,108804851000
+balance_sheet,supplemental_reported_other_receivables,Other receivables,consolidated,PKR,PKR,,,,107290000,93324000
+balance_sheet,supplemental_reported_provision_for_income_tax,Provision for income tax,consolidated,PKR,PKR,,,,449875000,
+balance_sheet,supplemental_reported_retention_money_payable,Retention money payable,consolidated,PKR,PKR,,,,54500000,185702000
+balance_sheet,supplemental_reported_revenue_reserve,Revenue reserve: Un-appropriated profits,consolidated,PKR,PKR,,,,21543468000,32591880000
+balance_sheet,supplemental_reported_short_term_deposits_prepayments,Short term deposits and prepayments,consolidated,PKR,PKR,,,,717268000,739350000
+balance_sheet,supplemental_reported_short_term_investments,Short term investments,consolidated,PKR,PKR,,,,11102413000,10569182000
+balance_sheet,supplemental_reported_trade_and_other_payables,Trade and other payables,consolidated,PKR,PKR,,,,17643728000,30815495000
+balance_sheet,supplemental_reported_unclaimed_dividend,Unclaimed dividend,consolidated,PKR,PKR,,,,26877000,122397000
+balance_sheet,total_assets,Total assets,consolidated,PKR,PKR,,89585276000,100343986000,118731599000,242369341000
+balance_sheet,total_current_assets,Total current assets,consolidated,PKR,PKR,,22755735000,27374875000,,
+balance_sheet,total_equity,Total Equity,consolidated,PKR,PKR,,47919141000,57643643000,70959286000,94204867000
+balance_sheet,total_equity_and_liabilities,Total equity and liabilities,consolidated,PKR,PKR,,89585276000,100343986000,118731599000,242369341000
+balance_sheet,trade_creditors,Trade creditors,consolidated,PKR,PKR,,3412227000,4464246000,,
+balance_sheet,trade_receivables,Trade debts,consolidated,PKR,PKR,,2600988000,4188745000,4610182000,5880000000
+cash_flow,capital_expenditure,Capital expenditure,consolidated,PKR,PKR,,-9080092000,-5453903000,-3611410000,-6717991000
+cash_flow,cash_and_cash_equivalents_beginning,Cash and cash equivalents at beginning of the year,consolidated,PKR,PKR,,-580251000,750252000,-127392000,1718031000
+cash_flow,cash_and_cash_equivalents_end,Cash and cash equivalents at end of the year,consolidated,PKR,PKR,,750252000,-127392000,1718031000,2331350000
+cash_flow,dividends_paid,Dividend paid,consolidated,PKR,PKR,,-191000,-123000,-378000,-2008000
+cash_flow,exchange_rate_effect_on_cash,Effects of exchange rate changes on cash,consolidated,PKR,PKR,3976000,7847000,2893000,-3071000,-2667000
+cash_flow,finance_cost_paid,Finance cost paid,consolidated,PKR,PKR,,-2240664000,-3682164000,-3286683000,-3604540000
+cash_flow,net_cash_from_financing_activities,Net cash (used in) / generated from financing activities,consolidated,PKR,PKR,,-6345281000,-9532789000,-2284481000,59116780000
+cash_flow,net_cash_from_investing_activities,Net cash outflow from investing activities,consolidated,PKR,PKR,,-12178786000,-4128981000,-15217776000,-78705753000
+cash_flow,net_change_in_cash,Net increase / (decrease) in cash,consolidated,PKR,PKR,,1322656000,-880537000,1848494000,615986000
+cash_flow,operating_cash_flow,Net cash generated from operating activities,consolidated,PKR,PKR,,19846723000,12781233000,19350751000,20204959000
+cash_flow,ops_note_amortization,Amortization,consolidated,PKR,PKR,2388000,3469000,,,
+cash_flow,ops_note_amortization_intangible,Amortisation on intangible assets,consolidated,PKR,PKR,,,11964000,,
+cash_flow,ops_note_depreciation,Depreciation,consolidated,PKR,PKR,3555760000,3779877000,,,
+cash_flow,ops_note_depreciation_ppe,Depreciation on operating fixed assets,consolidated,PKR,PKR,,,4835924000,,
+cash_flow,ops_note_depreciation_right_of_use,Depreciation on right-of-use asset,consolidated,PKR,PKR,,,20498000,,
+cash_flow,ops_note_finance_cost,Finance cost,consolidated,PKR,PKR,,,3535084000,,
+cash_flow,supplemental_reported_cash_generated_from_operations,Cash generated from operations,consolidated,PKR,PKR,,,,23549872000,32575763000
+cash_flow,supplemental_reported_decrease_lt_loans_employees,Decrease in long term loans to employees,consolidated,PKR,PKR,,,,14618000,6869000
+cash_flow,supplemental_reported_dividends_received,Dividends received,consolidated,PKR,PKR,,,,259816000,570285000
+cash_flow,supplemental_reported_employee_benefit_obligations_paid,Employee benefit obligations paid,consolidated,PKR,PKR,,,,-54768000,-38637000
+cash_flow,supplemental_reported_income_tax_final_taxes_paid,Income tax and final taxes paid,consolidated,PKR,PKR,,,,-4368527000,-12371067000
+cash_flow,supplemental_reported_income_tax_refunds_received,Income tax refunds received,consolidated,PKR,PKR,,,,178579000,
+cash_flow,supplemental_reported_increase_long_term_advances,Increase in long term advances and prepayments,consolidated,PKR,PKR,,,,-230223000,-2463464000
+cash_flow,supplemental_reported_increase_lt_deposits_suppliers,Increase in long term deposits to suppliers,consolidated,PKR,PKR,,,,-21577000,-23203000
+cash_flow,supplemental_reported_increase_retention_money_payable,Increase in retention money payable,consolidated,PKR,PKR,,,,52554000,55234000
+cash_flow,supplemental_reported_investments_agritech,Investments in Agritech Limited,consolidated,PKR,PKR,,,,-7067357000,
+cash_flow,supplemental_reported_investments_pioneer_cement,Investments in equity instruments of Pioneer Cement Limited,consolidated,PKR,PKR,,,,,-12737288000
+cash_flow,supplemental_reported_lease_rentals_paid,Lease rentals paid,consolidated,PKR,PKR,,,,-42222000,-49166000
+cash_flow,supplemental_reported_long_term_loans_proceeds,Proceeds from long term loans from financial institutions - secured,consolidated,PKR,PKR,,,,4200000000,74683900000
+cash_flow,supplemental_reported_long_term_loans_repayment,Repayment of long term loans from financial institutions - secured,consolidated,PKR,PKR,,,,-3833960000,-11538428000
+cash_flow,supplemental_reported_payment_acquisition_subsidiary,Payment for acquisition of subsidiary - net of cash acquired,consolidated,PKR,PKR,,,,,-62018773000
+cash_flow,supplemental_reported_payments_intangibles,Payments for acquisition of intangibles,consolidated,PKR,PKR,,,,-7816000,
+cash_flow,supplemental_reported_proceeds_disposal_ppe,"Proceeds from disposal of property, plant and equipment",consolidated,PKR,PKR,,,,95921000,215235000
+cash_flow,supplemental_reported_proceeds_disposal_stores,Proceeds from disposal of stores and spares,consolidated,PKR,PKR,,,,195180000,49932000
+cash_flow,supplemental_reported_proceeds_sale_short_term_investments,Proceeds from sale of short term investments,consolidated,PKR,PKR,,,,42709617000,15712674000
+cash_flow,supplemental_reported_proceeds_treasury_bills,Proceeds from the disposal of investments in market treasury bills,consolidated,PKR,PKR,,,,805066000,
+cash_flow,supplemental_reported_profit_bank_deposits_received,Profit received on bank deposits,consolidated,PKR,PKR,,,,206067000,608432000
+cash_flow,supplemental_reported_purchase_short_term_investments,Purchase of short term investments,consolidated,PKR,PKR,,,,-48572637000,-11924795000
+cash_flow,supplemental_reported_redemption_preference_shares,Redemption of preference shares,consolidated,PKR,PKR,,,,-3000,-5000
+cash_flow,supplemental_reported_short_term_borrowings_net,Short term borrowings - net,consolidated,PKR,PKR,,,,678765000,-372973000
+income_statement,administrative_expenses,Administrative expenses,consolidated,PKR,PKR,-977472000,-1398611000,,-2345069000,-4030580000
+income_statement,basic_eps,Earnings per share,consolidated,PKR/share,PKR,4.15,5.38,6.51,10.98,11.34
+income_statement,cost_of_sales,Cost of sales,consolidated,PKR,PKR,-35280283000,-44461714000,,-43212083000,-53538917000
+income_statement,finance_cost,Finance cost,consolidated,PKR,PKR,,-2380827000,-3412463000,-3011546000,-4594170000
+income_statement,gross_profit,Gross profit,consolidated,PKR,PKR,,17613545000,22430465000,25441916000,31606954000
+income_statement,levy,Final taxes - levy,consolidated,PKR,PKR,,,,-38972000,-138964000
+income_statement,net_impairment_financial_assets,Net impairment loss on financial assets,consolidated,PKR,PKR,-209920000,-191421000,,,
+income_statement,operating_profit,Operating profit,consolidated,PKR,PKR,,13074467000,14218570000,19047967000,24585242000
+income_statement,other_expenses,Other expenses,consolidated,PKR,PKR,,,,-1418766000,-1393836000
+income_statement,other_income,Other income,consolidated,PKR,PKR,60209000,147320000,,2017826000,1262883000
+income_statement,profit_after_tax,Profit after taxation,consolidated,PKR,PKR,,5770762000,6919777000,11503278000,12564675000
+income_statement,profit_after_tax_attributable,Equity holders of the Holding Company,consolidated,PKR,PKR,,,6891064000,11503305000,11884079000
+income_statement,profit_after_tax_non_controlling,Non-controlling interests,consolidated,PKR,PKR,,,,-27000,680596000
+income_statement,profit_before_tax,Profit before income tax,consolidated,PKR,PKR,,10693640000,10760303000,16329735000,19960083000
+income_statement,revenue,Revenue,consolidated,PKR,PKR,48519622000,62075259000,66452348000,68653999000,85145871000
+income_statement,selling_distribution_expenses,Distribution cost,consolidated,PKR,PKR,-1483876000,-2001499000,,-4133510000,-2982727000
+income_statement,supplemental_reported_finance_cost_net,Finance cost - net,consolidated,PKR,PKR,,,,-1918189000,-3969242000
+income_statement,supplemental_reported_finance_income,Finance income,consolidated,PKR,PKR,,,,1093357000,624928000
+income_statement,supplemental_reported_net_impairment_financial_assets,Net impairment gain / (loss) on financial assets,consolidated,PKR,PKR,,,,-514430000,122548000
+income_statement,supplemental_reported_profit_before_final_taxes,[unlabelled printed subtotal: profit before final taxes and income tax],consolidated,PKR,PKR,,,,16368707000,20099047000
+income_statement,supplemental_reported_share_of_associate_loss,Share of net loss of associate accounted for using equity method,consolidated,PKR,PKR,,,,-761071000,-516953000
+income_statement,tax_expense,Income tax,consolidated,PKR,PKR,,-4922878000,-3840526000,-4826457000,-7395408000
