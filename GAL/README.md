@@ -6,6 +6,8 @@ Sector: Automobile Assembler. Fiscal year end: 06-30.
 
 CSV files: [annual.csv](annual.csv), [quarterly.csv](quarterly.csv). Each wide cell joins to [facts.csv](../data/facts.csv) by symbol, line item, period end, period type and basis. Half-year and nine-month columns are cumulative.
 
+Main tables contain primary statements plus EPS, shares and dividends. Other reported financial notes remain available only in facts.csv.
+
 ## Income Statement
 
 ### Annual
@@ -63,14 +65,11 @@ No qualifying reported figures available.
 
 No qualifying reported figures available.
 
-## Other
+## EPS, shares and dividends
 
 ### Annual
 
-| Line item | Basis | Unit | Currency | 2024-06-30 / annual | 2025-06-30 / annual |
-|---|---|---|---|---|---|
-| non_controlling_interest | consolidated | PKR | PKR | 58000 [S49](#s49) | 119000 [S50](#s50) |
-| profit_after_tax_attributable | consolidated | PKR | PKR | 364977000 [S51](#s51) | 4095590000 [S52](#s52) |
+No qualifying reported figures available.
 
 ### Interim
 
@@ -87,11 +86,9 @@ Missing verified publication date: 0 distinct inspected observations. No missing
 | 2024-06-30 | annual | consolidated | balance_sheet | 3 |
 | 2024-06-30 | annual | consolidated | cash_flow | 8 |
 | 2024-06-30 | annual | consolidated | income_statement | 13 |
-| 2024-06-30 | annual | consolidated | other | 2 |
 | 2025-06-30 | annual | consolidated | balance_sheet | 3 |
 | 2025-06-30 | annual | consolidated | cash_flow | 8 |
 | 2025-06-30 | annual | consolidated | income_statement | 13 |
-| 2025-06-30 | annual | consolidated | other | 2 |
 
 Full exclusion counts and collection limits: [coverage.md](../coverage.md).
 
@@ -194,11 +191,3 @@ Pages are physical PDF page numbers, starting at 1. Documents are linked only; n
 <a id="s47"></a> **S47**: [psx:260295](https://dps.psx.com.pk/download/document/260295.pdf), page 13; published 2025-09-29; retrieved 2026-08-22; period 2024-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cash_flow_net_change_2024;cash_subtotal;source_structure_and_raw_scale.
 
 <a id="s48"></a> **S48**: [psx:260295](https://dps.psx.com.pk/download/document/260295.pdf), page 13; published 2025-09-29; retrieved 2026-08-22; period 2025-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cash_flow_net_change_2025;cash_subtotal;source_structure_and_raw_scale.
-
-<a id="s49"></a> **S49**: [psx:260295](https://dps.psx.com.pk/download/document/260295.pdf), page 12; published 2025-09-29; retrieved 2026-08-22; period 2024-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: pat_attribution_2024;source_structure_and_raw_scale.
-
-<a id="s50"></a> **S50**: [psx:260295](https://dps.psx.com.pk/download/document/260295.pdf), page 12; published 2025-09-29; retrieved 2026-08-22; period 2025-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: pat_attribution_2025;source_structure_and_raw_scale.
-
-<a id="s51"></a> **S51**: [psx:260295](https://dps.psx.com.pk/download/document/260295.pdf), page 12; published 2025-09-29; retrieved 2026-08-22; period 2024-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: pat_attribution_2024;source_structure_and_raw_scale.
-
-<a id="s52"></a> **S52**: [psx:260295](https://dps.psx.com.pk/download/document/260295.pdf), page 12; published 2025-09-29; retrieved 2026-08-22; period 2025-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: pat_attribution_2025;source_structure_and_raw_scale.

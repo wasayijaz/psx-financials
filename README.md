@@ -2,9 +2,9 @@
 
 Source-linked historical financial figures for 20 Pakistan Stock Exchange companies. This compilation is for researchers, students and people building reproducible financial datasets. It contains extracted reported figures from official filings, with partial coverage as of the cutoff below. It is not a complete ten-year database.
 
-Data cutoff: **2026-10-19**. Published facts: **1703**. Admitted checked: **441**. Collected checked: **1262**.
+Data cutoff: **2026-10-19**. Published facts: **1863**. Admitted checked: **441**. Collected checked: **1422**.
 
-Only reported historical financial data is included. There are no forecasts, valuations, price-implied expectations, scenarios or investment recommendations. Filing documents and images are not distributed: this repository contains links only.
+Main tables contain primary income, balance-sheet and cash-flow statements plus EPS, shares and dividends. Other reported note detail is retained under statement `other` in facts.csv only. Only reported historical financial data is included. There are no forecasts, valuations, price-implied expectations, scenarios or investment recommendations. Filing documents and images are not distributed: this repository contains links only.
 
 ## Companies and coverage
 
@@ -23,7 +23,7 @@ Only reported historical financial data is included. There are no forecasts, val
 | [MARI](MARI/README.md) | Mari Energies Limited | Oil & Gas Exploration Companies | 2025 | 0 | 0 | 0 | 1 | 0 |
 | [MEBL](MEBL/README.md) | Meezan Bank Limited | Commercial Banks | none | 0 | 0 | 0 | 0 | 0 |
 | [MLCF](MLCF/README.md) | Maple Leaf Cement Factory Limited | Cement | 2022, 2023, 2024, 2025, 2026 | 6 | 2 | 2 | 95 | 406 |
-| [NBP](NBP/README.md) | National Bank of Pakistan | Commercial Banks | 2024, 2025 | 0 | 0 | 0 | 0 | 94 |
+| [NBP](NBP/README.md) | National Bank of Pakistan | Commercial Banks | 2023, 2024, 2025 | 0 | 0 | 0 | 0 | 254 |
 | [NRL](NRL/README.md) | National Refinery Limited | Refinery | 2024, 2025, 2026 | 0 | 0 | 0 | 54 | 9 |
 | [OGDC](OGDC/README.md) | Oil & Gas Development Company Limited | Oil & Gas Exploration Companies | 2024, 2025, 2026 | 0 | 0 | 0 | 32 | 20 |
 | [PPL](PPL/README.md) | Pakistan Petroleum Limited | Oil & Gas Exploration Companies | 2024, 2025 | 3 | 1 | 2 | 0 | 181 |
@@ -75,7 +75,7 @@ Import `data/facts.csv` through your spreadsheet’s text/CSV import with UTF-8 
 | document_id | Retained identifier of the official filing. |
 | source_url | HTTPS link to the official PSX DPS or verified issuer source. |
 | page | Physical PDF page, starting at 1. |
-| published_on | Verified filing publication date, ISO format; never substituted by retrieval. |
+| published_on | Verified filing publication date or explicitly documented filing-availability date, ISO format; never a retrieval or inspection clock. Date evidence is in lineage.csv. |
 | retrieved_on | Source retrieval date, ISO format; not the exporter execution date. |
 
 ## Methodology
@@ -102,13 +102,13 @@ Annual flows require twelve-month duration. Quarter flows are three months; half
 
 ## Limitations and gaps
 
-Collection is ongoing. Available years, statements, bases and line items differ by company. Publication dates are often unknown even when a retained official report exists; those observations are withheld. Retrieval is never used as publication. See the per-stock counts in coverage.md. Those counts cover otherwise qualifying active observations and are not counts of every cell in every filing; duplicate deliveries of the same observation count once.
+Collection is ongoing. Available years, statements, bases and line items differ by company. Publication dates are often unknown even when a retained official report exists; those observations are withheld. Dates are resolved by document ID, official PSX document URL, issuer URL and content hash across the document catalog, retained financial series, collection manifests and available backup-map metadata. Only published_at or an explicitly documented filing-owned available_on is accepted. Ambiguous dates stay excluded. Retrieval and inspection clocks are never used as publication. See the per-stock counts in coverage.md. Those counts cover otherwise qualifying active observations and are not counts of every cell in every filing; duplicate deliveries of the same observation count once.
 
 Labels and metric identifiers reflect retained extractions and may differ across collectors or issuers. Source and statement context must be checked before comparing lines. Arithmetic agreement does not establish correct transcription, correct accounting interpretation or a complete statement. The exporter cannot verify document contents without reopening the linked filing. It does not infer issuer-domain authority from a collected URL alone: issuer domains must already be present in retained official-source metadata.
 
 ## Reproduce and update
 
-Python 3.12, standard library only. Inputs are local retained research/collection files and are not distributed. Their filenames and SHA-256 digests are recorded in `data/export_manifest.json`; row-level input references are in `data/lineage.csv`. These files contain generated provenance metadata, not copies of the private inputs. The backup map is consulted only for original URL recovery; its document files are never read.
+Python 3.12, standard library only. Inputs are local retained research/collection files and are not distributed. Their filenames and SHA-256 digests are recorded in `data/export_manifest.json`; row-level input references are in `data/lineage.csv`. These files contain generated provenance metadata, not copies of the private inputs. The backup map is consulted only for original URL and filing-date metadata; its document files are never read. Date evidence for published rows is recorded in data/lineage.csv. Source-only checks of unresolved DGKC, HBL and LUCK observations are in [data/date_resolution_review.csv](data/date_resolution_review.csv); withheld financial values are not distributed in that review.
 
 From the repository root:
 

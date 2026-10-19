@@ -379,28 +379,30 @@
     "NBP": {
       "admitted": 0,
       "annual_years": [
+        "2023",
         "2024",
         "2025"
       ],
-      "collected": 94,
+      "collected": 254,
       "exclusions": {
         "ambiguous_period": 6,
         "arithmetic_failed_or_unsupported": 678,
-        "duplicate_or_admitted_precedence": 127,
+        "collected_conflict": 18,
+        "duplicate_or_admitted_precedence": 515,
         "incomplete_batch_envelope": 731,
         "invalid_number": 8,
         "missing_or_future_retrieval_date": 12,
-        "missing_publication_date": 2411,
+        "missing_publication_date": 1916,
         "not_eligible_reconciliation": 9,
-        "outside_historical_statement_scope": 182,
+        "outside_historical_statement_scope": 183,
         "raw_scale_mismatch": 14,
         "record_on_hold": 10,
         "unknown_basis": 183
       },
-      "facts": 94,
+      "facts": 254,
       "fiscal_year_end": "12-31",
       "half_years": [],
-      "missing_publication_observations": 1535,
+      "missing_publication_observations": 1407,
       "name": "National Bank of Pakistan",
       "nine_months": [],
       "quarters": [],
@@ -408,7 +410,8 @@
       "statements": [
         "balance_sheet",
         "cash_flow",
-        "income_statement"
+        "income_statement",
+        "other"
       ]
     },
     "NRL": {
@@ -477,7 +480,7 @@
       "exclusions": {
         "collected_conflict": 32,
         "failed_or_unresolved_batch_checks": 1,
-        "missing_publication_date": 324,
+        "missing_publication_date": 390,
         "not_eligible_reconciliation": 25
       },
       "facts": 181,
@@ -485,7 +488,7 @@
       "half_years": [
         "2025-12-31"
       ],
-      "missing_publication_observations": 324,
+      "missing_publication_observations": 390,
       "name": "Pakistan Petroleum Limited",
       "nine_months": [
         "2025-03-31",
@@ -600,9 +603,9 @@
       ]
     }
   },
-  "conflict_observations": 32,
+  "conflict_observations": 50,
   "data_cutoff": "2026-10-19",
-  "facts": 1703,
+  "facts": 1863,
   "input_files": [
     {
       "input": "admitted/state/company_documents.json",
@@ -5514,19 +5517,47 @@
     },
     {
       "input": "collected/nbp-fy2024-q1-core-delivery-20261019/checks.json",
-      "sha256": "1ac2369485f91a1d2e851f0d558ab755611520cc62e2fb03d0a0f8bc0fdabc73"
+      "sha256": "7cad9f5e27758248ed0eb182ccacb8262efd87e0b7628b309edb5012d0d566b0"
     },
     {
       "input": "collected/nbp-fy2024-q1-core-delivery-20261019/holds.json",
-      "sha256": "b43fde862137a3710bcbaea3f0d3156829afc0daa602f21ca090875f0e9ba370"
+      "sha256": "32ca2067fc9b32fa07b121bce2a87cdbdc8a74653bab2be2851cc1948247884a"
     },
     {
       "input": "collected/nbp-fy2024-q1-core-delivery-20261019/manifest.json",
-      "sha256": "acae2459926622a6306cde2f180a1f8d8e4a7bacc5eb2ba13d3fdf9bee12f3d1"
+      "sha256": "f3224e89c38e4098dc0038562b9c97bad241cdc8cc61e4750a39a46d38caf5b8"
     },
     {
       "input": "collected/nbp-fy2024-q1-core-delivery-20261019/records.json",
-      "sha256": "71b9b3bce2b64b5e9b2bfb923f04774e3b5d9cb521d2ebc3e98c4fe4fb6f7a12"
+      "sha256": "1e14dbd53ff16ca9421f880e2e14193f9619fb629d3985b725d83fe4eb710427"
+    },
+    {
+      "input": "collected/nbp-fy2025-9m-core-delivery-20261019/checks.json",
+      "sha256": "a7e537fa32bb1eeafa6f0abd4638e45c7c955bb7b39a5afb114dcf2c6c88ec91"
+    },
+    {
+      "input": "collected/nbp-fy2025-9m-core-delivery-20261019/holds.json",
+      "sha256": "b14dfa5477c2b522baf0fdfe04dab895381ab342c821dc519db2d0f3477742e0"
+    },
+    {
+      "input": "collected/nbp-fy2025-9m-core-delivery-20261019/manifest.json",
+      "sha256": "46b6734c29a88a3355003d46c2d0d2175ca4df7ed8de5d9428720b214a1e019f"
+    },
+    {
+      "input": "collected/nbp-fy2025-9m-core-delivery-20261019/records.json",
+      "sha256": "0297fe15e30eb68091d71f0e9c179b139389b891b5129dc4e40d80055ed6db8d"
+    },
+    {
+      "input": "collected/ppl-annual-fy2023-results-core-reviewed-20261019/checks.json",
+      "sha256": "0de7e752a21d8a346c7e0d4913f452cf323f554ecdb12aad6ae6ccb909bca76e"
+    },
+    {
+      "input": "collected/ppl-annual-fy2023-results-core-reviewed-20261019/manifest.json",
+      "sha256": "6f04c72f6a22eac09b539713b5dc4a4a19d9b0174825d1f7069ac17e8a350c29"
+    },
+    {
+      "input": "collected/ppl-annual-fy2023-results-core-reviewed-20261019/records.json",
+      "sha256": "bc67be978e066700cfb03ee435b187feff30a9c56f4f89a729da03d0fa871e77"
     },
     {
       "input": "collected/ppl-financial-backfill-20261016-v1/checks.json",
@@ -5670,27 +5701,27 @@
     },
     {
       "input": "collected/queue-energy-20261019-ppl-fy2024-annual-core-company/checks.json",
-      "sha256": "38bbb3ea35beeae3e0ef17e14609e793374c6eee0116cf7ceb018462077345e2"
+      "sha256": "c8edc7de126243c0d70ad0fc8a3e6dd7cec029fe0e96ae4384e324eec0cb1888"
     },
     {
       "input": "collected/queue-energy-20261019-ppl-fy2024-annual-core-company/manifest.json",
-      "sha256": "15da5a0b8bd520a327b837d242779e72c4cef26784ce32fcf514a4d4581f5d11"
+      "sha256": "aef51e1b7eeedb6c966495b2724a9e4f7771cefb1d6a4e90cf14b70624316c0a"
     },
     {
       "input": "collected/queue-energy-20261019-ppl-fy2024-annual-core-company/records.json",
-      "sha256": "4c49042667826c049fc58a245c35752809ed395e641db8b89cbcf486a2006b35"
+      "sha256": "a58edf4ffc0ca942b98cd51475cd3323c70f6353fe8e9bb9dc777134c87ce036"
     },
     {
       "input": "collected/queue-energy-20261019-ppl-fy2024-annual-core-consolidated/checks.json",
-      "sha256": "54ca3472cb916ab2253d7db5731c8810f611248462086adc286401883a100a88"
+      "sha256": "615c317676aa9178435ed368728c9b15219ff77bc941751058c6ae1bfa308239"
     },
     {
       "input": "collected/queue-energy-20261019-ppl-fy2024-annual-core-consolidated/manifest.json",
-      "sha256": "06db95cf1e817a7a44bb283b90581f1aeaa6bf41ea55cbdb919e4842bf4d3066"
+      "sha256": "9e5d400618af39a596225b0b90e3b875e02f914f8b94fc745215155de9c39c1f"
     },
     {
       "input": "collected/queue-energy-20261019-ppl-fy2024-annual-core-consolidated/records.json",
-      "sha256": "2798c71d5b825e8b737fcfffa409f9b1b626e0c38d060e180b04f860c74a0db7"
+      "sha256": "7b44096f574fe5b50eae5e5ee1f587b6eda9b895701350a279a00205d479928b"
     },
     {
       "input": "collected/queue-energy-20261019-ppl-repair-002/checks.json",
@@ -6579,7 +6610,7 @@
   ],
   "status_counts": {
     "admitted_checked": 441,
-    "collected_checked": 1262
+    "collected_checked": 1422
   },
   "stocks": 20,
   "superseded_batches": 44,

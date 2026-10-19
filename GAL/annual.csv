@@ -23,5 +23,3 @@ income_statement,profit_after_tax,Profit for the year,consolidated,PKR,PKR,36503
 income_statement,profit_before_tax,"Profit before income tax, revenue tax and final tax",consolidated,PKR,PKR,489640000,5999981000
 income_statement,revenue,Revenue,consolidated,PKR,PKR,9413149000,34511909000
 income_statement,tax_expense,Income tax,consolidated,PKR,PKR,-54761000,-1868391000
-other,non_controlling_interest,Profit for the year,consolidated,PKR,PKR,58000,119000
-other,profit_after_tax_attributable,Profit for the year,consolidated,PKR,PKR,364977000,4095590000

@@ -6,6 +6,8 @@ Sector: Oil & Gas Exploration Companies. Fiscal year end: 06-30.
 
 CSV files: [annual.csv](annual.csv), [quarterly.csv](quarterly.csv). Each wide cell joins to [facts.csv](../data/facts.csv) by symbol, line item, period end, period type and basis. Half-year and nine-month columns are cumulative.
 
+Main tables contain primary statements plus EPS, shares and dividends. Other reported financial notes remain available only in facts.csv.
+
 ## Income Statement
 
 ### Annual
@@ -65,7 +67,7 @@ No qualifying reported figures available.
 
 No qualifying reported figures available.
 
-## Other
+## EPS, shares and dividends
 
 ### Annual
 

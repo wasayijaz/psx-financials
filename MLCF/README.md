@@ -6,6 +6,8 @@ Sector: Cement. Fiscal year end: 06-30.
 
 CSV files: [annual.csv](annual.csv), [quarterly.csv](quarterly.csv). Each wide cell joins to [facts.csv](../data/facts.csv) by symbol, line item, period end, period type and basis. Half-year and nine-month columns are cumulative.
 
+Main tables contain primary statements plus EPS, shares and dividends. Other reported financial notes remain available only in facts.csv.
+
 ## Income Statement
 
 ### Annual
@@ -206,7 +208,7 @@ CSV files: [annual.csv](annual.csv), [quarterly.csv](quarterly.csv). Each wide c
 | net_change_in_cash | consolidated | PKR | PKR | -938106000 [S490](#s490) | 2504987000 [S491](#s491) | 2039061000 [S492](#s492) | 976235000 [S493](#s493) | 1067716000 [S494](#s494) | -2593068000 [S495](#s495) |
 | operating_cash_flow | consolidated | PKR | PKR | 183867000 [S496](#s496) | 10689662000 [S497](#s497) | 13655401000 [S498](#s498) | 3063987000 [S499](#s499) | 11203426000 [S500](#s500) | 31878724000 [S501](#s501) |
 
-## Other
+## EPS, shares and dividends
 
 ### Annual
 

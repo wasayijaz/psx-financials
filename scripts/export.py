@@ -53,6 +53,57 @@ def key(row):
     return tuple(row[k] for k in KEY)
 
 
+def main_table_fact(row):
+    """Only primary statements and explicitly identified EPS/share/dividend lines."""
+    return row['statement'] != 'other' or bool(re.search(r'(?:^|_)(?:eps|shares|dividends?)(?:_|$)|(?:^|_)earnings_per_share(?:_|$)', row['line_item']))
+
+
+class FilingDates:
+    """Resolve filing dates by document identity; never use collection clocks."""
+    def __init__(self):
+        self.index = defaultdict(list)
+
+    @staticmethod
+    def identities(source):
+        result = []
+        for field in ('document_id', 'doc_id', 'source_url', 'content_sha256', 'sha256'):
+            if source.get(field):
+                result.append(str(source[field]))
+        match = re.fullmatch(r'https://dps\.psx\.com\.pk/download/document/(\d+)\.pdf', str(source.get('source_url', '')))
+        if match:
+            result.append('psx:' + match.group(1))
+        return set(result)
+
+    @staticmethod
+    def own_date(source):
+        if day(source.get('published_at')):
+            return 'published_at', source['published_at']
+        basis = str(source.get('availability_basis') or '')
+        # Free-text mentions of "publication" can explicitly deny a publication
+        # date. Accept only an affirmative, bounded filing-owned date assertion.
+        if (day(source.get('available_on')) and re.fullmatch(
+                r'(?:official )?(?:PSX |issuer )?filing (?:publication|availability) date verified(?: from [^.]+)?', basis, re.I)):
+            return 'available_on', source['available_on']
+        return None
+
+    def add(self, source, origin):
+        evidence = self.own_date(source)
+        if evidence:
+            for identity in self.identities(source):
+                self.index[identity].append((origin, evidence[0], str(evidence[1])))
+
+    def resolve(self, source, origin):
+        own = self.own_date(source)
+        if own:
+            return origin, own[0], str(own[1])
+        candidates = set()
+        for identity in self.identities(source):
+            candidates.update(self.index.get(identity, []))
+        if len({day(v) for _, _, v in candidates}) == 1:
+            return min(candidates)
+        return None
+
+
 def csv_bytes(fields, rows):
     stream = io.StringIO(newline='')
     writer = csv.DictWriter(stream, fieldnames=fields, lineterminator='\n', extrasaction='raise')
@@ -295,7 +346,7 @@ def normalize(record, source, symbol, info, status, checks, cutoff):
 
 
 def wide_rows(facts, annual):
-    facts = [f for f in facts if (f['period_type'] == 'annual') == annual]
+    facts = [f for f in facts if main_table_fact(f) and (f['period_type'] == 'annual') == annual]
     periods = sorted({f['period_end'] + '|' + f['period_type'] for f in facts})
     groups = {}
     for fact in facts:
@@ -353,6 +404,15 @@ def build(args):
                 payload['supersessions'] = inputs.read(folder / supersession_file, 'collected', B)
             batches[folder.name] = payload
     replaced_batches = replacements(batches)
+    filing_dates = FilingDates()
+    for doc in documents.values():
+        filing_dates.add(doc, 'admitted/state/company_documents.json')
+    for ticker in series['tickers'].values():
+        for fact in ticker.get('facts', []):
+            filing_dates.add(fact, 'admitted/state/company_financial_series.json')
+    for name, batch in batches.items():
+        for doc in docs_of(batch['manifest']):
+            filing_dates.add(doc, 'collected/' + name + '/manifest.json')
     replaced_record_ids = set()
     for name, batch in batches.items():
         if name not in replaced_batches:
@@ -370,6 +430,7 @@ def build(args):
                 digest = value.get('sha256') or value.get('content_sha256')
                 if url and digest:
                     backup_urls[digest] = url
+                filing_dates.add(value, 'url-map/' + path.name)
                 for child in value.values():
                     visit(child)
             elif isinstance(value, list):
@@ -412,22 +473,35 @@ def build(args):
         return source
     exclusions = Counter()
     missing_publication = defaultdict(set)
+    missing_date_reviews = {}
     candidates = []
     def exclude(symbol, stage, reason, batch='', count=1):
         exclusions[(symbol if symbol in SYMBOLS else 'UNKNOWN', stage, reason, batch)] += count
     def candidate(record, source, symbol, status, checks, origin, record_id, stage):
+        # Resolve dates before other metadata enrichment so the exact original
+        # evidence file remains traceable, including URL aliases and series facts.
+        date_origin = origin
+        if origin.startswith('collected/'):
+            date_origin = origin.rsplit('/', 1)[0] + '/manifest.json'
+        resolved = filing_dates.resolve(source, date_origin)
         source = enrich(source)
+        source['published_at'] = resolved[2] if resolved else None
+        if resolved and resolved[1] == 'available_on':
+            checks = checks + ['filing_available_date']
         if symbol not in infos:
             exclude(symbol, stage, 'outside_roster', origin)
             return
         try:
             row = normalize(record, source, symbol, infos[symbol], status, checks, cutoff)
-            candidates.append(dict(row=row, origin=origin, record_id=str(record_id), input_sha256=inputs.entries[origin][1], source_sha256=source.get('content_sha256', '')))
+            candidates.append(dict(row=row, origin=origin, record_id=str(record_id), input_sha256=inputs.entries[origin][1], source_sha256=source.get('content_sha256', ''), date_input=resolved[0] if resolved else origin, date_field=resolved[1] if resolved else 'published_at', date_value=resolved[2] if resolved else str(source.get('published_at', ''))))
         except (ValueError, InvalidOperation, TypeError) as exc:
             reason = str(exc) if isinstance(exc, ValueError) and not isinstance(exc, InvalidOperation) else 'invalid_numeric_or_schema'
             if reason == 'missing_publication_date':
                 identity = (symbol, record.get('metric'), record.get('period_end'), record.get('period_type'), record.get('consolidation'), source.get('content_sha256'), source.get('page', record.get('page')), decimal_text(record['normalized_value']))
                 missing_publication[symbol].add(identity)
+                if symbol in ('DGKC', 'HBL', 'LUCK'):
+                    review_key = (symbol, source.get('document_id', ''), str(record_id))
+                    missing_date_reviews[review_key] = dict(symbol=symbol, document_id=source.get('document_id', ''), source_url=source.get('source_url', ''), page=str(source.get('page', record.get('page'))), period_end=record.get('period_end', ''), input=origin, record_id=str(record_id), result='EXCLUDED_NO_VERIFIED_FILING_DATE')
             exclude(symbol, stage, reason, origin)
     floor_ids = set()
     for symbol, company in sorted(floor['companies'].items()):
@@ -547,7 +621,19 @@ def build(args):
     put('data/facts.csv', fact_bytes)
     put('data/conflicts.csv', csv_bytes(FIELDS + ['reason'], sorted(conflicts, key=lambda f: tuple(str(f[k]) for k in FIELDS))))
     put('data/exclusions.csv', csv_bytes(['symbol', 'stage', 'reason', 'batch', 'observations'], [dict(zip(['symbol', 'stage', 'reason', 'batch', 'observations'], (*k, n))) for k, n in sorted(exclusions.items())]))
-    put('data/lineage.csv', csv_bytes(KEY + ['input', 'record_id', 'input_sha256', 'source_sha256'], [dict({k: c['row'][k] for k in KEY}, input=c['origin'], record_id=c['record_id'], input_sha256=c['input_sha256'], source_sha256=c['source_sha256']) for c in sorted(selected, key=lambda c: key(c['row']))]))
+    date_reviews = []
+    for symbol in ('DGKC', 'HBL', 'LUCK'):
+        pool = [r for _, r in sorted(missing_date_reviews.items()) if r['symbol'] == symbol]
+        picked = []
+        for review in pool:
+            if review['document_id'] not in {r['document_id'] for r in picked}:
+                picked.append(review)
+            if len(picked) == 3:
+                break
+        picked += [r for r in pool if r not in picked][:max(0, 3 - len(picked))]
+        date_reviews.extend(picked)
+    put('data/date_resolution_review.csv', csv_bytes(['symbol', 'document_id', 'source_url', 'page', 'period_end', 'input', 'record_id', 'result'], date_reviews))
+    put('data/lineage.csv', csv_bytes(KEY + ['input', 'record_id', 'input_sha256', 'source_sha256', 'date_input', 'date_field', 'date_value'], [dict({k: c['row'][k] for k in KEY}, **{k: c[k] for k in ('record_id', 'input_sha256', 'source_sha256', 'date_input', 'date_field', 'date_value')}, input=c['origin']) for c in sorted(selected, key=lambda c: key(c['row']))]))
     put('data/export_manifest.json', json.dumps(info, indent=2, ensure_ascii=False, sort_keys=True) + '\n')
     coverage = ['# Coverage', '', 'Coverage counts individual reported line items, not complete statements. Blank cells mean unavailable. Quarter counts exclude cumulative half-year and nine-month periods.', '', '| Symbol | Annual years | Quarter ends | Half-year ends | Nine-month ends | Statements | Admitted | Collected | Missing publication observations |', '|---|---|---|---|---|---|---:|---:|---:|']
     for s, c in info['companies'].items():
@@ -576,6 +662,8 @@ def build(args):
             history += f'\n## Export — {cutoff}\n\nFacts: {len(facts)}. SHA-256 of facts.csv: `{digest}`.\n'
     else:
         history = '# Changelog\n\n' + version + '\nFacts SHA-256: `' + hashlib.sha256(fact_bytes).hexdigest() + '`.\n'
+    if '## Date provenance and table scope' not in history:
+        history += f'\n## Date provenance and table scope — {cutoff}\n\nResolved filing dates across retained metadata using document IDs, official URLs and content hashes. Retrieval and inspection clocks remain excluded. Main tables now contain only primary statements plus EPS, shares and dividends; other reported notes remain in facts.csv. Refreshed facts: {len(facts)} ({info["status_counts"].get("admitted_checked", 0)} admitted, {info["status_counts"].get("collected_checked", 0)} collected).\n'
     put('CHANGELOG.md', history)
     inputs.verify()
     # Only exporter-owned paths are written. No cleanup or traversal of input folders.
@@ -589,9 +677,11 @@ def build(args):
 
 def company_readme(symbol, company, facts):
     out = [f"# {symbol} — {company['name']}", '', f"Sector: {company['sector']}. Fiscal year end: {company['fiscal_year_end'] or 'unknown'}.", '', f"{company['facts']} reported figures: {company['admitted']} admitted checked; {company['collected']} collected checked. This is partial history, not a completeness assertion.", '', 'CSV files: [annual.csv](annual.csv), [quarterly.csv](quarterly.csv). Each wide cell joins to [facts.csv](../data/facts.csv) by symbol, line item, period end, period type and basis. Half-year and nine-month columns are cumulative.', '']
+    facts = [f for f in facts if main_table_fact(f)]
+    out += ['Main tables contain primary statements plus EPS, shares and dividends. Other reported financial notes remain available only in facts.csv.', '']
     refs = []
     for statement in ('income_statement', 'balance_sheet', 'cash_flow', 'other'):
-        out += ['## ' + statement.replace('_', ' ').title(), '']
+        out += ['## ' + ('EPS, shares and dividends' if statement == 'other' else statement.replace('_', ' ').title()), '']
         for annual in (True, False):
             section = [f for f in facts if f['statement'] == statement and (f['period_type'] == 'annual') == annual]
             out += ['### ' + ('Annual' if annual else 'Interim'), '']
@@ -644,17 +734,17 @@ DICTIONARY = {
     'status': 'admitted_checked or collected_checked; see methodology.',
     'checks_passed': 'Semicolon-separated structural/arithmetic checks. cross_check_unavailable means no supported complete equation covers this row.',
     'document_id': 'Retained identifier of the official filing.', 'source_url': 'HTTPS link to the official PSX DPS or verified issuer source.',
-    'page': 'Physical PDF page, starting at 1.', 'published_on': 'Verified filing publication date, ISO format; never substituted by retrieval.',
+    'page': 'Physical PDF page, starting at 1.', 'published_on': 'Verified filing publication date or explicitly documented filing-availability date, ISO format; never a retrieval or inspection clock. Date evidence is in lineage.csv.',
     'retrieved_on': 'Source retrieval date, ISO format; not the exporter execution date.'}
 
 
 def main_readme(info):
-    out = ['# PSX financial statements', '', 'Source-linked historical financial figures for 20 Pakistan Stock Exchange companies. This compilation is for researchers, students and people building reproducible financial datasets. It contains extracted reported figures from official filings, with partial coverage as of the cutoff below. It is not a complete ten-year database.', '', f"Data cutoff: **{info['data_cutoff']}**. Published facts: **{info['facts']}**. Admitted checked: **{info['status_counts'].get('admitted_checked', 0)}**. Collected checked: **{info['status_counts'].get('collected_checked', 0)}**.", '', 'Only reported historical financial data is included. There are no forecasts, valuations, price-implied expectations, scenarios or investment recommendations. Filing documents and images are not distributed: this repository contains links only.', '', '## Companies and coverage', '', '| Symbol | Company | Sector | Annual years | Quarter periods | Half-year periods | Nine-month periods | Admitted | Collected |', '|---|---|---|---|---:|---:|---:|---:|---:|']
+    out = ['# PSX financial statements', '', 'Source-linked historical financial figures for 20 Pakistan Stock Exchange companies. This compilation is for researchers, students and people building reproducible financial datasets. It contains extracted reported figures from official filings, with partial coverage as of the cutoff below. It is not a complete ten-year database.', '', f"Data cutoff: **{info['data_cutoff']}**. Published facts: **{info['facts']}**. Admitted checked: **{info['status_counts'].get('admitted_checked', 0)}**. Collected checked: **{info['status_counts'].get('collected_checked', 0)}**.", '', 'Main tables contain primary income, balance-sheet and cash-flow statements plus EPS, shares and dividends. Other reported note detail is retained under statement `other` in facts.csv only. Only reported historical financial data is included. There are no forecasts, valuations, price-implied expectations, scenarios or investment recommendations. Filing documents and images are not distributed: this repository contains links only.', '', '## Companies and coverage', '', '| Symbol | Company | Sector | Annual years | Quarter periods | Half-year periods | Nine-month periods | Admitted | Collected |', '|---|---|---|---|---:|---:|---:|---:|---:|']
     for s, c in info['companies'].items():
         out.append('| ' + ' | '.join([f'[{s}]({s}/README.md)', md(c['name']), md(c['sector']), ', '.join(c['annual_years']) or 'none', str(len(c['quarters'])), str(len(c['half_years'])), str(len(c['nine_months'])), str(c['admitted']), str(c['collected'])]) + ' |')
     out += ['', 'Exact dates, statements present, per-stock missing-publication counts and exclusion reasons are in [coverage.md](coverage.md). A year in this table means at least one line exists, not that every statement is complete.', '', '## Files and use', '', '`data/facts.csv` is the source of truth: one row per reported figure. Each company folder contains a readable history, an annual wide CSV and an interim wide CSV named `quarterly.csv`. Its interim columns explicitly distinguish quarters, half-years and nine-month periods.', '', 'Wide CSV row identifiers are statement, line item, basis, unit and currency; period columns are `YYYY-MM-DD|period_type`. Join a wide cell back to facts.csv using symbol, line item, period end, period type and basis to retrieve its source. Blank cells mean missing, never zero. Company Markdown tables link each figure to a complete source reference.', '', '### Python / pandas example', '', 'The exporter itself requires only the Python standard library. This optional analysis example uses pandas:', '', '```python', 'import pandas as pd', 'facts = pd.read_csv("data/facts.csv", dtype={"value": "string", "page": "Int64"})', 'rows = facts.query("symbol == \'MLCF\' and period_type == \'annual\' and basis == \'consolidated\'")', 'print(rows[["line_item", "period_end", "value", "unit", "source_url", "page"]])', '```', '', '### Spreadsheet example', '', 'Import `data/facts.csv` through your spreadsheet’s text/CSV import with UTF-8 encoding. Keep identifiers as text. Filter `symbol`, then `basis` and `period_type`; use `period_end` as pivot columns and `line_item` as rows. Filter to one unit/currency and check for duplicates before pivoting. Keep the provenance columns beside any extracted figure. Do not sum EPS or mix bases or cumulative and discrete periods.', '', '## Data dictionary', '', '| Column | Meaning |', '|---|---|']
     out += ['| ' + k + ' | ' + md(DICTIONARY[k]) + ' |' for k in FIELDS]
-    out += ['', '## Methodology', '', 'Sources are official PSX DPS filings and issuer investor-relations financial reports. The upstream collection uses statement parsers, text/geometry extraction and model-assisted visual transcription. This exporter does not fetch, open or copy those documents. It reads retained JSON observations and source metadata, and permits only reported financial statement cells and supported financial notes.', '', '`admitted_checked` means an observation passed the admitted annual-floor checks or was classified eligible in the retained reconciliation. The exporter also validates its raw numeric scale, provenance and period structure. `collected_checked` means a collected observation passed this export’s structural and numeric checks and its batch had no detected unresolved failure. It has not been admitted to the private product and has no independent audit assurance. Arithmetic checks test consistency, not transcription accuracy.', '', 'The exporter independently recalculates supported record-bound linear equations and available balance, profit-attribution, bank-income and cash-subtotal identities using Decimal arithmetic. Operands must share document, period, duration, basis, unit and currency. Tolerances cannot exceed half a printed unit per operand. Unsupported scalar summary assertions are not treated as verified equations. A row without a complete supported equation is labelled `cross_check_unavailable`; it may still pass source/structure/raw-scale checks. It is not described as arithmetically reconciled.', '', 'The retained annual floor can select an otherwise checked reported fact even where a narrower reconciliation classifies it outside that reconciliation’s metric scope. That approved annual-floor selection governs its admission status. Other reconciliation observations must be eligible; audit-only, quarantined and derived records are excluded.', '', 'Explicit batch replacement links and numeric versions of the same named scope replace older deliveries before selection. Incomplete envelopes, hash mismatches, failed/unresolved batches and held observations are excluded. The inputs are not modified. Structural unknowns are excluded rather than filled.', '', 'For the same symbol, normalized line item, period end, period type and basis, admitted checked data takes precedence over collected data. Equal duplicate observations are deduplicated deterministically, preferring the latest publication date and then stable source identifiers. Conflicting collected amounts or statement/unit semantics are withheld together in [data/conflicts.csv](data/conflicts.csv), with both sources. Conflicting admitted candidates are also withheld. A selected admitted fact resolves lower-trust collected disagreement by the stated precedence. Only explicit upstream replacement resolves a collected restatement; a later filing alone does not silently overwrite a different collected value. Consolidated and standalone remain separate.', '', '## Conventions', '', 'Values use the unit shown in each row. Monetary scales such as thousands and millions are applied once to raw printed values; do not multiply again. Currency is explicit. Per-share amounts, share counts and percentages retain their distinct units. Parentheses are parsed as negative amounts. Other reported signs are preserved; expenses are not automatically made negative. Printed dashes or ambiguous numeric cells are not filled with zero.', '', 'Fiscal year ends are listed per company. They come from the admitted annual floor or a single consistent calendar supported by collection-manifest evidence; unknown calendars prevent export. A fiscal year is labelled by its ending year. Corporate reorganizations and changes of presentation can limit comparability; ticker continuity does not prove an unchanged group perimeter.', '', 'Annual flows require twelve-month duration. Quarter flows are three months; half-year and nine-month flows remain cumulative. Interim balance-sheet snapshots use the explicit period classification or the evidenced fiscal calendar’s three-, six- or nine-month position. No subtraction creates a quarter, EPS, total or missing line. Balance sheets are point-in-time figures, never flows.', '', '## Limitations and gaps', '', 'Collection is ongoing. Available years, statements, bases and line items differ by company. Publication dates are often unknown even when a retained official report exists; those observations are withheld. Retrieval is never used as publication. See the per-stock counts in coverage.md. Those counts cover otherwise qualifying active observations and are not counts of every cell in every filing; duplicate deliveries of the same observation count once.', '', 'Labels and metric identifiers reflect retained extractions and may differ across collectors or issuers. Source and statement context must be checked before comparing lines. Arithmetic agreement does not establish correct transcription, correct accounting interpretation or a complete statement. The exporter cannot verify document contents without reopening the linked filing. It does not infer issuer-domain authority from a collected URL alone: issuer domains must already be present in retained official-source metadata.', '', '## Reproduce and update', '', 'Python 3.12, standard library only. Inputs are local retained research/collection files and are not distributed. Their filenames and SHA-256 digests are recorded in `data/export_manifest.json`; row-level input references are in `data/lineage.csv`. These files contain generated provenance metadata, not copies of the private inputs. The backup map is consulted only for original URL recovery; its document files are never read.', '', 'From the repository root:', '', '```powershell', f'& "C:/Users/MWasa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe" scripts/export.py --cutoff {info["data_cutoff"]}', '& "C:/Users/MWasa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe" scripts/validate.py --self-test --spot-check 25', '```', '', 'Portable equivalent: `python scripts/export.py --cutoff YYYY-MM-DD --admitted PATH --batches PATH --backup-map PATH`, then `python scripts/validate.py --self-test --spot-check 25`. `--output PATH` defaults to this repository. The cutoff is inclusive and fixed for reproducibility. Publication, retrieval and financial period dates after it are excluded. Identical input bytes, arguments and existing changelog history produce identical output bytes. Inputs are hashed again before writing; concurrent changes abort the export. The exporter does not create a network connection, commit or push.', '', 'Refresh after new filings have been collected and checked. Review validation, coverage and exclusions before publishing. Keep releases and meaningful changes in [CHANGELOG.md](CHANGELOG.md). Existing history is preserved, with an export digest appended when the canonical facts change. This is a manually run export, not a scheduled process.', '', '## Cite', '', 'Cite: Wasay Ijaz, “PSX financial statements,” wasayijaz/psx-financials, version 1, data cutoff ' + info['data_cutoff'] + ', plus the Git commit used. Cite the original issuer/PSX filing, document identifier and page for every figure you reuse. Preserve provenance and status when redistributing data and state any modifications.', '', '## Disclaimer', '', 'Research data compiled from public filings. It may contain extraction errors. Verify figures against the linked official filing before relying on them. This compilation is not investment advice and makes no performance claims. It is provided without warranty.', '', '## Licenses and attribution', '', 'Exporter and validator code: [MIT](LICENSE). Original compilation and organization of the data: [CC BY 4.0](DATA-LICENSE), attributed to Wasay Ijaz with PSX and the issuers identified as the original financial-data sources. No ownership or relicensing of the underlying filings is claimed; issuer and PSX rights remain with their respective owners. No PDFs, images or other source documents are included.', '', '## Report an error', '', 'Open a [GitHub issue](https://github.com/wasayijaz/psx-financials/issues) with the ticker, line item, period, basis, document URL, page, observed value and proposed correction. Include the repository commit. Link to the official filing; do not upload a document copy. Corrections require source evidence and are recorded in the changelog.', '']
+    out += ['', '## Methodology', '', 'Sources are official PSX DPS filings and issuer investor-relations financial reports. The upstream collection uses statement parsers, text/geometry extraction and model-assisted visual transcription. This exporter does not fetch, open or copy those documents. It reads retained JSON observations and source metadata, and permits only reported financial statement cells and supported financial notes.', '', '`admitted_checked` means an observation passed the admitted annual-floor checks or was classified eligible in the retained reconciliation. The exporter also validates its raw numeric scale, provenance and period structure. `collected_checked` means a collected observation passed this export’s structural and numeric checks and its batch had no detected unresolved failure. It has not been admitted to the private product and has no independent audit assurance. Arithmetic checks test consistency, not transcription accuracy.', '', 'The exporter independently recalculates supported record-bound linear equations and available balance, profit-attribution, bank-income and cash-subtotal identities using Decimal arithmetic. Operands must share document, period, duration, basis, unit and currency. Tolerances cannot exceed half a printed unit per operand. Unsupported scalar summary assertions are not treated as verified equations. A row without a complete supported equation is labelled `cross_check_unavailable`; it may still pass source/structure/raw-scale checks. It is not described as arithmetically reconciled.', '', 'The retained annual floor can select an otherwise checked reported fact even where a narrower reconciliation classifies it outside that reconciliation’s metric scope. That approved annual-floor selection governs its admission status. Other reconciliation observations must be eligible; audit-only, quarantined and derived records are excluded.', '', 'Explicit batch replacement links and numeric versions of the same named scope replace older deliveries before selection. Incomplete envelopes, hash mismatches, failed/unresolved batches and held observations are excluded. The inputs are not modified. Structural unknowns are excluded rather than filled.', '', 'For the same symbol, normalized line item, period end, period type and basis, admitted checked data takes precedence over collected data. Equal duplicate observations are deduplicated deterministically, preferring the latest publication date and then stable source identifiers. Conflicting collected amounts or statement/unit semantics are withheld together in [data/conflicts.csv](data/conflicts.csv), with both sources. Conflicting admitted candidates are also withheld. A selected admitted fact resolves lower-trust collected disagreement by the stated precedence. Only explicit upstream replacement resolves a collected restatement; a later filing alone does not silently overwrite a different collected value. Consolidated and standalone remain separate.', '', '## Conventions', '', 'Values use the unit shown in each row. Monetary scales such as thousands and millions are applied once to raw printed values; do not multiply again. Currency is explicit. Per-share amounts, share counts and percentages retain their distinct units. Parentheses are parsed as negative amounts. Other reported signs are preserved; expenses are not automatically made negative. Printed dashes or ambiguous numeric cells are not filled with zero.', '', 'Fiscal year ends are listed per company. They come from the admitted annual floor or a single consistent calendar supported by collection-manifest evidence; unknown calendars prevent export. A fiscal year is labelled by its ending year. Corporate reorganizations and changes of presentation can limit comparability; ticker continuity does not prove an unchanged group perimeter.', '', 'Annual flows require twelve-month duration. Quarter flows are three months; half-year and nine-month flows remain cumulative. Interim balance-sheet snapshots use the explicit period classification or the evidenced fiscal calendar’s three-, six- or nine-month position. No subtraction creates a quarter, EPS, total or missing line. Balance sheets are point-in-time figures, never flows.', '', '## Limitations and gaps', '', 'Collection is ongoing. Available years, statements, bases and line items differ by company. Publication dates are often unknown even when a retained official report exists; those observations are withheld. Dates are resolved by document ID, official PSX document URL, issuer URL and content hash across the document catalog, retained financial series, collection manifests and available backup-map metadata. Only published_at or an explicitly documented filing-owned available_on is accepted. Ambiguous dates stay excluded. Retrieval and inspection clocks are never used as publication. See the per-stock counts in coverage.md. Those counts cover otherwise qualifying active observations and are not counts of every cell in every filing; duplicate deliveries of the same observation count once.', '', 'Labels and metric identifiers reflect retained extractions and may differ across collectors or issuers. Source and statement context must be checked before comparing lines. Arithmetic agreement does not establish correct transcription, correct accounting interpretation or a complete statement. The exporter cannot verify document contents without reopening the linked filing. It does not infer issuer-domain authority from a collected URL alone: issuer domains must already be present in retained official-source metadata.', '', '## Reproduce and update', '', 'Python 3.12, standard library only. Inputs are local retained research/collection files and are not distributed. Their filenames and SHA-256 digests are recorded in `data/export_manifest.json`; row-level input references are in `data/lineage.csv`. These files contain generated provenance metadata, not copies of the private inputs. The backup map is consulted only for original URL and filing-date metadata; its document files are never read. Date evidence for published rows is recorded in data/lineage.csv. Source-only checks of unresolved DGKC, HBL and LUCK observations are in [data/date_resolution_review.csv](data/date_resolution_review.csv); withheld financial values are not distributed in that review.', '', 'From the repository root:', '', '```powershell', f'& "C:/Users/MWasa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe" scripts/export.py --cutoff {info["data_cutoff"]}', '& "C:/Users/MWasa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe" scripts/validate.py --self-test --spot-check 25', '```', '', 'Portable equivalent: `python scripts/export.py --cutoff YYYY-MM-DD --admitted PATH --batches PATH --backup-map PATH`, then `python scripts/validate.py --self-test --spot-check 25`. `--output PATH` defaults to this repository. The cutoff is inclusive and fixed for reproducibility. Publication, retrieval and financial period dates after it are excluded. Identical input bytes, arguments and existing changelog history produce identical output bytes. Inputs are hashed again before writing; concurrent changes abort the export. The exporter does not create a network connection, commit or push.', '', 'Refresh after new filings have been collected and checked. Review validation, coverage and exclusions before publishing. Keep releases and meaningful changes in [CHANGELOG.md](CHANGELOG.md). Existing history is preserved, with an export digest appended when the canonical facts change. This is a manually run export, not a scheduled process.', '', '## Cite', '', 'Cite: Wasay Ijaz, “PSX financial statements,” wasayijaz/psx-financials, version 1, data cutoff ' + info['data_cutoff'] + ', plus the Git commit used. Cite the original issuer/PSX filing, document identifier and page for every figure you reuse. Preserve provenance and status when redistributing data and state any modifications.', '', '## Disclaimer', '', 'Research data compiled from public filings. It may contain extraction errors. Verify figures against the linked official filing before relying on them. This compilation is not investment advice and makes no performance claims. It is provided without warranty.', '', '## Licenses and attribution', '', 'Exporter and validator code: [MIT](LICENSE). Original compilation and organization of the data: [CC BY 4.0](DATA-LICENSE), attributed to Wasay Ijaz with PSX and the issuers identified as the original financial-data sources. No ownership or relicensing of the underlying filings is claimed; issuer and PSX rights remain with their respective owners. No PDFs, images or other source documents are included.', '', '## Report an error', '', 'Open a [GitHub issue](https://github.com/wasayijaz/psx-financials/issues) with the ticker, line item, period, basis, document URL, page, observed value and proposed correction. Include the repository commit. Link to the official filing; do not upload a document copy. Corrections require source evidence and are recorded in the changelog.', '']
     return '\n'.join(out)
 
 

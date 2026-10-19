@@ -6,6 +6,8 @@ Sector: Refinery. Fiscal year end: 06-30.
 
 CSV files: [annual.csv](annual.csv), [quarterly.csv](quarterly.csv). Each wide cell joins to [facts.csv](../data/facts.csv) by symbol, line item, period end, period type and basis. Half-year and nine-month columns are cumulative.
 
+Main tables contain primary statements plus EPS, shares and dividends. Other reported financial notes remain available only in facts.csv.
+
 ## Income Statement
 
 ### Annual
@@ -97,7 +99,7 @@ No qualifying reported figures available.
 | supplemental_reported_net_cash_investing | standalone | PKR | PKR | -1898788000 [S164](#s164) | -3737785000 [S165](#s165) | -2283212000 [S166](#s166) | -2702601000 [S167](#s167) |
 | supplemental_reported_net_change_in_cash | standalone | PKR | PKR | 867977000 [S168](#s168) | -320044000 [S169](#s169) | -5210384000 [S170](#s170) | 36193000 [S171](#s171) |
 
-## Other
+## EPS, shares and dividends
 
 ### Annual
 

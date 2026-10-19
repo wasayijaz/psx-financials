@@ -17,10 +17,10 @@ Coverage counts individual reported line items, not complete statements. Blank c
 | MARI | 2025 | none | none | none | balance_sheet | 1 | 0 | 1112 |
 | MEBL | none | none | none | none | none | 0 | 0 | 292 |
 | MLCF | 2022, 2023, 2024, 2025, 2026 | 2024-09-30, 2024-12-31, 2025-03-31, 2025-09-30, 2025-12-31, 2026-03-31 | 2024-12-31, 2025-12-31 | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement | 95 | 406 | 239 |
-| NBP | 2024, 2025 | none | none | none | balance_sheet, cash_flow, income_statement | 0 | 94 | 1535 |
+| NBP | 2023, 2024, 2025 | none | none | none | balance_sheet, cash_flow, income_statement, other | 0 | 254 | 1407 |
 | NRL | 2024, 2025, 2026 | none | none | none | balance_sheet, income_statement | 54 | 9 | 510 |
 | OGDC | 2024, 2025, 2026 | none | none | none | balance_sheet, cash_flow, income_statement | 32 | 20 | 0 |
-| PPL | 2024, 2025 | 2025-03-31, 2025-12-31, 2026-03-31 | 2025-12-31 | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement, other | 0 | 181 | 324 |
+| PPL | 2024, 2025 | 2025-03-31, 2025-12-31, 2026-03-31 | 2025-12-31 | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement, other | 0 | 181 | 390 |
 | PRL | 2024, 2025, 2026 | none | none | none | balance_sheet, cash_flow, income_statement | 65 | 6 | 1556 |
 | PSO | 2024, 2025 | none | none | none | balance_sheet, cash_flow, income_statement | 0 | 60 | 235 |
 | UBL | 2024, 2025 | none | none | none | balance_sheet, income_statement | 29 | 3 | 0 |
@@ -135,9 +135,9 @@ Exact period-by-statement coverage: [MLCF/README.md](MLCF/README.md).
 
 ### NBP
 
-Missing publication date: **1535** observations. Fiscal year end: 12-31. At least one line is present from each primary statement.
+Missing publication date: **1407** observations. Fiscal year end: 12-31. At least one line is present from each primary statement.
 
-ambiguous_period: 6; arithmetic_failed_or_unsupported: 678; duplicate_or_admitted_precedence: 127; incomplete_batch_envelope: 731; invalid_number: 8; missing_or_future_retrieval_date: 12; missing_publication_date: 2411; not_eligible_reconciliation: 9; outside_historical_statement_scope: 182; raw_scale_mismatch: 14; record_on_hold: 10; unknown_basis: 183
+ambiguous_period: 6; arithmetic_failed_or_unsupported: 678; collected_conflict: 18; duplicate_or_admitted_precedence: 515; incomplete_batch_envelope: 731; invalid_number: 8; missing_or_future_retrieval_date: 12; missing_publication_date: 1916; not_eligible_reconciliation: 9; outside_historical_statement_scope: 183; raw_scale_mismatch: 14; record_on_hold: 10; unknown_basis: 183
 
 Exact period-by-statement coverage: [NBP/README.md](NBP/README.md).
 
@@ -159,9 +159,9 @@ Exact period-by-statement coverage: [OGDC/README.md](OGDC/README.md).
 
 ### PPL
 
-Missing publication date: **324** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
+Missing publication date: **390** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
 
-collected_conflict: 32; failed_or_unresolved_batch_checks: 1; missing_publication_date: 324; not_eligible_reconciliation: 25
+collected_conflict: 32; failed_or_unresolved_batch_checks: 1; missing_publication_date: 390; not_eligible_reconciliation: 25
 
 Exact period-by-statement coverage: [PPL/README.md](PPL/README.md).
 

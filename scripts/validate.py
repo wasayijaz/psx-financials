@@ -19,7 +19,7 @@ from urllib.parse import urlsplit
 
 from export import (SYMBOLS, FIELDS, KEY, FORBIDDEN, DEFAULT_ADMITTED,
                     DEFAULT_BATCHES, key, number, decimal_text, wide_rows,
-                    csv_bytes, resolve, arithmetic, period_type)
+                    csv_bytes, resolve, arithmetic, period_type, main_table_fact, FilingDates)
 
 
 def require(condition, message):
@@ -36,7 +36,7 @@ def read_csv(path):
 def allowed_paths():
     paths = {'README.md', 'coverage.md', 'LICENSE', 'DATA-LICENSE', '.gitignore', '.gitattributes', 'CHANGELOG.md',
              'scripts/export.py', 'scripts/validate.py', 'data/facts.csv', 'data/conflicts.csv',
-             'data/exclusions.csv', 'data/lineage.csv', 'data/export_manifest.json', 'data/spot_checks.csv'}
+             'data/exclusions.csv', 'data/lineage.csv', 'data/export_manifest.json', 'data/spot_checks.csv', 'data/date_resolution_review.csv'}
     for symbol in SYMBOLS:
         paths.update(symbol + '/' + name for name in ('README.md', 'annual.csv', 'quarterly.csv'))
     return paths
@@ -105,14 +105,15 @@ def validate(root, check_audit=True):
             require(company[field] == sorted({r['fiscal_year'] if ptype == 'annual' else r['period_end'] for r in fs if r['period_type'] == ptype}), symbol + ' coverage mismatch: ' + ptype)
         require(company['statements'] == sorted({r['statement'] for r in fs}), symbol + ' statements mismatch')
         text = (root / symbol / 'README.md').read_text(encoding='utf-8')
-        require(text.count('<a id="s') == len(fs), symbol + ' Markdown figure count mismatch')
+        table_facts = [f for f in fs if main_table_fact(f)]
+        require(text.count('<a id="s') == len(table_facts), symbol + ' Markdown figure count mismatch')
         for annual, name in ((True, 'annual.csv'), (False, 'quarterly.csv')):
             expected_fields, expected_rows = wide_rows(fs, annual)
             actual_fields, actual_rows = read_csv(root / symbol / name)
             require(expected_fields == actual_fields and expected_rows == actual_rows, symbol + '/' + name + ' differs from facts.csv')
-            require(sum(bool(r[p]) for r in actual_rows for p in actual_fields if '|' in p) == sum((r['period_type'] == 'annual') == annual for r in fs), symbol + ' wide cell count mismatch')
+            require(sum(bool(r[p]) for r in actual_rows for p in actual_fields if '|' in p) == sum((r['period_type'] == 'annual') == annual for r in table_facts), symbol + ' wide cell count mismatch')
         # Every Markdown figure reference must point back to a fact with full provenance.
-        for row in fs:
+        for row in table_facts:
             reference = f"[{row['document_id']}]({row['source_url']}), page {row['page']}; published {row['published_on']}; retrieved {row['retrieved_on']}; period {row['period_end']} ({row['period_type']}); {row['basis']}; {row['unit']}, {row['currency']}; {row['status']}"
             require(reference in text, symbol + ' missing Markdown source reference')
     _, lineage = read_csv(root / 'data/lineage.csv')
@@ -121,6 +122,9 @@ def validate(root, check_audit=True):
     for row in lineage:
         require(row['input_sha256'] == hashes.get(row['input']), 'Lineage input hash mismatch')
         require(re.fullmatch('[a-f0-9]{64}', row['source_sha256']), 'Missing source content hash')
+        require(row['date_input'] in hashes and row['date_field'] in ('published_at', 'available_on'), 'Missing filing-date lineage')
+        fact = next(r for r in facts if key(r) == key(row))
+        require(row['date_value'][:10] == fact['published_on'], 'Filing-date lineage mismatch')
     conflict_fields, conflicts = read_csv(root / 'data/conflicts.csv')
     require(conflict_fields == FIELDS + ['reason'], 'Conflict schema mismatch')
     require(len(conflicts) == manifest['conflict_observations'], 'Conflict count mismatch')
@@ -151,6 +155,11 @@ def spot_check(root, facts, lineage, admitted, batches, count):
         pool = sorted((r for r in facts if r['symbol'] == symbol), key=key)
         if pool:
             chosen.append(rng.choice(pool))
+    # Required focus for this date-resolution pass: at least three per target
+    # wherever qualifying exported data exists; never invent an eligible figure.
+    for symbol in ('DGKC', 'HBL', 'LUCK'):
+        pool = [r for r in sorted(facts, key=key) if r['symbol'] == symbol and key(r) not in {key(c) for c in chosen}]
+        chosen += rng.sample(pool, min(2, len(pool)))
     remaining = [r for r in sorted(facts, key=key) if key(r) not in {key(c) for c in chosen}]
     # Check both statuses where they exist, in addition to geographic/issuer spread.
     for status in ('admitted_checked', 'collected_checked'):
@@ -192,16 +201,92 @@ def spot_check(root, facts, lineage, admitted, batches, count):
         require(source_record['consolidation'] == ('unconsolidated' if row['basis'] == 'standalone' else 'consolidated'), 'Spot check basis mismatch')
         source_options = [source, documents.get(row['document_id'], {})] + [d for d in documents.values() if d.get('content_sha256') == trace['source_sha256']]
         require(any(s.get('source_url') == row['source_url'] for s in source_options), 'Spot check URL mismatch')
-        require(any(str(s.get('published_at', ''))[:10] == row['published_on'] for s in source_options), 'Spot check publication mismatch')
+        date_origin = trace['date_input']
+        if date_origin.startswith('admitted/'):
+            date_path = admitted / date_origin.removeprefix('admitted/')
+        elif date_origin.startswith('collected/'):
+            date_path = batches / date_origin.removeprefix('collected/')
+        else:
+            date_path = Path('D:/Henneth-Backups/collection-originals') / date_origin.removeprefix('url-map/')
+        expected_hash = next(i['sha256'] for i in manifest['input_files'] if i['input'] == date_origin)
+        require(hashlib.sha256(date_path.read_bytes()).hexdigest() == expected_hash, 'Date input changed since export')
+        matched = []
+        identities = FilingDates.identities(dict(source, document_id=row['document_id'], source_url=row['source_url']))
+        def visit(value):
+            if isinstance(value, dict):
+                if identities & FilingDates.identities(value) and str(value.get(trace['date_field'], '')) == trace['date_value']:
+                    matched.append(value)
+                for child in value.values():
+                    visit(child)
+            elif isinstance(value, list):
+                for child in value:
+                    visit(child)
+        visit(load(date_path))
+        require(matched and trace['date_value'][:10] == row['published_on'], 'Spot check publication mismatch')
+        require(any(FilingDates.own_date(s) for s in matched), 'Retrieval/inspection date used as publication')
         report.append(dict({k: row[k] for k in FIELDS}, input=origin, record_id=trace['record_id'], result='PASS'))
     data = csv_bytes(FIELDS + ['input', 'record_id', 'result'], report)
     target = root / 'data/spot_checks.csv'
     if not target.exists() or target.read_bytes() != data:
         target.write_bytes(data)
     print(f'PASS: {len(report)} deterministic random spot checks across {len({r["symbol"] for r in report})} stocks against original input records: value, unit, currency, period/type, basis, document, URL, page and publication date.')
+    # Independently inspect the retained source metadata for the requested stocks
+    # that still have no admissible filing dates. This publishes no withheld values.
+    date_index = FilingDates()
+    input_hashes = {i['input']: i['sha256'] for i in manifest['input_files']}
+    def add_sources(value, origin):
+        if isinstance(value, dict):
+            if value.get('document_id') or value.get('doc_id') or value.get('source_url'):
+                date_index.add(value, origin)
+            for child in value.values():
+                add_sources(child, origin)
+        elif isinstance(value, list):
+            for child in value:
+                add_sources(child, origin)
+    for origin in input_hashes:
+        if origin in ('admitted/state/company_documents.json', 'admitted/state/company_financial_series.json'):
+            path = admitted / origin.removeprefix('admitted/')
+        elif origin.startswith('collected/') and origin.endswith('/manifest.json'):
+            path = batches / origin.removeprefix('collected/')
+        elif origin.startswith('url-map/'):
+            path = Path('D:/Henneth-Backups/collection-originals') / origin.removeprefix('url-map/')
+        else:
+            continue
+        require(hashlib.sha256(path.read_bytes()).hexdigest() == input_hashes[origin], 'Date metadata changed since export')
+        add_sources(load(path), origin)
+    _, reviews = read_csv(root / 'data/date_resolution_review.csv')
+    for symbol in ('DGKC', 'HBL', 'LUCK'):
+        expected = min(3, manifest['companies'][symbol]['missing_publication_observations'])
+        require(sum(r['symbol'] == symbol for r in reviews) >= expected, 'Too few excluded-date reviews: ' + symbol)
+    for review in reviews:
+        origin = review['input']
+        path = admitted / origin.removeprefix('admitted/') if origin.startswith('admitted/') else batches / origin.removeprefix('collected/')
+        require(hashlib.sha256(path.read_bytes()).hexdigest() == input_hashes[origin], 'Excluded source input changed')
+        payload = load(path)
+        if origin.endswith('annual_data_floor.json'):
+            record = next(l['selected'] for y in payload['companies'][review['symbol']]['years'] for l in y['lines'].values() if (l.get('selected') or {}).get('reconciliation_id') == review['record_id'])
+            source = record['source']
+        elif origin.endswith('financial_evidence_reconciliation.json'):
+            record = next(r for r in payload['companies'][review['symbol']]['facts'] if r.get('reconciliation_id') == review['record_id'])
+            source = record['source']
+        else:
+            record = next(r for r in (payload if isinstance(payload, list) else payload['records']) if r['record_id'] == review['record_id'])
+            docs = load(path.parent / 'manifest.json')['documents']
+            docs = list(docs.values()) if isinstance(docs, dict) else docs
+            source = next(d for d in docs if d['document_id'] == review['document_id'])
+        require(record['period_end'] == review['period_end'] and str(source.get('page', record.get('page'))) == review['page'], 'Excluded source identity mismatch')
+        require(date_index.resolve(dict(source, document_id=review['document_id'], source_url=review['source_url']), origin) is None, 'Resolvable date incorrectly excluded')
+    print('PASS: excluded-date source checks: ' + ', '.join(s + '=' + str(sum(r['symbol'] == s for r in reviews)) for s in ('DGKC', 'HBL', 'LUCK')) + '; no retrieval or inspection dates substituted.')
 
 
 def self_test():
+    require(FilingDates.own_date({'available_on': '2026-10-16', 'availability_basis': 'actual_batch_original_hash_and_physical_page_verification_at_created_at; not an original publication date'}) is None, 'Inspection date accepted as publication')
+    require(FilingDates.own_date({'available_on': '2026-10-16', 'retrieved_at': '2026-10-16'}) is None, 'Unproven available_on accepted')
+    date_index = FilingDates()
+    date_index.add({'document_id': 'psx:123', 'published_at': '2025-09-01'}, 'catalog')
+    require(date_index.resolve({'source_url': 'https://dps.psx.com.pk/download/document/123.pdf'}, 'candidate') == ('catalog', 'published_at', '2025-09-01'), 'PSX URL date resolution regression')
+    require(not main_table_fact({'statement': 'other', 'line_item': 'supplemental_reported_inventory_detail'}), 'Other notes leaked into main tables')
+    require(main_table_fact({'statement': 'other', 'line_item': 'dividend_per_share'}), 'Dividend excluded from main tables')
     def c(value, status='collected_checked', unit='PKR'):
         row = dict.fromkeys(FIELDS, 'x')
         row.update(symbol='ATRL', line_item='revenue', period_end='2025-06-30', period_type='annual', basis='consolidated', value=str(value), unit=unit, currency='PKR', statement='income_statement', status=status, published_on='2025-09-01', document_id='psx:1', page='1')
@@ -223,7 +308,7 @@ def self_test():
         raise ValueError('Failed arithmetic accepted')
     require(period_type({'period_type': 'interim', 'duration_months': 6}, '06-30') == 'half_year', 'Cumulative classification regression')
     require(period_type({'period_type': 'interim', 'snapshot': True, 'period_end': '2023-12-31'}, '06-30') == 'half_year', 'Snapshot classification regression')
-    print('PASS: conflict, admitted precedence, unit mismatch, arithmetic rejection and cumulative/snapshot classification regression checks.')
+    print('PASS: date resolution, retrieval-date rejection, table scope, conflict, admitted precedence, unit mismatch, arithmetic and cumulative/snapshot regression checks.')
 
 
 def main():

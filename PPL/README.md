@@ -6,6 +6,8 @@ Sector: Oil & Gas Exploration Companies. Fiscal year end: 06-30.
 
 CSV files: [annual.csv](annual.csv), [quarterly.csv](quarterly.csv). Each wide cell joins to [facts.csv](../data/facts.csv) by symbol, line item, period end, period type and basis. Half-year and nine-month columns are cumulative.
 
+Main tables contain primary statements plus EPS, shares and dividends. Other reported financial notes remain available only in facts.csv.
+
 ## Income Statement
 
 ### Annual
@@ -157,33 +159,26 @@ No qualifying reported figures available.
 | supplemental_reported_repayments_of_long_term_financing | consolidated | PKR | PKR | -159969000 [S176](#s176) |
 | supplemental_reported_repayments_of_long_term_financing | standalone | PKR | PKR | -159969000 [S177](#s177) |
 
-## Other
+## EPS, shares and dividends
 
 ### Annual
 
-| Line item | Basis | Unit | Currency | 2024-06-30 / annual | 2025-06-30 / annual |
-|---|---|---|---|---|---|
-| total_equity | consolidated | PKR | PKR | 640731856000 [S178](#s178) | 705023483000 [S179](#s179) |
+No qualifying reported figures available.
 
 ### Interim
 
-| Line item | Basis | Unit | Currency | 2025-03-31 / nine_months | 2026-03-31 / nine_months |
-|---|---|---|---|---|---|
-| total_equity | consolidated | PKR | PKR | 695299952000 [S180](#s180) | 747198688000 [S181](#s181) |
+No qualifying reported figures available.
 
 ## Coverage and gaps
 
 Annual fiscal years: 2024, 2025. Quarter periods: 3; half-year periods: 1; nine-month periods: 2.
 
-Missing verified publication date: 324 distinct inspected observations. No missing figure is estimated. Every period/statement combination below counts available lines only.
+Missing verified publication date: 390 distinct inspected observations. No missing figure is estimated. Every period/statement combination below counts available lines only.
 
 | Period end | Type | Basis | Statement | Figures |
 |---|---|---|---|---:|
-| 2024-06-30 | annual | consolidated | other | 1 |
 | 2025-03-31 | nine_months | consolidated | income_statement | 8 |
-| 2025-03-31 | nine_months | consolidated | other | 1 |
 | 2025-03-31 | quarter | consolidated | income_statement | 8 |
-| 2025-06-30 | annual | consolidated | other | 1 |
 | 2025-12-31 | half_year | consolidated | balance_sheet | 24 |
 | 2025-12-31 | half_year | consolidated | cash_flow | 21 |
 | 2025-12-31 | half_year | consolidated | income_statement | 14 |
@@ -193,7 +188,6 @@ Missing verified publication date: 324 distinct inspected observations. No missi
 | 2025-12-31 | quarter | consolidated | income_statement | 14 |
 | 2025-12-31 | quarter | standalone | income_statement | 14 |
 | 2026-03-31 | nine_months | consolidated | income_statement | 8 |
-| 2026-03-31 | nine_months | consolidated | other | 1 |
 | 2026-03-31 | quarter | consolidated | income_statement | 8 |
 
 Full exclusion counts and collection limits: [coverage.md](../coverage.md).
@@ -555,11 +549,3 @@ Pages are physical PDF page numbers, starting at 1. Documents are linked only; n
 <a id="s176"></a> **S176**: [psx:270122](https://dps.psx.com.pk/download/document/270122.pdf), page 8; published 2026-02-13; retrieved 2026-10-16; period 2025-12-31 (half_year); consolidated; PKR, PKR; collected_checked; checks: ccf_financing_sum;source_structure_and_raw_scale.
 
 <a id="s177"></a> **S177**: [psx:270122](https://dps.psx.com.pk/download/document/270122.pdf), page 4; published 2026-02-13; retrieved 2026-10-16; period 2025-12-31 (half_year); standalone; PKR, PKR; collected_checked; checks: source_structure_and_raw_scale;ucf_financing_sum.
-
-<a id="s178"></a> **S178**: [psx:275641](https://dps.psx.com.pk/download/document/275641.pdf), page 9; published 2026-04-29; retrieved 2026-08-18; period 2024-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
-
-<a id="s179"></a> **S179**: [psx:275641](https://dps.psx.com.pk/download/document/275641.pdf), page 9; published 2026-04-29; retrieved 2026-08-18; period 2025-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
-
-<a id="s180"></a> **S180**: [psx:275641](https://dps.psx.com.pk/download/document/275641.pdf), page 9; published 2026-04-29; retrieved 2026-08-18; period 2025-03-31 (nine_months); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
-
-<a id="s181"></a> **S181**: [psx:275641](https://dps.psx.com.pk/download/document/275641.pdf), page 9; published 2026-04-29; retrieved 2026-08-18; period 2026-03-31 (nine_months); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
