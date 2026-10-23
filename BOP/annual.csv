@@ -14,5 +14,4 @@ income_statement,other_income,Other income,consolidated,PKR,PKR,1207674000,75487
 income_statement,profit_after_tax,PROFIT AFTER TAXATION,consolidated,PKR,PKR,13280057000,15530034000
 income_statement,profit_before_credit_loss_allowance,Profit before credit loss allowance,consolidated,PKR,PKR,20363873000,40374093000
 income_statement,profit_before_tax,PROFIT BEFORE TAXATION,consolidated,PKR,PKR,24437162000,35394368000
-income_statement,tax_expense,Taxation,consolidated,PKR,PKR,11157105000,19864334000
 income_statement,total_operating_income,Total income,consolidated,PKR,PKR,71073971000,101130943000

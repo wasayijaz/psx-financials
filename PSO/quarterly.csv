@@ -1,1 +1,7 @@
-statement,line_item,reported_label,basis,unit,currency
+statement,line_item,reported_label,basis,unit,currency,2025-03-31|nine_months,2025-03-31|quarter,2026-03-31|nine_months,2026-03-31|quarter
+balance_sheet,total_equity,Total equity,consolidated,PKR,PKR,261835079000,,298299686000,
+income_statement,basic_eps,Earnings per share - basic and diluted,consolidated,PKR/share,PKR,,6.74,83.93,52.59
+income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,,10670815000,40165093000,40165093000
+income_statement,profit_after_tax_attributable,Profit for the period attributable to the owners of the Holding Company,consolidated,PKR,PKR,,3164964000,39401324000,24687839000
+income_statement,revenue,Net sales,consolidated,PKR,PKR,,746844852000,2361348906000,791471872000
+other,weighted_average_shares,Weighted average number of ordinary shares in issue during the period,consolidated,shares,PKR,,469473300,,469473300

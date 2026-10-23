@@ -1,1 +1,10 @@
-statement,line_item,reported_label,basis,unit,currency
+statement,line_item,reported_label,basis,unit,currency,2024-12-31|quarter,2025-12-31|half_year,2025-12-31|quarter
+balance_sheet,total_equity,Total equity,consolidated,PKR,PKR,,17225230000,
+balance_sheet,total_liabilities,Total liabilities,consolidated,PKR,PKR,,10800011000,
+income_statement,basic_eps,Earnings per share - basic and diluted,consolidated,PKR/share,PKR,8.23,,21.91
+income_statement,cost_of_sales,Cost of sales,consolidated,PKR,PKR,-3162391000,,-5799116000
+income_statement,gross_profit,Gross profit,consolidated,PKR,PKR,693374000,,1874767000
+income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,468941000,,1249110000
+income_statement,profit_before_tax,Profit before income tax,consolidated,PKR,PKR,622968000,,1949503000
+income_statement,revenue,Revenue - net,consolidated,PKR,PKR,3855765000,,7673883000
+income_statement,tax_expense,Taxation,consolidated,PKR,PKR,-154027000,,-700393000

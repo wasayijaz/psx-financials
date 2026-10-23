@@ -13,3 +13,7 @@ Facts: 1863. SHA-256 of facts.csv: `1aa1d00e08611689727400abad6b456cbfe59230bcbd
 ## Date provenance and table scope — 2026-10-19
 
 Resolved filing dates across retained metadata using document IDs, official URLs and content hashes. Retrieval and inspection clocks remain excluded. Main tables now contain only primary statements plus EPS, shares and dividends; other reported notes remain in facts.csv. Refreshed facts: 1863 (441 admitted, 1422 collected).
+
+## Export — 2026-10-23
+
+Facts: 2200. SHA-256 of facts.csv: `e28c647523befe322253dd228fdf6dec79dce0869b8848b8e304ebecff3fc8ac`.

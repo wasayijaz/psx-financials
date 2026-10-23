@@ -6,6 +6,7 @@ balance_sheet,property_plant_equipment,"Property, plant and equipment",consolida
 balance_sheet,short_term_borrowings,Short term borrowings from financial institutions - secured,consolidated,PKR,PKR,,,,,,,,,4014213000,
 balance_sheet,supplemental_reported_issued_share_capital_pkr_thousand,"Issued, subscribed and paid-up share capital",consolidated,PKR,PKR,,,,,,10475626000,10475626000,,10475626000,
 balance_sheet,total_current_assets,Total current assets,consolidated,PKR,PKR,,,,,,40537410000,39494417000,,56740103000,
+balance_sheet,total_equity,Total equity,consolidated,PKR,PKR,,,,,,75144601000,80059064000,,86445290000,
 balance_sheet,total_equity_and_liabilities,Total equity and liabilities,consolidated,PKR,PKR,,,,,,122330181000,128679108000,,249270094000,
 balance_sheet,trade_receivables,Trade debts,consolidated,PKR,PKR,,,,,,4221789000,3521979000,,5139514000,
 cash_flow,cash_and_cash_equivalents_beginning,Cash and cash equivalents at beginning of the period,consolidated,PKR,PKR,-127393000,-127392000,,-127392000,,1718031000,1718031000,,1718031000,
@@ -15,7 +16,7 @@ cash_flow,net_cash_from_investing_activities,Net cash outflow from investing act
 cash_flow,net_change_in_cash,Net (decrease) / increase in cash and cash equivalents,consolidated,PKR,PKR,-938106000,2504987000,,2039061000,,976235000,1067716000,,-2593068000,
 cash_flow,operating_cash_flow,Net cash generated from operations,consolidated,PKR,PKR,183867000,10689662000,,13655401000,,3063987000,11203426000,,31878724000,
 income_statement,administrative_expenses,Administrative expenses,consolidated,PKR,PKR,-586171000,-1259934000,-673763000,-1799680000,-539746000,-586878000,-1398370000,-811492000,-2699438000,-1301068000
-income_statement,basic_eps,Earnings per share - basic and diluted,consolidated,PKR/share,PKR,1.28,4.85,3.57,7.51,2.67,2.6,5.58,2.98,7.44,1.86
+income_statement,basic_eps,Earning per share for profit attributable to the equity holders of the Holding company,consolidated,PKR/share,PKR,1.28,4.85,3.57,7.51,2.67,2.6,5.58,2.98,7.44,1.86
 income_statement,cost_of_sales,Cost of sales,consolidated,PKR,PKR,-10757161000,-22208269000,-11451107000,-32936375000,-10728106000,-10891752000,-23261943000,-12370191000,-37677192000,-14415249000
 income_statement,finance_cost,Finance cost,consolidated,PKR,PKR,-674512000,-2090608000,-1416096000,-2555017000,-464409000,-396710000,-778118000,-381408000,-2368837000,-1590720000
 income_statement,gross_profit,Gross profit,consolidated,PKR,PKR,4962677000,12539719000,7577044000,18442739000,5903020000,5591609000,12156912000,6565303000,19286679000,7129766000
@@ -23,6 +24,8 @@ income_statement,operating_profit,Operating profit,consolidated,PKR,PKR,27378510
 income_statement,other_expenses,Other expenses,consolidated,PKR,PKR,-220763000,-461533000,-240771000,-795167000,-333634000,-232092000,-602467000,-370375000,-809564000,-207097000
 income_statement,other_income,Other income,consolidated,PKR,PKR,19308000,291263000,273325000,360405000,68807000,497585000,789930000,292345000,916002000,126072000
 income_statement,profit_after_tax,Profit after taxation,consolidated,PKR,PKR,1342410000,5077738000,3735328000,7871107000,2793368000,2728238000,5846296000,3118058000,7795290000,1948993000
+income_statement,profit_after_tax_attributable,Equity holders of the Holding Company,consolidated,PKR,PKR,1342743000,,3735090000,,2793410000,2728256000,,3118059000,,1770955000
+income_statement,profit_after_tax_non_controlling,Non-controlling interests,consolidated,PKR,PKR,-333000,,238000,,-42000,-18000,,-1000,,178038000
 income_statement,profit_before_tax,Profit before income tax,consolidated,PKR,PKR,2099315000,7220114000,5120799000,10914113000,3719981000,4050784000,8897040000,4846256000,11843843000,2946802000
 income_statement,revenue,Revenue from contracts with customers - net,consolidated,PKR,PKR,15719838000,34747988000,19028151000,51379114000,16631126000,16483361000,35418855000,18935494000,56963871000,21545015000
 income_statement,selling_distribution_expenses,Selling and distribution expenses,consolidated,PKR,PKR,-1347200000,-2390476000,-1043276000,-3160347000,-769871000,-774268000,-1595811000,-821543000,-2318764000,-722953000
@@ -31,3 +34,4 @@ income_statement,supplemental_reported_finance_income,Finance income,consolidate
 income_statement,supplemental_reported_net_impairment_loss_on_financial_assets,Net impairment loss on financial assets,consolidated,PKR,PKR,-90000000,-330000000,-240000000,-420000000,-90000000,-90000000,-84345000,5655000,-174345000,-90000000
 income_statement,supplemental_reported_share_of_loss_associated_company,Share of loss in associated company,consolidated,PKR,PKR,,,,-99550000,-99550000,-3091000,220013000,223104000,-122992000,-343004000
 income_statement,tax_expense,Income tax,consolidated,PKR,PKR,-756905000,-2142376000,-1385471000,-3043006000,-926613000,-1322546000,-3050744000,-1728198000,-4048553000,-997809000
+other,issued_ordinary_shares,"Issued, subscribed and paid-up share capital; 1,047,562,608 ordinary shares of Rs 10 each",consolidated,shares,PKR,,,,,,,1047562608,,1047562608,

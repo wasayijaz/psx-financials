@@ -1,7 +1,11 @@
 statement,line_item,reported_label,basis,unit,currency,2024-12-31|annual,2025-12-31|annual
 balance_sheet,credit_loss_allowance,Credit loss allowance / provisions and write-offs - net,consolidated,PKR,PKR,12775474000,
+balance_sheet,equity_attributable_to_parent,Total equity attributable to the equity holders of the Bank,consolidated,PKR,PKR,,505221362000
+balance_sheet,non_controlling_interests,Non-controlling interest,consolidated,PKR,PKR,,70451000
 balance_sheet,total_assets,Total assets,consolidated,PKR,PKR,8069097277000,
+balance_sheet,total_equity,NET ASSETS,consolidated,PKR,PKR,320808013000,505291813000
 balance_sheet,total_liabilities,Total liabilities,consolidated,PKR,PKR,7748289264000,
+income_statement,basic_eps,Basic and diluted earnings per share,consolidated,PKR/share,PKR,30.7,52.13
 income_statement,credit_loss_charge,Credit loss allowance and write-offs - net,consolidated,PKR,PKR,12775474000,-4653428000
 income_statement,financing_income,Mark-up / return / interest earned,consolidated,PKR,PKR,1084641497000,1184861499000
 income_statement,funding_expense,Mark-up / return / interest expensed,consolidated,PKR,PKR,911093616000,823309408000
@@ -9,11 +13,12 @@ income_statement,net_interest_income,Net mark-up / interest income,consolidated,
 income_statement,non_controlling_interest,structural_block_total:bank_non_controlling_interest,consolidated,PKR,PKR,621591000,20491000
 income_statement,non_interest_income,Total non mark-up / interest income,consolidated,PKR,PKR,83694532000,62704368000
 income_statement,other_income,Other income,consolidated,PKR,PKR,1139575000,986246000
-income_statement,profit_after_tax,structural_block_total:bank_total_profit_after_tax,consolidated,PKR,PKR,75777444000,130020374000
+income_statement,profit_after_tax,structural_block_total:bank_total_profit_after_tax,consolidated,PKR,PKR,,130020374000
 income_statement,profit_after_tax_attributable,structural_block_total:bank_parent_profit_after_tax,consolidated,PKR,PKR,75155853000,129999883000
 income_statement,profit_after_tax_continuing_operations,Profit after taxation from continuing operations,consolidated,PKR,PKR,74838834000,130020374000
 income_statement,profit_before_credit_loss_allowance,Profit before credit loss allowance,consolidated,PKR,PKR,157812313000,286454089000
-income_statement,profit_before_tax,Profit before taxation,consolidated,PKR,PKR,145036839000,291107517000
+income_statement,profit_before_tax,Profit before taxation from continuing operations,consolidated,PKR,PKR,,291107517000
 income_statement,profit_from_discontinued_operations,Profit from discontinued operations - net of tax,consolidated,PKR,PKR,938610000,
-income_statement,tax_expense,Taxation,consolidated,PKR,PKR,70198005000,161087143000
+income_statement,supplemental_reported_profit_after_tax_continuing_operations,Profit after taxation from continuing operations,consolidated,PKR,PKR,,130020374000
+income_statement,tax_expense,Taxation,consolidated,PKR,PKR,,161087143000
 income_statement,total_operating_income,Total income,consolidated,PKR,PKR,257242413000,424256459000

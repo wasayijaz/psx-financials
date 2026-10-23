@@ -18,4 +18,5 @@ income_statement,profit_after_tax_attributable,Profit attributable to owners of 
 income_statement,profit_after_tax_non_controlling,Non-controlling interest,consolidated,PKR,PKR,1145851000,1775488000
 income_statement,profit_before_tax,PROFIT BEFORE INCOME TAX,consolidated,PKR,PKR,140589545000,136181769000
 income_statement,revenue,Turnover - net,consolidated,PKR,PKR,411254410000,483807560000
+income_statement,supplemental_reported_revenue,Turnover - net,standalone,PKR,PKR,,432410443000
 income_statement,tax_expense,Provision for taxation,consolidated,PKR,PKR,-55064201000,-51235462000

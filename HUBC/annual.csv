@@ -14,11 +14,15 @@ cash_flow,exchange_rate_effect_on_cash,Loss on conversion of foreign currency ba
 cash_flow,fixed_capital_expenditure,Fixed capital expenditure,consolidated,PKR,PKR,-2364177000,-935016000
 cash_flow,net_cash_from_financing_activities,Net cash used in financing activities,consolidated,PKR,PKR,-55532510000,-51770793000
 cash_flow,net_cash_from_investing_activities,Net cash generated from / (used in) investing activities,consolidated,PKR,PKR,-3845910000,35015553000
+cash_flow,net_cash_generated_from_operating_activities,Net cash generated from operating activities,consolidated,PKR,PKR,78760833000,11428574000
 cash_flow,net_cash_generated_from_or_used_in_investing_activities,Net cash generated from / (used in) investing activities,consolidated,PKR,PKR,-3845910000,35015553000
 cash_flow,net_cash_used_in_financing_activities,Net cash used in financing activities,consolidated,PKR,PKR,-55532510000,-51770793000
 cash_flow,net_change_in_cash,Net (decrease) / increase in cash and cash equivalents,consolidated,PKR,PKR,19382413000,-5326666000
 cash_flow,net_decrease_increase_in_cash_and_cash_equivalents,Net (decrease) / increase in cash and cash equivalents,consolidated,PKR,PKR,19382413000,-5326666000
 cash_flow,operating_cash_flow,Net cash generated from operating activities,consolidated,PKR,PKR,78760833000,11428574000
+cash_flow,supplemental_reported_dividends_paid_nci,Dividends paid to non-controlling interests,consolidated,PKR,PKR,-2175868000,-8419364000
+cash_flow,supplemental_reported_dividends_paid_owners,Dividends paid to owners of the holding company,consolidated,PKR,PKR,-17480463000,-32371486000
+cash_flow,supplemental_reported_fixed_capital_expenditure,Fixed capital expenditure,consolidated,PKR,PKR,-2364177000,-935016000
 income_statement,administrative_expenses,General and administration expenses,consolidated,PKR,PKR,-1788886000,-2006481000
 income_statement,basic_eps,Basic and diluted earnings per share attributable to owners of the holding company,consolidated,PKR/share,PKR,35.56,38.26
 income_statement,cost_of_sales,Cost of revenue,consolidated,PKR,PKR,-43527604000,-41438192000
@@ -35,4 +39,6 @@ income_statement,profit_after_tax_non_controlling,Non-controlling interests,cons
 income_statement,profit_before_tax,PROFIT BEFORE TAXATION FROM CONTINUING OPERATIONS,consolidated,PKR,PKR,64115150000,69600910000
 income_statement,profit_from_discontinued_operations,Profit from discontinued operations,consolidated,PKR,PKR,161977000,
 income_statement,revenue,Revenue from contracts with customers - net,consolidated,PKR,PKR,83351492000,71126352000
+income_statement,supplemental_reported_profit_before_levy_tax,PROFIT BEFORE LEVY AND TAXATION FROM CONTINUING OPERATIONS,consolidated,PKR,PKR,64115150000,70248006000
+income_statement,supplemental_reported_share_of_profit_associates_jointventures,Share of profit from associates and joint ventures - net,consolidated,PKR,PKR,41310192000,45315750000
 income_statement,tax_expense,Taxation,consolidated,PKR,PKR,-12502566000,-13343732000

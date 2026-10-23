@@ -1,1 +1,8 @@
-statement,line_item,reported_label,basis,unit,currency
+statement,line_item,reported_label,basis,unit,currency,2026-06-30|annual
+balance_sheet,total_equity,Total equity,consolidated,PKR,PKR,126705678000
+income_statement,basic_eps,Earnings per share - basic and diluted,consolidated,PKR/share,PKR,26.98
+income_statement,profit_after_tax,Profit for the year,consolidated,PKR,PKR,12174052000
+income_statement,profit_after_tax_attributable,Owners of the parent company,consolidated,PKR,PKR,11819026000
+income_statement,profit_after_tax_non_controlling,Non-controlling interests,consolidated,PKR,PKR,355026000
+income_statement,revenue,Revenue from contracts with customers - net,consolidated,PKR,PKR,87608436000
+other,issued_ordinary_shares,"Issued, subscribed and paid up share capital 438,119,118 ordinary shares of Rs 10 each",consolidated,shares,PKR,438119118

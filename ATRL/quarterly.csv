@@ -1,1 +1,7 @@
-statement,line_item,reported_label,basis,unit,currency
+statement,line_item,reported_label,basis,unit,currency,2025-03-31|quarter,2026-03-31|nine_months,2026-03-31|quarter
+income_statement,basic_eps,Earnings per share - basic and diluted (Rupees),consolidated,PKR/share,PKR,-9.06,,118.79
+income_statement,profit_after_tax,Profit/(loss) for the period,consolidated,PKR,PKR,-965536000,,12664829000
+income_statement,revenue,Net sales,consolidated,PKR,PKR,74602036000,,87772333000
+income_statement,supplemental_reported_profit_before_associate_share,Profit after taxation from refinery operations and subsidiary,consolidated,PKR,PKR,1474772000,,10962279000
+income_statement,supplemental_reported_share_in_profit_associates,Share in profit/(loss) of associated companies,consolidated,PKR,PKR,-2440308000,,1702550000
+other,issued_ordinary_shares,"Issued, subscribed and paid-up capital; ordinary shares of Rs 10 each",consolidated,shares,PKR,,106616250,

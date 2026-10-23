@@ -2,7 +2,7 @@
 
 Source-linked historical financial figures for 20 Pakistan Stock Exchange companies. This compilation is for researchers, students and people building reproducible financial datasets. It contains extracted reported figures from official filings, with partial coverage as of the cutoff below. It is not a complete ten-year database.
 
-Data cutoff: **2026-10-19**. Published facts: **1863**. Admitted checked: **441**. Collected checked: **1422**.
+Data cutoff: **2026-10-23**. Published facts: **2200**. Admitted checked: **550**. Collected checked: **1650**.
 
 Main tables contain primary income, balance-sheet and cash-flow statements plus EPS, shares and dividends. Other reported note detail is retained under statement `other` in facts.csv only. Only reported historical financial data is included. There are no forecasts, valuations, price-implied expectations, scenarios or investment recommendations. Filing documents and images are not distributed: this repository contains links only.
 
@@ -10,26 +10,26 @@ Main tables contain primary income, balance-sheet and cash-flow statements plus 
 
 | Symbol | Company | Sector | Annual years | Quarter periods | Half-year periods | Nine-month periods | Admitted | Collected |
 |---|---|---|---|---:|---:|---:|---:|---:|
-| [ATRL](ATRL/README.md) | Attock Refinery Limited | Refinery | 2024, 2025, 2026 | 0 | 0 | 0 | 59 | 23 |
-| [BOP](BOP/README.md) | The Bank of Punjab | Commercial Banks | 2024, 2025 | 6 | 1 | 2 | 26 | 212 |
+| [ATRL](ATRL/README.md) | Attock Refinery Limited | Refinery | 2024, 2025, 2026 | 2 | 0 | 2 | 59 | 36 |
+| [BOP](BOP/README.md) | The Bank of Punjab | Commercial Banks | 2024, 2025 | 6 | 1 | 2 | 24 | 212 |
 | [CNERGY](CNERGY/README.md) | Cnergyico PK  Limited | Refinery | 2025 | 4 | 2 | 2 | 0 | 171 |
-| [DGKC](DGKC/README.md) | D.G. Khan Cement Company Limited | Cement | none | 0 | 0 | 0 | 0 | 0 |
+| [DGKC](DGKC/README.md) | D.G. Khan Cement Company Limited | Cement | 2026 | 2 | 0 | 2 | 7 | 13 |
 | [ENGROH](ENGROH/README.md) | Engro Holdings Limited | Inv. Banks / Inv. Cos. / Securities Cos. | none | 0 | 0 | 0 | 0 | 0 |
-| [FFC](FFC/README.md) | Fauji Fertilizer Company Limited | Fertilizer | 2024, 2025 | 0 | 0 | 0 | 8 | 25 |
-| [GAL](GAL/README.md) | Ghandhara Automobiles Limited | Automobile Assembler | 2024, 2025 | 0 | 0 | 0 | 0 | 52 |
+| [FFC](FFC/README.md) | Fauji Fertilizer Company Limited | Fertilizer | 2024, 2025 | 8 | 2 | 2 | 8 | 386 |
+| [GAL](GAL/README.md) | Ghandhara Automobiles Limited | Automobile Assembler | 2024, 2025 | 2 | 1 | 0 | 7 | 61 |
 | [HBL](HBL/README.md) | Habib Bank Limited | Commercial Banks | none | 0 | 0 | 0 | 0 | 0 |
-| [HUBC](HUBC/README.md) | The Hub Power Company Limited | Power Generation & Distribution | 2025, 2026 | 0 | 0 | 0 | 72 | 0 |
+| [HUBC](HUBC/README.md) | The Hub Power Company Limited | Power Generation & Distribution | 2025, 2026 | 0 | 0 | 0 | 74 | 10 |
 | [LUCK](LUCK/README.md) | Lucky Cement Limited | Cement | none | 0 | 0 | 0 | 0 | 0 |
 | [MARI](MARI/README.md) | Mari Energies Limited | Oil & Gas Exploration Companies | 2025 | 0 | 0 | 0 | 1 | 0 |
 | [MEBL](MEBL/README.md) | Meezan Bank Limited | Commercial Banks | none | 0 | 0 | 0 | 0 | 0 |
-| [MLCF](MLCF/README.md) | Maple Leaf Cement Factory Limited | Cement | 2022, 2023, 2024, 2025, 2026 | 6 | 2 | 2 | 95 | 406 |
+| [MLCF](MLCF/README.md) | Maple Leaf Cement Factory Limited | Cement | 2022, 2023, 2024, 2025, 2026 | 6 | 2 | 2 | 172 | 361 |
 | [NBP](NBP/README.md) | National Bank of Pakistan | Commercial Banks | 2023, 2024, 2025 | 0 | 0 | 0 | 0 | 254 |
 | [NRL](NRL/README.md) | National Refinery Limited | Refinery | 2024, 2025, 2026 | 0 | 0 | 0 | 54 | 9 |
-| [OGDC](OGDC/README.md) | Oil & Gas Development Company Limited | Oil & Gas Exploration Companies | 2024, 2025, 2026 | 0 | 0 | 0 | 32 | 20 |
-| [PPL](PPL/README.md) | Pakistan Petroleum Limited | Oil & Gas Exploration Companies | 2024, 2025 | 3 | 1 | 2 | 0 | 181 |
+| [OGDC](OGDC/README.md) | Oil & Gas Development Company Limited | Oil & Gas Exploration Companies | 2024, 2025, 2026 | 2 | 0 | 2 | 50 | 12 |
+| [PPL](PPL/README.md) | Pakistan Petroleum Limited | Oil & Gas Exploration Companies | 2024, 2025 | 2 | 0 | 2 | 0 | 36 |
 | [PRL](PRL/README.md) | Pakistan Refinery Limited | Refinery | 2024, 2025, 2026 | 0 | 0 | 0 | 65 | 6 |
-| [PSO](PSO/README.md) | Pakistan State Oil Company Limited | Oil & Gas Marketing Companies | 2024, 2025 | 0 | 0 | 0 | 0 | 60 |
-| [UBL](UBL/README.md) | United Bank Limited | Commercial Banks | 2024, 2025 | 0 | 0 | 0 | 29 | 3 |
+| [PSO](PSO/README.md) | Pakistan State Oil Company Limited | Oil & Gas Marketing Companies | 2024, 2025 | 2 | 0 | 2 | 0 | 76 |
+| [UBL](UBL/README.md) | United Bank Limited | Commercial Banks | 2024, 2025 | 0 | 0 | 0 | 29 | 7 |
 
 Exact dates, statements present, per-stock missing-publication counts and exclusion reasons are in [coverage.md](coverage.md). A year in this table means at least one line exists, not that every statement is complete.
 
@@ -113,7 +113,7 @@ Python 3.12, standard library only. Inputs are local retained research/collectio
 From the repository root:
 
 ```powershell
-& "C:/Users/MWasa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe" scripts/export.py --cutoff 2026-10-19
+& "C:/Users/MWasa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe" scripts/export.py --cutoff 2026-10-23
 & "C:/Users/MWasa/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe" scripts/validate.py --self-test --spot-check 25
 ```
 
@@ -123,7 +123,7 @@ Refresh after new filings have been collected and checked. Review validation, co
 
 ## Cite
 
-Cite: Wasay Ijaz, “PSX financial statements,” wasayijaz/psx-financials, version 1, data cutoff 2026-10-19, plus the Git commit used. Cite the original issuer/PSX filing, document identifier and page for every figure you reuse. Preserve provenance and status when redistributing data and state any modifications.
+Cite: Wasay Ijaz, “PSX financial statements,” wasayijaz/psx-financials, version 1, data cutoff 2026-10-23, plus the Git commit used. Cite the original issuer/PSX filing, document identifier and page for every figure you reuse. Preserve provenance and status when redistributing data and state any modifications.
 
 ## Disclaimer
 
