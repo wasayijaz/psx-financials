@@ -1,1 +1,5 @@
-statement,line_item,reported_label,basis,unit,currency
+statement,line_item,reported_label,basis,unit,currency,2020-09-30|quarter,2020-12-31|quarter,2021-09-30|quarter,2021-12-31|half_year,2021-12-31|quarter,2022-09-30|quarter,2022-12-31|half_year,2022-12-31|quarter
+balance_sheet,total_equity,SHARE CAPITAL AND RESERVES (total of the rows above),standalone,PKR,PKR,,,116477846000,118961873000,,132392148000,133984739000,
+income_statement,basic_eps,Earnings per share - basic and diluted (PKR),standalone,PKR/share,PKR,6.89,7.16,10.15,,7.71,11.91,,10.18
+income_statement,profit_after_tax,Profit after taxation,standalone,PKR,PKR,2226449000,2314724000,3283860000,,2490632000,3852413000,,3276206000
+income_statement,revenue,Net sales,standalone,PKR,PKR,14335130000,15740364000,16915233000,,20633383000,19743334000,,25589747000

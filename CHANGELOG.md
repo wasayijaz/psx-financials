@@ -17,3 +17,7 @@ Resolved filing dates across retained metadata using document IDs, official URLs
 ## Export — 2026-10-23
 
 Facts: 2200. SHA-256 of facts.csv: `e28c647523befe322253dd228fdf6dec79dce0869b8848b8e304ebecff3fc8ac`.
+
+## Export — 2026-10-23
+
+Facts: 2289. SHA-256 of facts.csv: `a2d926e90490b056ecdfd4b7d0180a86045c398550dccad5c7ffb81dca3f7be5`.

@@ -77,7 +77,7 @@ No qualifying reported figures available.
 
 Annual fiscal years: 2024, 2025. Quarter periods: 0; half-year periods: 0; nine-month periods: 0.
 
-Missing verified publication date: 299 distinct inspected observations. No missing figure is estimated. Every period/statement combination below counts available lines only.
+Missing verified publication date: 304 distinct inspected observations. No missing figure is estimated. Every period/statement combination below counts available lines only.
 
 | Period end | Type | Basis | Statement | Figures |
 |---|---|---|---|---:|

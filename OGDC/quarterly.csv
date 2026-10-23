@@ -1,6 +1,7 @@
-statement,line_item,reported_label,basis,unit,currency,2025-03-31|quarter,2026-03-31|nine_months,2026-03-31|quarter
-balance_sheet,total_equity,TOTAL EQUITY,consolidated,PKR,PKR,,1407292779000,
-income_statement,basic_eps,Earnings per share -basic and diluted (Rupees),consolidated,PKR/share,PKR,10.96,,9.82
-income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,47149242000,,42243457000
-income_statement,revenue,Sales- net,consolidated,PKR,PKR,104483920000,,107297009000
-other,weighted_average_shares,Average number of shares outstanding during the period,consolidated,shares,PKR,4300928000,,4300928000
+statement,line_item,reported_label,basis,unit,currency,2024-09-30|quarter,2025-03-31|quarter,2025-09-30|quarter,2026-03-31|nine_months,2026-03-31|quarter
+balance_sheet,total_equity,TOTAL EQUITY,consolidated,PKR,PKR,,,,1407292779000,
+balance_sheet,total_equity,Total equity,standalone,PKR,PKR,1291401819000,,1385951763000,,
+income_statement,basic_eps,Earnings per share -basic and diluted (Rupees),consolidated,PKR/share,PKR,9.54,10.96,8.91,,9.82
+income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,41019911000,47149242000,38304846000,,42243457000
+income_statement,revenue,Sales- net,consolidated,PKR,PKR,106010995000,104483920000,96191968000,,107297009000
+other,weighted_average_shares,Average number of shares outstanding during the period,consolidated,shares,PKR,,4300928000,,,4300928000

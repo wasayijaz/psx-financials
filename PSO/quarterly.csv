@@ -1,7 +1,12 @@
-statement,line_item,reported_label,basis,unit,currency,2025-03-31|nine_months,2025-03-31|quarter,2026-03-31|nine_months,2026-03-31|quarter
-balance_sheet,total_equity,Total equity,consolidated,PKR,PKR,261835079000,,298299686000,
-income_statement,basic_eps,Earnings per share - basic and diluted,consolidated,PKR/share,PKR,,6.74,83.93,52.59
-income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,,10670815000,40165093000,40165093000
-income_statement,profit_after_tax_attributable,Profit for the period attributable to the owners of the Holding Company,consolidated,PKR,PKR,,3164964000,39401324000,24687839000
-income_statement,revenue,Net sales,consolidated,PKR,PKR,,746844852000,2361348906000,791471872000
-other,weighted_average_shares,Weighted average number of ordinary shares in issue during the period,consolidated,shares,PKR,,469473300,,469473300
+statement,line_item,reported_label,basis,unit,currency,2017-09-30|quarter,2017-12-31|half_year,2017-12-31|quarter,2018-03-31|nine_months,2018-03-31|quarter,2018-09-30|quarter,2018-12-31|half_year,2018-12-31|quarter,2019-03-31|nine_months,2019-03-31|quarter,2019-09-30|quarter,2019-12-31|half_year,2019-12-31|quarter,2020-03-31|nine_months,2020-03-31|quarter,2025-03-31|nine_months,2025-03-31|quarter,2026-03-31|nine_months,2026-03-31|quarter
+balance_sheet,total_assets,TOTAL ASSETS,standalone,PKR,PKR,,,,,,,,,,,,394260867000,,,,,,,
+balance_sheet,total_equity,Total equity,consolidated,PKR,PKR,,,,,,,,,,,,,,,,261835079000,,298299686000,
+balance_sheet,total_equity,Equity (total of the rows above),standalone,PKR,PKR,,,,,,114629914000,113066511000,,114742262000,,123926080000,125057254000,,121600775000,,,,,
+income_statement,basic_eps,Earnings per share - basic and diluted,consolidated,PKR/share,PKR,,,,,,,,,,,,,,,,,6.74,83.93,52.59
+income_statement,basic_eps,Earning / (Loss) per share - basic and diluted,standalone,PKR/share,PKR,15.43,21.78,8.93,33.8,12.02,,,,,,9.02,13.71,6.19,6.41,-7.3,,,,
+income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,,,,,,,,,,,,,,,,,10670815000,40165093000,40165093000
+income_statement,profit_after_tax,Profit / (Loss) for the period,standalone,PKR,PKR,5029397000,8522061000,3492664000,13224683000,4702622000,4180884000,4249045000,68161000,5926258000,1677213000,3528458000,6434750000,2906292000,3008394000,-3426356000,,,,
+income_statement,profit_after_tax_attributable,Profit for the period attributable to the owners of the Holding Company,consolidated,PKR,PKR,,,,,,,,,,,,,,,,,3164964000,39401324000,24687839000
+income_statement,revenue,Net sales,consolidated,PKR,PKR,,,,,,,,,,,,,,,,,746844852000,2361348906000,791471872000
+income_statement,revenue,Net sales,standalone,PKR,PKR,258644874000,522491413000,261246347000,749455599000,226964186000,,572543230000,291824665000,819198909000,246655679000,329782826000,642338678000,312555852000,887330619000,244991941000,,,,
+other,weighted_average_shares,Weighted average number of ordinary shares in issue during the period,consolidated,shares,PKR,,,,,,,,,,,,,,,,,469473300,,469473300

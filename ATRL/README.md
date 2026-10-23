@@ -2,7 +2,7 @@
 
 Sector: Refinery. Fiscal year end: 06-30.
 
-95 reported figures: 59 admitted checked; 36 collected checked. This is partial history, not a completeness assertion.
+108 reported figures: 59 admitted checked; 49 collected checked. This is partial history, not a completeness assertion.
 
 CSV files: [annual.csv](annual.csv), [quarterly.csv](quarterly.csv). Each wide cell joins to [facts.csv](../data/facts.csv) by symbol, line item, period end, period type and basis. Half-year and nine-month columns are cumulative.
 
@@ -39,13 +39,13 @@ Main tables contain primary statements plus EPS, shares and dividends. Other rep
 
 ### Interim
 
-| Line item | Basis | Unit | Currency | 2025-03-31 / quarter | 2026-03-31 / quarter |
-|---|---|---|---|---|---|
-| basic_eps | consolidated | PKR/share | PKR | -9.06 [S43](#s43) | 118.79 [S44](#s44) |
-| profit_after_tax | consolidated | PKR | PKR | -965536000 [S45](#s45) | 12664829000 [S46](#s46) |
-| revenue | consolidated | PKR | PKR | 74602036000 [S47](#s47) | 87772333000 [S48](#s48) |
-| supplemental_reported_profit_before_associate_share | consolidated | PKR | PKR | 1474772000 [S49](#s49) | 10962279000 [S50](#s50) |
-| supplemental_reported_share_in_profit_associates | consolidated | PKR | PKR | -2440308000 [S51](#s51) | 1702550000 [S52](#s52) |
+| Line item | Basis | Unit | Currency | 2024-09-30 / quarter | 2025-03-31 / quarter | 2025-09-30 / quarter | 2026-03-31 / quarter |
+|---|---|---|---|---|---|---|---|
+| basic_eps | consolidated | PKR/share | PKR | 34.83 [S43](#s43) | -9.06 [S44](#s44) | 22.52 [S45](#s45) | 118.79 [S46](#s46) |
+| profit_after_tax | consolidated | PKR | PKR | 3712846000 [S47](#s47) | -965536000 [S48](#s48) | 2400759000 [S49](#s49) | 12664829000 [S50](#s50) |
+| revenue | consolidated | PKR | PKR | 80670246000 [S51](#s51) | 74602036000 [S52](#s52) | 59365202000 [S53](#s53) | 87772333000 [S54](#s54) |
+| supplemental_reported_profit_before_associate_share | consolidated | PKR | PKR | 3052996000 [S55](#s55) | 1474772000 [S56](#s56) | 1476511000 [S57](#s57) | 10962279000 [S58](#s58) |
+| supplemental_reported_share_in_profit_associates | consolidated | PKR | PKR | 659850000 [S59](#s59) | -2440308000 [S60](#s60) | 924248000 [S61](#s61) | 1702550000 [S62](#s62) |
 
 ## Balance Sheet
 
@@ -53,14 +53,14 @@ Main tables contain primary statements plus EPS, shares and dividends. Other rep
 
 | Line item | Basis | Unit | Currency | 2024-06-30 / annual | 2025-06-30 / annual | 2026-06-30 / annual |
 |---|---|---|---|---|---|---|
-| cash_and_bank_balances | consolidated | PKR | PKR |  |  | 56302894000 [S53](#s53) |
-| cash_and_cash_equivalents | consolidated | PKR | PKR | 33926591000 [S54](#s54) | 39585346000 [S55](#s55) |  |
-| property_plant_equipment | consolidated | PKR | PKR |  |  | 71419270000 [S56](#s56) |
-| total_assets | consolidated | PKR | PKR | 229840986000 [S57](#s57) | 220143508000 [S58](#s58) | 293173169000 [S59](#s59) |
-| total_equity | consolidated | PKR | PKR | 229840986000 [S60](#s60) | 220143508000 [S61](#s61) | 186398731000 [S62](#s62) |
-| total_equity_and_liabilities | consolidated | PKR | PKR | 229840986000 [S63](#s63) | 220143508000 [S64](#s64) | 293173169000 [S65](#s65) |
-| trade_debts | consolidated | PKR | PKR |  |  | 18697064000 [S66](#s66) |
-| trade_receivables | consolidated | PKR | PKR | 37036362000 [S67](#s67) | 15505526000 [S68](#s68) |  |
+| cash_and_bank_balances | consolidated | PKR | PKR |  |  | 56302894000 [S63](#s63) |
+| cash_and_cash_equivalents | consolidated | PKR | PKR | 33926591000 [S64](#s64) | 39585346000 [S65](#s65) |  |
+| property_plant_equipment | consolidated | PKR | PKR |  |  | 71419270000 [S66](#s66) |
+| total_assets | consolidated | PKR | PKR | 229840986000 [S67](#s67) | 220143508000 [S68](#s68) | 293173169000 [S69](#s69) |
+| total_equity | consolidated | PKR | PKR | 229840986000 [S70](#s70) | 220143508000 [S71](#s71) | 186398731000 [S72](#s72) |
+| total_equity_and_liabilities | consolidated | PKR | PKR | 229840986000 [S73](#s73) | 220143508000 [S74](#s74) | 293173169000 [S75](#s75) |
+| trade_debts | consolidated | PKR | PKR |  |  | 18697064000 [S76](#s76) |
+| trade_receivables | consolidated | PKR | PKR | 37036362000 [S77](#s77) | 15505526000 [S78](#s78) |  |
 
 ### Interim
 
@@ -72,15 +72,15 @@ No qualifying reported figures available.
 
 | Line item | Basis | Unit | Currency | 2024-06-30 / annual | 2025-06-30 / annual | 2026-06-30 / annual |
 |---|---|---|---|---|---|---|
-| capital_expenditure | consolidated | PKR | PKR | -880329000 [S69](#s69) | -1069540000 [S70](#s70) | -4253368000 [S71](#s71) |
-| cash_and_cash_equivalents_beginning | consolidated | PKR | PKR | 28037622000 [S72](#s72) | 67369802000 [S73](#s73) | 87435891000 [S74](#s74) |
-| cash_and_cash_equivalents_end | consolidated | PKR | PKR | 67369802000 [S75](#s75) | 87435891000 [S76](#s76) | 115782465000 [S77](#s77) |
-| dividends_paid | consolidated | PKR | PKR | -2099197000 [S78](#s78) | -1862811000 [S79](#s79) | -798436000 [S80](#s80) |
-| exchange_rate_effect_on_cash | consolidated | PKR | PKR |  |  | 1989788000 [S81](#s81) |
-| net_cash_from_financing_activities | consolidated | PKR | PKR | -2529704000 [S82](#s82) | -1444985000 [S83](#s83) | -1132827000 [S84](#s84) |
-| net_cash_from_investing_activities | consolidated | PKR | PKR | 14610716000 [S85](#s85) | 12006043000 [S86](#s86) | 4764864000 [S87](#s87) |
-| net_change_in_cash | consolidated | PKR | PKR |  |  | 26356786000 [S88](#s88) |
-| operating_cash_flow | consolidated | PKR | PKR | 27247442000 [S89](#s89) | 7219458000 [S90](#s90) | 22724749000 [S91](#s91) |
+| capital_expenditure | consolidated | PKR | PKR | -880329000 [S79](#s79) | -1069540000 [S80](#s80) | -4253368000 [S81](#s81) |
+| cash_and_cash_equivalents_beginning | consolidated | PKR | PKR | 28037622000 [S82](#s82) | 67369802000 [S83](#s83) | 87435891000 [S84](#s84) |
+| cash_and_cash_equivalents_end | consolidated | PKR | PKR | 67369802000 [S85](#s85) | 87435891000 [S86](#s86) | 115782465000 [S87](#s87) |
+| dividends_paid | consolidated | PKR | PKR | -2099197000 [S88](#s88) | -1862811000 [S89](#s89) | -798436000 [S90](#s90) |
+| exchange_rate_effect_on_cash | consolidated | PKR | PKR |  |  | 1989788000 [S91](#s91) |
+| net_cash_from_financing_activities | consolidated | PKR | PKR | -2529704000 [S92](#s92) | -1444985000 [S93](#s93) | -1132827000 [S94](#s94) |
+| net_cash_from_investing_activities | consolidated | PKR | PKR | 14610716000 [S95](#s95) | 12006043000 [S96](#s96) | 4764864000 [S97](#s97) |
+| net_change_in_cash | consolidated | PKR | PKR |  |  | 26356786000 [S98](#s98) |
+| operating_cash_flow | consolidated | PKR | PKR | 27247442000 [S99](#s99) | 7219458000 [S100](#s100) | 22724749000 [S101](#s101) |
 
 ### Interim
 
@@ -92,17 +92,17 @@ No qualifying reported figures available.
 
 | Line item | Basis | Unit | Currency | 2026-06-30 / annual |
 |---|---|---|---|---|
-| dividend | standalone | PKR/share | PKR | 17.5 [S92](#s92) |
+| dividend | standalone | PKR/share | PKR | 17.5 [S102](#s102) |
 
 ### Interim
 
-| Line item | Basis | Unit | Currency | 2026-03-31 / nine_months |
-|---|---|---|---|---|
-| issued_ordinary_shares | consolidated | shares | PKR | 106616250 [S93](#s93) |
+| Line item | Basis | Unit | Currency | 2025-09-30 / quarter | 2026-03-31 / nine_months |
+|---|---|---|---|---|---|
+| issued_ordinary_shares | consolidated | shares | PKR | 106616250 [S103](#s103) | 106616250 [S104](#s104) |
 
 ## Coverage and gaps
 
-Annual fiscal years: 2024, 2025, 2026. Quarter periods: 2; half-year periods: 0; nine-month periods: 2.
+Annual fiscal years: 2024, 2025, 2026. Quarter periods: 4; half-year periods: 0; nine-month periods: 2.
 
 Missing verified publication date: 955 distinct inspected observations. No missing figure is estimated. Every period/statement combination below counts available lines only.
 
@@ -111,10 +111,13 @@ Missing verified publication date: 955 distinct inspected observations. No missi
 | 2024-06-30 | annual | consolidated | balance_sheet | 5 |
 | 2024-06-30 | annual | consolidated | cash_flow | 7 |
 | 2024-06-30 | annual | consolidated | income_statement | 11 |
+| 2024-09-30 | quarter | consolidated | income_statement | 5 |
 | 2025-03-31 | quarter | consolidated | income_statement | 5 |
 | 2025-06-30 | annual | consolidated | balance_sheet | 5 |
 | 2025-06-30 | annual | consolidated | cash_flow | 7 |
 | 2025-06-30 | annual | consolidated | income_statement | 11 |
+| 2025-09-30 | quarter | consolidated | income_statement | 5 |
+| 2025-09-30 | quarter | consolidated | other | 1 |
 | 2026-03-31 | nine_months | consolidated | other | 1 |
 | 2026-03-31 | quarter | consolidated | income_statement | 5 |
 | 2026-06-30 | annual | consolidated | balance_sheet | 6 |
@@ -212,104 +215,126 @@ Pages are physical PDF page numbers, starting at 1. Documents are linked only; n
 
 <a id="s42"></a> **S42**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 9; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: atrl:refinery_subgroup_profit_after_tax;source_structure_and_raw_scale.
 
-<a id="s43"></a> **S43**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR/share, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s43"></a> **S43**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2024-09-30 (quarter); consolidated; PKR/share, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s44"></a> **S44**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (quarter); consolidated; PKR/share, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s44"></a> **S44**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR/share, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s45"></a> **S45**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2025-03-31;source_structure_and_raw_scale.
+<a id="s45"></a> **S45**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2025-09-30 (quarter); consolidated; PKR/share, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s46"></a> **S46**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2026-03-31;source_structure_and_raw_scale.
+<a id="s46"></a> **S46**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (quarter); consolidated; PKR/share, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s47"></a> **S47**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s47"></a> **S47**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2024-09-30 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2024-09-30;source_structure_and_raw_scale.
 
-<a id="s48"></a> **S48**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s48"></a> **S48**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2025-03-31;source_structure_and_raw_scale.
 
-<a id="s49"></a> **S49**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2025-03-31;source_structure_and_raw_scale.
+<a id="s49"></a> **S49**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2025-09-30 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2025-09-30;source_structure_and_raw_scale.
 
 <a id="s50"></a> **S50**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2026-03-31;source_structure_and_raw_scale.
 
-<a id="s51"></a> **S51**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2025-03-31;source_structure_and_raw_scale.
+<a id="s51"></a> **S51**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2024-09-30 (quarter); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s52"></a> **S52**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2026-03-31;source_structure_and_raw_scale.
+<a id="s52"></a> **S52**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s53"></a> **S53**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s53"></a> **S53**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2025-09-30 (quarter); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s54"></a> **S54**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s54"></a> **S54**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s55"></a> **S55**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s55"></a> **S55**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2024-09-30 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2024-09-30;source_structure_and_raw_scale.
 
-<a id="s56"></a> **S56**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s56"></a> **S56**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2025-03-31;source_structure_and_raw_scale.
 
-<a id="s57"></a> **S57**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities;upstream:assets_equal_liabilities_plus_equity.
+<a id="s57"></a> **S57**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2025-09-30 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2025-09-30;source_structure_and_raw_scale.
 
-<a id="s58"></a> **S58**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities;upstream:assets_equal_liabilities_plus_equity.
+<a id="s58"></a> **S58**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2026-03-31;source_structure_and_raw_scale.
 
-<a id="s59"></a> **S59**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities;upstream:assets_equal_liabilities_plus_equity.
+<a id="s59"></a> **S59**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2024-09-30 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2024-09-30;source_structure_and_raw_scale.
 
-<a id="s60"></a> **S60**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 224; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_liabilities_plus_equity.
+<a id="s60"></a> **S60**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2025-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2025-03-31;source_structure_and_raw_scale.
 
-<a id="s61"></a> **S61**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 224; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_liabilities_plus_equity.
+<a id="s61"></a> **S61**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 32; published 2025-10-31; retrieved 2026-08-24; period 2025-09-30 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2025-09-30;source_structure_and_raw_scale.
 
-<a id="s62"></a> **S62**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s62"></a> **S62**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 36; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (quarter); consolidated; PKR, PKR; collected_checked; checks: reported_profit_reconciliation_2026-03-31;source_structure_and_raw_scale.
 
-<a id="s63"></a> **S63**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 224; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities.
+<a id="s63"></a> **S63**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s64"></a> **S64**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 224; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities.
+<a id="s64"></a> **S64**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s65"></a> **S65**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s65"></a> **S65**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s66"></a> **S66**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s66"></a> **S66**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s67"></a> **S67**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s67"></a> **S67**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities;upstream:assets_equal_liabilities_plus_equity.
 
-<a id="s68"></a> **S68**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s68"></a> **S68**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities;upstream:assets_equal_liabilities_plus_equity.
 
-<a id="s69"></a> **S69**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s69"></a> **S69**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities;upstream:assets_equal_liabilities_plus_equity.
 
-<a id="s70"></a> **S70**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s70"></a> **S70**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 224; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_liabilities_plus_equity.
 
-<a id="s71"></a> **S71**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s71"></a> **S71**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 224; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_liabilities_plus_equity.
 
-<a id="s72"></a> **S72**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s72"></a> **S72**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s73"></a> **S73**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s73"></a> **S73**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 224; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities.
 
-<a id="s74"></a> **S74**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s74"></a> **S74**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 224; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:assets_equal_equity_and_liabilities.
 
-<a id="s75"></a> **S75**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s75"></a> **S75**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s76"></a> **S76**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s76"></a> **S76**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 8; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s77"></a> **S77**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s77"></a> **S77**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s78"></a> **S78**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s78"></a> **S78**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 225; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s79"></a> **S79**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s79"></a> **S79**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s80"></a> **S80**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s80"></a> **S80**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
 <a id="s81"></a> **S81**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s82"></a> **S82**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s82"></a> **S82**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s83"></a> **S83**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s83"></a> **S83**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s84"></a> **S84**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s84"></a> **S84**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s85"></a> **S85**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s85"></a> **S85**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s86"></a> **S86**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s86"></a> **S86**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s87"></a> **S87**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s87"></a> **S87**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s88"></a> **S88**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s88"></a> **S88**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s89"></a> **S89**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s89"></a> **S89**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s90"></a> **S90**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s90"></a> **S90**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s91"></a> **S91**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+<a id="s91"></a> **S91**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
 
-<a id="s92"></a> **S92**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 1; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); standalone; PKR/share, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s92"></a> **S92**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
 
-<a id="s93"></a> **S93**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 34; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (nine_months); consolidated; shares, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+<a id="s93"></a> **S93**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+
+<a id="s94"></a> **S94**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+
+<a id="s95"></a> **S95**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+
+<a id="s96"></a> **S96**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+
+<a id="s97"></a> **S97**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+
+<a id="s98"></a> **S98**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+
+<a id="s99"></a> **S99**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2024-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+
+<a id="s100"></a> **S100**: [psx:260900](https://dps.psx.com.pk/download/document/260900.pdf), page 229; published 2025-10-03; retrieved 2026-08-24; period 2025-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+
+<a id="s101"></a> **S101**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 12; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); consolidated; PKR, PKR; admitted_checked; checks: source_structure_and_raw_scale;upstream:cash_flow_subtotal.
+
+<a id="s102"></a> **S102**: [psx:281722](https://dps.psx.com.pk/download/document/281722.pdf), page 1; published 2026-08-27; retrieved 2026-09-08; period 2026-06-30 (annual); standalone; PKR/share, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+
+<a id="s103"></a> **S103**: [psx:264643](https://dps.psx.com.pk/download/document/264643.pdf), page 30; published 2025-10-31; retrieved 2026-08-24; period 2025-09-30 (quarter); consolidated; shares, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
+
+<a id="s104"></a> **S104**: [psx:276353](https://dps.psx.com.pk/download/document/276353.pdf), page 34; published 2026-04-30; retrieved 2026-10-12; period 2026-03-31 (nine_months); consolidated; shares, PKR; collected_checked; checks: cross_check_unavailable;source_structure_and_raw_scale.
