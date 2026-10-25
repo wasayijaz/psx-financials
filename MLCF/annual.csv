@@ -99,10 +99,12 @@ income_statement,operating_profit,Operating profit,consolidated,PKR,PKR,,1307446
 income_statement,other_expenses,Other expenses,consolidated,PKR,PKR,,,,-1418766000,-1393836000
 income_statement,other_income,Other income,consolidated,PKR,PKR,60209000,147320000,,2017826000,1262883000
 income_statement,profit_after_tax,Profit after taxation,consolidated,PKR,PKR,,5770762000,6919777000,11503278000,12564675000
+income_statement,profit_after_tax,Profit for the year,standalone,PKR,PKR,,4491669000,5272527000,,
 income_statement,profit_after_tax_attributable,Equity holders of the Holding Company,consolidated,PKR,PKR,,,6891064000,11503305000,11884079000
 income_statement,profit_after_tax_non_controlling,Non-controlling interests,consolidated,PKR,PKR,,,,-27000,680596000
 income_statement,profit_before_tax,Profit before income tax,consolidated,PKR,PKR,,10693640000,10760303000,16329735000,19960083000
 income_statement,revenue,Revenue,consolidated,PKR,PKR,48519622000,62075259000,66452348000,68653999000,85145871000
+income_statement,revenue,Revenue 35,standalone,PKR,PKR,,62075259000,66452348000,,
 income_statement,selling_distribution_expenses,Distribution cost,consolidated,PKR,PKR,-1483876000,-2001499000,,-4133510000,-2982727000
 income_statement,supplemental_reported_finance_cost_net,Finance cost - net,consolidated,PKR,PKR,,,,-1918189000,-3969242000
 income_statement,supplemental_reported_finance_income,Finance income,consolidated,PKR,PKR,,,,1093357000,624928000

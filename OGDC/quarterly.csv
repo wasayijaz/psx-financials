@@ -1,7 +1,10 @@
-statement,line_item,reported_label,basis,unit,currency,2024-09-30|quarter,2025-03-31|quarter,2025-09-30|quarter,2026-03-31|nine_months,2026-03-31|quarter
-balance_sheet,total_equity,TOTAL EQUITY,consolidated,PKR,PKR,,,,1407292779000,
-balance_sheet,total_equity,Total equity,standalone,PKR,PKR,1291401819000,,1385951763000,,
-income_statement,basic_eps,Earnings per share -basic and diluted (Rupees),consolidated,PKR/share,PKR,9.54,10.96,8.91,,9.82
-income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,41019911000,47149242000,38304846000,,42243457000
-income_statement,revenue,Sales- net,consolidated,PKR,PKR,106010995000,104483920000,96191968000,,107297009000
-other,weighted_average_shares,Average number of shares outstanding during the period,consolidated,shares,PKR,,4300928000,,,4300928000
+statement,line_item,reported_label,basis,unit,currency,2017-09-30|quarter,2017-12-31|half_year,2017-12-31|quarter,2018-09-30|quarter,2018-12-31|half_year,2018-12-31|quarter,2019-09-30|quarter,2024-09-30|quarter,2025-03-31|quarter,2025-09-30|quarter,2026-03-31|nine_months,2026-03-31|quarter
+balance_sheet,total_equity,TOTAL EQUITY,consolidated,PKR,PKR,,,,,,,,,,,1407292779000,
+balance_sheet,total_equity,SHARE CAPITAL AND RESERVES (total of the rows above),standalone,PKR,PKR,,,,,,,652681267000,1291401819000,,1385951763000,,
+income_statement,basic_eps,Earnings per share -basic and diluted (Rupees),consolidated,PKR/share,PKR,,,,,,,,9.54,10.96,8.91,,9.82
+income_statement,basic_eps,Earnings per share - basic and diluted (Rupees) 19,standalone,PKR/share,PKR,3.95,8.53,4.57,6.22,13.2,6.98,6.35,,,,,
+income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,,,,,,,,41019911000,47149242000,38304846000,,42243457000
+income_statement,profit_after_tax,Profit for the period,standalone,PKR,PKR,,36671577000,19662050000,,56756358000,30021361000,27316350000,,,,,
+income_statement,revenue,Sales- net,consolidated,PKR,PKR,,,,,,,,106010995000,104483920000,96191968000,,107297009000
+income_statement,revenue,Sales - net 16,standalone,PKR,PKR,43962395000,95960267000,51997872000,61799189000,126897761000,65098572000,66203989000,,,,,
+other,weighted_average_shares,Average number of shares outstanding during the period,consolidated,shares,PKR,,,,,,,,,4300928000,,,4300928000

@@ -50,10 +50,10 @@
       ],
       "collected": 212,
       "exclusions": {
-        "annual_floor_not_checked": 28,
+        "annual_floor_not_checked": 32,
         "missing_or_future_retrieval_date": 4,
-        "missing_publication_date": 389,
-        "not_eligible_reconciliation": 227,
+        "missing_publication_date": 392,
+        "not_eligible_reconciliation": 233,
         "outside_historical_statement_scope": 46
       },
       "facts": 236,
@@ -61,7 +61,7 @@
       "half_years": [
         "2025-06-30"
       ],
-      "missing_publication_observations": 326,
+      "missing_publication_observations": 331,
       "name": "The Bank of Punjab",
       "nine_months": [
         "2024-09-30",
@@ -89,11 +89,11 @@
       ],
       "collected": 171,
       "exclusions": {
-        "annual_floor_not_checked": 7,
+        "annual_floor_not_checked": 32,
         "duplicate_or_admitted_precedence": 9,
         "incomplete_batch_envelope": 143,
-        "missing_publication_date": 1389,
-        "not_eligible_reconciliation": 139,
+        "missing_publication_date": 1371,
+        "not_eligible_reconciliation": 169,
         "outside_historical_statement_scope": 3,
         "superseded_batch": 261
       },
@@ -103,7 +103,7 @@
         "2024-12-31",
         "2025-12-31"
       ],
-      "missing_publication_observations": 935,
+      "missing_publication_observations": 941,
       "name": "Cnergyico PK  Limited",
       "nine_months": [
         "2025-03-31",
@@ -127,26 +127,42 @@
       "annual_years": [
         "2026"
       ],
-      "collected": 13,
+      "collected": 63,
       "exclusions": {
-        "annual_floor_not_checked": 3,
-        "duplicate_or_admitted_precedence": 7,
-        "missing_or_future_retrieval_date": 99,
-        "missing_publication_date": 593,
+        "annual_floor_not_checked": 7,
+        "duplicate_or_admitted_precedence": 22,
+        "missing_or_future_retrieval_date": 132,
+        "missing_publication_date": 742,
         "missing_unit_or_currency": 11,
-        "not_eligible_reconciliation": 2137,
+        "not_eligible_reconciliation": 2250,
         "raw_value_not_numeric": 2
       },
-      "facts": 20,
+      "facts": 70,
       "fiscal_year_end": "06-30",
-      "half_years": [],
-      "missing_publication_observations": 483,
+      "half_years": [
+        "2017-12-31",
+        "2018-12-31",
+        "2019-12-31"
+      ],
+      "missing_publication_observations": 581,
       "name": "D.G. Khan Cement Company Limited",
       "nine_months": [
+        "2018-03-31",
+        "2019-03-31",
+        "2020-03-31",
         "2025-03-31",
         "2026-03-31"
       ],
       "quarters": [
+        "2017-09-30",
+        "2017-12-31",
+        "2018-03-31",
+        "2018-09-30",
+        "2018-12-31",
+        "2019-03-31",
+        "2019-09-30",
+        "2019-12-31",
+        "2020-03-31",
         "2025-03-31",
         "2026-03-31"
       ],
@@ -164,14 +180,14 @@
       "exclusions": {
         "invalid_number": 6,
         "missing_or_future_retrieval_date": 38,
-        "missing_publication_date": 61,
+        "missing_publication_date": 101,
         "missing_unit_or_currency": 260,
         "outside_historical_statement_scope": 4
       },
       "facts": 0,
       "fiscal_year_end": "12-31",
       "half_years": [],
-      "missing_publication_observations": 53,
+      "missing_publication_observations": 77,
       "name": "Engro Holdings Limited",
       "nine_months": [],
       "quarters": [],
@@ -184,16 +200,16 @@
         "2024",
         "2025"
       ],
-      "collected": 386,
+      "collected": 400,
       "exclusions": {
         "collected_conflict": 8,
         "duplicate_or_admitted_precedence": 55,
         "missing_or_future_retrieval_date": 173,
         "missing_publication_date": 23,
-        "not_eligible_reconciliation": 524,
+        "not_eligible_reconciliation": 532,
         "superseded_batch": 21
       },
-      "facts": 394,
+      "facts": 408,
       "fiscal_year_end": "12-31",
       "half_years": [
         "2023-06-30",
@@ -202,10 +218,15 @@
       "missing_publication_observations": 16,
       "name": "Fauji Fertilizer Company Limited",
       "nine_months": [
+        "2018-09-30",
         "2023-09-30",
         "2024-09-30"
       ],
       "quarters": [
+        "2017-09-30",
+        "2018-03-31",
+        "2018-09-30",
+        "2019-03-31",
         "2023-03-31",
         "2023-06-30",
         "2023-09-30",
@@ -286,15 +307,16 @@
       ],
       "collected": 10,
       "exclusions": {
+        "annual_floor_not_checked": 13,
         "duplicate_or_admitted_precedence": 89,
-        "missing_publication_date": 352,
-        "not_eligible_reconciliation": 56,
+        "missing_publication_date": 918,
+        "not_eligible_reconciliation": 265,
         "superseded_batch": 32
       },
       "facts": 84,
       "fiscal_year_end": "06-30",
       "half_years": [],
-      "missing_publication_observations": 270,
+      "missing_publication_observations": 629,
       "name": "The Hub Power Company Limited",
       "nine_months": [],
       "quarters": [],
@@ -308,27 +330,40 @@
     "LUCK": {
       "admitted": 0,
       "annual_years": [],
-      "collected": 22,
+      "collected": 60,
       "exclusions": {
-        "annual_floor_not_checked": 13,
-        "duplicate_or_admitted_precedence": 6,
+        "annual_floor_not_checked": 19,
+        "duplicate_or_admitted_precedence": 10,
         "incomplete_batch_envelope": 1,
         "missing_or_future_retrieval_date": 53,
-        "missing_publication_date": 885,
+        "missing_publication_date": 906,
         "missing_unit_or_currency": 2,
-        "not_eligible_reconciliation": 761,
+        "not_eligible_reconciliation": 795,
         "outside_historical_statement_scope": 5
       },
-      "facts": 22,
+      "facts": 60,
       "fiscal_year_end": "06-30",
       "half_years": [
+        "2017-12-31",
+        "2018-12-31",
+        "2019-12-31",
         "2021-12-31",
         "2022-12-31"
       ],
-      "missing_publication_observations": 713,
+      "missing_publication_observations": 729,
       "name": "Lucky Cement Limited",
-      "nine_months": [],
+      "nine_months": [
+        "2019-03-31",
+        "2020-03-31"
+      ],
       "quarters": [
+        "2017-12-31",
+        "2018-09-30",
+        "2018-12-31",
+        "2019-03-31",
+        "2019-09-30",
+        "2019-12-31",
+        "2020-03-31",
         "2020-09-30",
         "2020-12-31",
         "2021-09-30",
@@ -403,31 +438,35 @@
         "2025",
         "2026"
       ],
-      "collected": 361,
+      "collected": 442,
       "exclusions": {
         "annual_floor_not_checked": 5,
-        "duplicate_or_admitted_precedence": 104,
-        "missing_or_future_retrieval_date": 1702,
-        "missing_publication_date": 291,
+        "duplicate_or_admitted_precedence": 108,
+        "missing_or_future_retrieval_date": 1672,
+        "missing_publication_date": 319,
         "missing_unit_or_currency": 6,
-        "not_eligible_reconciliation": 1670,
+        "not_eligible_reconciliation": 1722,
         "outside_historical_statement_scope": 4,
         "raw_value_not_numeric": 1,
         "superseded_batch": 370
       },
-      "facts": 533,
+      "facts": 614,
       "fiscal_year_end": "06-30",
       "half_years": [
+        "2017-12-31",
+        "2018-12-31",
         "2024-12-31",
         "2025-12-31"
       ],
-      "missing_publication_observations": 281,
+      "missing_publication_observations": 283,
       "name": "Maple Leaf Cement Factory Limited",
       "nine_months": [
         "2025-03-31",
         "2026-03-31"
       ],
       "quarters": [
+        "2017-12-31",
+        "2018-12-31",
         "2024-09-30",
         "2024-12-31",
         "2025-03-31",
@@ -518,23 +557,32 @@
         "2025",
         "2026"
       ],
-      "collected": 20,
+      "collected": 40,
       "exclusions": {
-        "duplicate_or_admitted_precedence": 21,
+        "duplicate_or_admitted_precedence": 22,
         "incomplete_batch_envelope": 242,
         "missing_or_future_retrieval_date": 116,
-        "not_eligible_reconciliation": 346
+        "missing_publication_date": 8,
+        "not_eligible_reconciliation": 358
       },
-      "facts": 70,
+      "facts": 90,
       "fiscal_year_end": "06-30",
-      "half_years": [],
-      "missing_publication_observations": 0,
+      "half_years": [
+        "2017-12-31",
+        "2018-12-31"
+      ],
+      "missing_publication_observations": 4,
       "name": "Oil & Gas Development Company Limited",
       "nine_months": [
         "2025-03-31",
         "2026-03-31"
       ],
       "quarters": [
+        "2017-09-30",
+        "2017-12-31",
+        "2018-09-30",
+        "2018-12-31",
+        "2019-09-30",
         "2024-09-30",
         "2025-03-31",
         "2025-09-30",
@@ -627,15 +675,15 @@
       ],
       "collected": 122,
       "exclusions": {
-        "annual_floor_not_checked": 26,
+        "annual_floor_not_checked": 20,
         "arithmetic_failed_or_unsupported": 816,
         "collected_conflict": 12,
         "duplicate_or_admitted_precedence": 9,
         "held_or_rejected_batch": 114,
         "incomplete_batch_envelope": 413,
         "missing_or_future_retrieval_date": 179,
-        "missing_publication_date": 356,
-        "not_eligible_reconciliation": 274,
+        "missing_publication_date": 576,
+        "not_eligible_reconciliation": 346,
         "raw_value_not_numeric": 6,
         "superseded_batch": 62
       },
@@ -646,7 +694,7 @@
         "2018-12-31",
         "2019-12-31"
       ],
-      "missing_publication_observations": 279,
+      "missing_publication_observations": 383,
       "name": "Pakistan State Oil Company Limited",
       "nine_months": [
         "2018-03-31",
@@ -687,15 +735,15 @@
         "annual_floor_not_checked": 40,
         "duplicate_or_admitted_precedence": 5,
         "missing_or_future_retrieval_date": 112,
-        "missing_publication_date": 329,
-        "not_eligible_reconciliation": 457,
+        "missing_publication_date": 341,
+        "not_eligible_reconciliation": 458,
         "outside_historical_statement_scope": 31,
         "raw_value_not_numeric": 2
       },
       "facts": 36,
       "fiscal_year_end": "12-31",
       "half_years": [],
-      "missing_publication_observations": 304,
+      "missing_publication_observations": 312,
       "name": "United Bank Limited",
       "nine_months": [],
       "quarters": [],
@@ -707,24 +755,24 @@
     }
   },
   "conflict_observations": 38,
-  "data_cutoff": "2026-10-23",
-  "facts": 2289,
+  "data_cutoff": "2026-10-25",
+  "facts": 2492,
   "input_files": [
     {
       "input": "admitted/state/company_documents.json",
-      "sha256": "bd11781014db13a177058dce427ad1f306592cbcb66fd9f1c30ee423d9325e4f"
+      "sha256": "e47c6b873abe7940391e9f72b6e7059437de53cea2f55b475fb1e1af0d3310fa"
     },
     {
       "input": "admitted/state/company_financial_series.json",
-      "sha256": "6347bf4d5895583d90a46b499fcbadbabe8a5cd859ba96a6017874b8cb742024"
+      "sha256": "85afeccba928fbc099c65eac32ae43d748f986939fd834bbde5cf6a143e96d05"
     },
     {
       "input": "admitted/state/company_intel/annual_data_floor.json",
-      "sha256": "9655dbae8243f4807485f2018458cc382b0319c0f9d1c5084096c910bd85786c"
+      "sha256": "76f484f248e240c198dea43315f99996ca9ee6145befbfc699dfbc33a7e0a4a8"
     },
     {
       "input": "admitted/state/company_intel/financial_evidence_reconciliation.json",
-      "sha256": "0a1b2afc185a6862687455bedd8a8598646b38c56c3117ad3e875afc0033709f"
+      "sha256": "eceb7890659b3ffb8f03201f25183f85ad10d155fa32110e012d604d1e77e5ec"
     },
     {
       "input": "admitted/state/universe.json",
@@ -1383,6 +1431,18 @@
       "sha256": "09839bcfa8042da8cfe66f0190bad55d521cb80408aec8b430d71eca34cd8426"
     },
     {
+      "input": "collected/bop-fy2017-fy2018-statement-core-20261023-v1-a2/checks.json",
+      "sha256": "28d40e22f464ac1b5d3ad82a6e2cee65801aaa03e655f0099892bc15add81c13"
+    },
+    {
+      "input": "collected/bop-fy2017-fy2018-statement-core-20261023-v1-a2/manifest.json",
+      "sha256": "56d987ad5db3452a3471e48b3679c2ec6bbe0ba1f63e45e339996d144a14cc0c"
+    },
+    {
+      "input": "collected/bop-fy2017-fy2018-statement-core-20261023-v1-a2/records.json",
+      "sha256": "9d3c14c62f36a38a50959cfca030e09c87ec71fa3b14088f97b771ef6a229422"
+    },
+    {
       "input": "collected/bop-hy2025-reviewed-20261016/checks.json",
       "sha256": "7aa036f8cd7802cdc0d0eec4949b495c92d8ed805a5b9363986527ecae3aff70"
     },
@@ -1417,6 +1477,30 @@
     {
       "input": "collected/bop-sep2025-reviewed-20261016/records.json",
       "sha256": "06499913c513693d4a18839911767616fa4dad12b5b0760f597c2af1de7d05f1"
+    },
+    {
+      "input": "collected/cnergy-fy2024-consolidated-equity-operand-20261023-v1-f1/checks.json",
+      "sha256": "12fc380abc3eedf5e1b53232de152607f4c480960fd12be54009b9766122d1b6"
+    },
+    {
+      "input": "collected/cnergy-fy2024-consolidated-equity-operand-20261023-v1-f1/manifest.json",
+      "sha256": "aed3c45f75480d43301e438ca79b282abf58d012589007bd5492e623070101b9"
+    },
+    {
+      "input": "collected/cnergy-fy2024-consolidated-equity-operand-20261023-v1-f1/records.json",
+      "sha256": "105f2e71ec91add57a9b95fc2c5ef5825a527ae8001324cba30b9779f9eef2a0"
+    },
+    {
+      "input": "collected/cnergy-fy2024-fy2025-core-supplement-20261023-v1-a2/checks.json",
+      "sha256": "c8320fdb579dd681dab78cd919bc071599d59c1f5965c5ee6fc2e38b318f4e59"
+    },
+    {
+      "input": "collected/cnergy-fy2024-fy2025-core-supplement-20261023-v1-a2/manifest.json",
+      "sha256": "736c1e8f80696ba6543d2d2e52c27f23834772747cd72d8a0cb8cfb6bf7e23b9"
+    },
+    {
+      "input": "collected/cnergy-fy2024-fy2025-core-supplement-20261023-v1-a2/records.json",
+      "sha256": "8d985e23740298587c7713a6517b654c71fef6baa0770f042a60dc700e285955"
     },
     {
       "input": "collected/cnergy-fy23-q1-actual-quarter-20261022-v1/checks.json",
@@ -1623,6 +1707,78 @@
       "sha256": "47983a1bc6e4e01a853f91549a4c3db6d0bbcecebc997303757a76666dc0d9e6"
     },
     {
+      "input": "collected/dgkc-2018-09-30-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "6311d98b19c2e73c8941f8f5daacb1100b8a83d46316aab0f3fc93b527f71ee7"
+    },
+    {
+      "input": "collected/dgkc-2018-09-30-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "6ca1532b1ea229a473b5526849665a9693868c7f3e6df86ecdc24d11055773ea"
+    },
+    {
+      "input": "collected/dgkc-2018-09-30-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "57b9f3ae28195f1a8d6cc71b1393dcf35dc9108ae38ca69dff127b8ea7d282be"
+    },
+    {
+      "input": "collected/dgkc-2018-12-31-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "a03bcc94379dfadf554b6e44cdfb95b0bbc05a5a9e592498a48c1b2335e91818"
+    },
+    {
+      "input": "collected/dgkc-2018-12-31-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "734053bc0654024d45dc6efee87df50693c4f9edcc147c30424b5d6bda9e0d2d"
+    },
+    {
+      "input": "collected/dgkc-2018-12-31-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "55ba54d1f2afc365cdf9b210324b073a585c1a0a6cf80eeec1e4e6f4c046b6e7"
+    },
+    {
+      "input": "collected/dgkc-2019-03-31-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "153a36b69471163792208c776186270d7cddaad84cff0bfdd59244a4047984bf"
+    },
+    {
+      "input": "collected/dgkc-2019-03-31-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "74a9df9f091124399d73b2ede9fe04f635f6c36c0262dd835a5334929c9a9d1c"
+    },
+    {
+      "input": "collected/dgkc-2019-03-31-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "b64d1225a8af6752e5e55ddf74e24d33edda758db227f65c0b6b65cf1deab6b5"
+    },
+    {
+      "input": "collected/dgkc-2019-09-30-quarter-full-20261021-v2-f1/checks.json",
+      "sha256": "7cc689e40036efe953f3cd20563b720a044a59e3e1739e32069763319598012a"
+    },
+    {
+      "input": "collected/dgkc-2019-09-30-quarter-full-20261021-v2-f1/manifest.json",
+      "sha256": "ab4a7b9e7c6b5be74233b892031c3ff41717a3b0ec323f2cce659a0fc90110c0"
+    },
+    {
+      "input": "collected/dgkc-2019-09-30-quarter-full-20261021-v2-f1/records.json",
+      "sha256": "6e4cefeb1b736bb9301639fa027b4dbc6bd56542c887f19e3d3407c1ac9f9a41"
+    },
+    {
+      "input": "collected/dgkc-2019-12-31-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "867e7e9b331247efdc436f586a23d084146dcb9be59eb11ff31956ffe259ea16"
+    },
+    {
+      "input": "collected/dgkc-2019-12-31-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "7a922d54c2aaf4184a6ab10868df7663fd3bf1dc573683f5c49bd87e15e2569a"
+    },
+    {
+      "input": "collected/dgkc-2019-12-31-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "e19221336f6a5f2064b09f2217e2c542f350d8b120ae8b1ec6601e93ff61ee18"
+    },
+    {
+      "input": "collected/dgkc-2020-03-31-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "5b9afe5e2db3ae3f7ad0d4a1a4beee8d944470711f75b304da97cceed89a634e"
+    },
+    {
+      "input": "collected/dgkc-2020-03-31-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "0e3727fc019c9247d7f85e66137d865968de31e5dc65a283676eee1bd7600a82"
+    },
+    {
+      "input": "collected/dgkc-2020-03-31-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "4e481c6184d7afbd0b2fcc1629eaed32ce98248f1e1b6fbbffaf8dbea3f7c478"
+    },
+    {
       "input": "collected/dgkc-2020-09-30-quarter-full-20261021-v1-fast20261023v1-n1/checks.json",
       "sha256": "13b80cb38f5aa778e3629c97ef148bebd356ed91cc10d1e5c234a65de89232f3"
     },
@@ -1767,6 +1923,54 @@
       "sha256": "b3e066e5d3b11b8b9bf525b290ba40c8a090c2102ce81445f500d7e6b418e2ac"
     },
     {
+      "input": "collected/dgkc-final-quarter-5b6e9821ad13-20261023-v2-clock-v1-f1/checks.json",
+      "sha256": "15db1f3d6dcdc05267c830216ef71e7f0dd16bc202fbd5591ceac7bd520ad5f3"
+    },
+    {
+      "input": "collected/dgkc-final-quarter-5b6e9821ad13-20261023-v2-clock-v1-f1/manifest.json",
+      "sha256": "20f4e5b0b5046dee8b5c5d51e69d22aeb15a211b1d9e2b7b2c967ad53cce6aab"
+    },
+    {
+      "input": "collected/dgkc-final-quarter-5b6e9821ad13-20261023-v2-clock-v1-f1/records.json",
+      "sha256": "d843b5ea115679d279e11c0d6972496ab489ec0216c81e86ee20d47182a80731"
+    },
+    {
+      "input": "collected/dgkc-final-quarter-812f27b95693-20261023-v2-clock-v1-f1/checks.json",
+      "sha256": "5bab86c60e48d1f4f26d602ca73f37bbebe96db3601994bfffdde44cc4aeb258"
+    },
+    {
+      "input": "collected/dgkc-final-quarter-812f27b95693-20261023-v2-clock-v1-f1/manifest.json",
+      "sha256": "7e3929212319a4c0331c770ba30224f384b452547ba36072b4f89b63a26563ad"
+    },
+    {
+      "input": "collected/dgkc-final-quarter-812f27b95693-20261023-v2-clock-v1-f1/records.json",
+      "sha256": "40b582062acf5c1183a5785cba8438ecbe8ca9352a04756cc0bf57729462a4f0"
+    },
+    {
+      "input": "collected/dgkc-final-quarter-8dec921d376f-20261023-v2-clock-v1-f1/checks.json",
+      "sha256": "5a2ca89da68712cd45a188d9f0bdf0bfb532b21832f2f3a14ee54bc2d0fbe087"
+    },
+    {
+      "input": "collected/dgkc-final-quarter-8dec921d376f-20261023-v2-clock-v1-f1/manifest.json",
+      "sha256": "5d787186eb391dde8d62d368a3b6f079294c86eeaaf588357015f1143c402b09"
+    },
+    {
+      "input": "collected/dgkc-final-quarter-8dec921d376f-20261023-v2-clock-v1-f1/records.json",
+      "sha256": "8326e1dfe815523d3ab727f7956718c683cde85fc973a8c4326170570d61fdde"
+    },
+    {
+      "input": "collected/dgkc-fy17-fy18-annual-gap-20261023-v1-a2/checks.json",
+      "sha256": "b52ca445ea393d94a7294e1841bf8237196eec1c1b6aab48f38ede405db64c36"
+    },
+    {
+      "input": "collected/dgkc-fy17-fy18-annual-gap-20261023-v1-a2/manifest.json",
+      "sha256": "7eb281afd8ecb5264b0b5ca6605831d05cf32d0adfbc6e65c756b68d459a1370"
+    },
+    {
+      "input": "collected/dgkc-fy17-fy18-annual-gap-20261023-v1-a2/records.json",
+      "sha256": "24dd39f587f6bea7122b71a3dcca48340fb3cead2d2acdc5a81ed413a9a95e02"
+    },
+    {
       "input": "collected/dgkc-fy26-annual-calendar-anchor-root-20261023-v5-n1/checks.json",
       "sha256": "f85e7fd533f5efe6b866d04dc2f553ec1d16b48288cf2442f27784bbc671cff4"
     },
@@ -1777,6 +1981,18 @@
     {
       "input": "collected/dgkc-fy26-annual-calendar-anchor-root-20261023-v5-n1/records.json",
       "sha256": "e60ac940c545733c28c77084fb2cc3c8d3e557e1a1749d813a3cdddb6d1b7c28"
+    },
+    {
+      "input": "collected/dgkc-psx-annual-core-wave-20261023-v1-f1/checks.json",
+      "sha256": "ca232fc8d70438aabee19778846dcb997dec1f9ba66e3af09849c1ae812f6208"
+    },
+    {
+      "input": "collected/dgkc-psx-annual-core-wave-20261023-v1-f1/manifest.json",
+      "sha256": "4f4a6dfbd68a30dd79827a40923487adb3691655732f6b0b1355916bf521eb90"
+    },
+    {
+      "input": "collected/dgkc-psx-annual-core-wave-20261023-v1-f1/records.json",
+      "sha256": "f9c246999c002634f33e99e14b71deb3219fa2076bb3b7b5008c929d295b0302"
     },
     {
       "input": "collected/engroh-annual-capture-wave-20261019/checks.json",
@@ -1813,6 +2029,54 @@
     {
       "input": "collected/engroh-recent-annual-reverified-20261019-v1/records.json",
       "sha256": "ad1e8e3a066e84a635ce1a96fc5ec9854305a447978f6b5fb99e39543901ef0a"
+    },
+    {
+      "input": "collected/engroh-v1-summary-core-164324-annual-20261023-v2-e1/checks.json",
+      "sha256": "4183226bca9e9efb7c5d69152635686ef0c26dd998f2c779928b9457b22d2d99"
+    },
+    {
+      "input": "collected/engroh-v1-summary-core-164324-annual-20261023-v2-e1/manifest.json",
+      "sha256": "2b84facf0e8a1226a4f5dd353dd451236b463b67c8584e6e6b9c2f69303931a5"
+    },
+    {
+      "input": "collected/engroh-v1-summary-core-164324-annual-20261023-v2-e1/records.json",
+      "sha256": "a99b99e6d939ecdc33939d7954afc4646496a10da075f2480a02c71ffc1f0734"
+    },
+    {
+      "input": "collected/engroh-v1-summary-core-205168-annual-20261023-v2-e1/checks.json",
+      "sha256": "36028a3aabb300b7188e0e59d33e811f0933ff772319df8b9a5608df3bf8c205"
+    },
+    {
+      "input": "collected/engroh-v1-summary-core-205168-annual-20261023-v2-e1/manifest.json",
+      "sha256": "ce364870fcba13b140a310dd29e7c31673f1184b8f942c635e3150268b945329"
+    },
+    {
+      "input": "collected/engroh-v1-summary-core-205168-annual-20261023-v2-e1/records.json",
+      "sha256": "c7c4b2f423cfde27d6efd8064724609ac171fa92bda3aa074e71b73e8217cd3f"
+    },
+    {
+      "input": "collected/ffc-2018-09-30-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "c1c771d1d5825e0bd7cc200c4c6e01d349e41cbce18938acfcb8d7271f375b68"
+    },
+    {
+      "input": "collected/ffc-2018-09-30-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "f87616ca95a150d420b9a17ac54ec72211f1616afe7d42319f8ae6ba68678d8a"
+    },
+    {
+      "input": "collected/ffc-2018-09-30-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "e754dbc84bd3e17faf2da91733fe219768202b09309ffbc50b5c682669159f1c"
+    },
+    {
+      "input": "collected/ffc-2019-03-31-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "9cb3d9b737053f67179e17cb77f04f9fccecf1b4bf7ea71f113851b9f204ccdf"
+    },
+    {
+      "input": "collected/ffc-2019-03-31-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "c190bfce7fe0ba6f08cc1f9e7d3c22c431888cb00877d61bf8d9da59a747c4ee"
+    },
+    {
+      "input": "collected/ffc-2019-03-31-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "c9ffbd29b11138ae7779cab57279cee53061f5b5aa4eb3affff07083c217f953"
     },
     {
       "input": "collected/ffc-2020-06-30-quarter-full-20261021-v3-fast20261023v1/checks.json",
@@ -5259,6 +5523,18 @@
       "sha256": "1fc4f676b3191176f531ca5675860cd27dec2f16fb0c9d941619a2b53f30ee43"
     },
     {
+      "input": "collected/hubc-annual-core-wave-20261023-v1-f1/checks.json",
+      "sha256": "f59a8cae53f8f23c045ca06435c3a3068cff4c7716951a2dd24424709839a321"
+    },
+    {
+      "input": "collected/hubc-annual-core-wave-20261023-v1-f1/manifest.json",
+      "sha256": "b2c08def40e1318c2c081317865bd4b3b45a35fdb4b8535ff28dc3541b2ab250"
+    },
+    {
+      "input": "collected/hubc-annual-core-wave-20261023-v1-f1/records.json",
+      "sha256": "1500f3d84bbbaab7d6badfb8ad5bc155db727f78a7cf0197ae850a9505429915"
+    },
+    {
       "input": "collected/hubc-financial-backfill-20261016-v1/checks.json",
       "sha256": "c8788d79748bc576ecef51e983e15dde3cc70e6a5b824de0c48f35692d1f7f54"
     },
@@ -5281,6 +5557,18 @@
     {
       "input": "collected/hubc-financial-backfill-20261016-v2/records.json",
       "sha256": "bf574cb74de9e8cb4fd84a25a174cbfde2aaecdb7fd609299b9225240677ddc5"
+    },
+    {
+      "input": "collected/hubc-fy17-fy24-annual-exclusive-20261023-v1-e1/checks.json",
+      "sha256": "1a406d061630ce5f3786a072f53b78bc2df048d44ebd1d877661380791108542"
+    },
+    {
+      "input": "collected/hubc-fy17-fy24-annual-exclusive-20261023-v1-e1/manifest.json",
+      "sha256": "9388b9e08a6298a6aa158ee9d3e2e56234eb399e770d20a4cdc181bbdbed0189"
+    },
+    {
+      "input": "collected/hubc-fy17-fy24-annual-exclusive-20261023-v1-e1/records.json",
+      "sha256": "6d4267dad8ec29b8c92dffd3c1a8307243aca01ff9772d7eafe37016fc537421"
     },
     {
       "input": "collected/hubc-fy2024-reviewed-20261016/checks.json",
@@ -5341,6 +5629,54 @@
     {
       "input": "collected/hubc-q1-reviewed-20261016/records.json",
       "sha256": "d2492a4f452951803588887ec0bd6fc8ac996f9e6c66b089d3ecdd8afb79474b"
+    },
+    {
+      "input": "collected/luck-2018-12-31-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "13003c688c9724b586a30d43ad49df02f939c3b8e993cecb9fbb3ad0e7272505"
+    },
+    {
+      "input": "collected/luck-2018-12-31-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "4b061e91dd0ed4f0f71b368121dd7a0a97f7753c0e8f3f5f65cf1b5c884afd4f"
+    },
+    {
+      "input": "collected/luck-2018-12-31-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "c0f635febc084154a39c595bdf8b75874ac14f13146f58b929d4081b6d8bbb2b"
+    },
+    {
+      "input": "collected/luck-2019-09-30-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "671e92bec647d6633e007d9324c4715cbf7a0de35f9155a1cb5407ee24cc523b"
+    },
+    {
+      "input": "collected/luck-2019-09-30-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "3e2e549fe24303e3cd2d205b225c810abdb68da3b7daf26cbb5b9a38162cf606"
+    },
+    {
+      "input": "collected/luck-2019-09-30-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "092430e90c391217573a50dfc5ade933bf34aa9b3bb2ba91dc35dc52e6f24de1"
+    },
+    {
+      "input": "collected/luck-2019-12-31-quarter-full-20261021-v2-f1/checks.json",
+      "sha256": "31030babffbefed31877963b2fc5bfc572d23257dbdacddc363a42b72103ee1e"
+    },
+    {
+      "input": "collected/luck-2019-12-31-quarter-full-20261021-v2-f1/manifest.json",
+      "sha256": "fae5cc62634d6620d0dbceb5cc739936ef5c05c996981ccb03a1bb522335825e"
+    },
+    {
+      "input": "collected/luck-2019-12-31-quarter-full-20261021-v2-f1/records.json",
+      "sha256": "b92258329c4d2da34688c89dda165d578516ca31ee2a7dabd8efe0629dc71ff0"
+    },
+    {
+      "input": "collected/luck-2020-03-31-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "08e8e1e7df3875c6a4b71482dfe041f101f8fbf2cea9459706ece272b36a8031"
+    },
+    {
+      "input": "collected/luck-2020-03-31-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "80c8c3f5d2c7126a97d42f375708e48b96758c438a012896853a2810e0a4d2ed"
+    },
+    {
+      "input": "collected/luck-2020-03-31-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "25e4b656580e022d28fafb2cbf9d396b88f8b04dfcd1ab70b8cf885d1e3e8326"
     },
     {
       "input": "collected/luck-2020-09-30-quarter-full-20261021-v1-fast20261023v1/checks.json",
@@ -5547,6 +5883,18 @@
       "sha256": "0b009a33112b29498b5f6dd40901398d7e6737195e8acf28368bc99904d994b0"
     },
     {
+      "input": "collected/luck-psx-annual-core-wave-20261023-v1-f1/checks.json",
+      "sha256": "fdce8cba6897c448b1dee37742c04a8444743ec8ba69ea7145b5481f182318dd"
+    },
+    {
+      "input": "collected/luck-psx-annual-core-wave-20261023-v1-f1/manifest.json",
+      "sha256": "ba9b5567aa02065a03f65981013e4e49485f970d3a2269ff537ea30c7c579521"
+    },
+    {
+      "input": "collected/luck-psx-annual-core-wave-20261023-v1-f1/records.json",
+      "sha256": "c094db55645d50cbe4e9a5bdf2bc71776a82eb517a79ee19b332f78221a83f99"
+    },
+    {
       "input": "collected/luck-recent-annual-floor-net-completion-20261020-v1/checks.json",
       "sha256": "ffc3af71e1c0b3a2f77700663a06037244dd89e18212a46cdcc631952051c33f"
     },
@@ -5691,6 +6039,18 @@
       "sha256": "a086da13aa117567e70e081ee84bfa655e7be109027c0391aec93569604b69a9"
     },
     {
+      "input": "collected/mlcf-2018-12-31-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "ffc4e9b06b497e4b62720788b8f9e483606e78c177a8bd9b507c973e66f9181c"
+    },
+    {
+      "input": "collected/mlcf-2018-12-31-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "dd5fcbff5613b6055fed5e09709362596da342663128a419ae279e0234b1493d"
+    },
+    {
+      "input": "collected/mlcf-2018-12-31-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "f97c158158631cadda6befe4d241f64f9fa97213897bcfdf7d336b9c1c33791c"
+    },
+    {
       "input": "collected/mlcf-2020-03-31-extractor-corrected-20261023-v1-q1/checks.json",
       "sha256": "95736481e74db1a2f8229a9eb1bc6fa3758a0a60857b52fc54c2b3f605ba938a"
     },
@@ -5715,6 +6075,18 @@
       "sha256": "9f057933f28f16532b898d7140efd63484139cfe32eff1c141b8f244d75c8f49"
     },
     {
+      "input": "collected/mlcf-2024-06-30-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "52502c5af21ac70aea19cba258decd04d965aaa51835f4b53fc1151e84f3d899"
+    },
+    {
+      "input": "collected/mlcf-2024-06-30-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "83f54703993cede049a29e73a589b5bfe55e40ab6d3af096dd0605475cf8a0c4"
+    },
+    {
+      "input": "collected/mlcf-2024-06-30-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "e40541520061cc033ed443c97d3b319e394784b567cbf9e2d5b4ebd1f2f0dbf0"
+    },
+    {
       "input": "collected/mlcf-2025-03-31-quarter-full-20261021-v1-fast20261023v1/checks.json",
       "sha256": "02926bd701933989ceb78078ea21acec3641b0e632409119ca5478a8ab0aa4c0"
     },
@@ -5737,6 +6109,114 @@
     {
       "input": "collected/mlcf-december2025-quarter-full-20261021-v4-fast20261023v1/records.json",
       "sha256": "258ba372758dcddfbed0bf9ea966b2b85cb9cbd8f5250142e6179c93f2bd0d66"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-12bae3fe2cab-20261023-v2/checks.json",
+      "sha256": "33094b4eccb2cc259c7f1e5df0d5c27501bd89d7c4546ddb7a49148189817c8e"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-12bae3fe2cab-20261023-v2/manifest.json",
+      "sha256": "e7c865412ac88566bbd522ab7752e81de1650dad8bc431b04218ed239202ee98"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-12bae3fe2cab-20261023-v2/records.json",
+      "sha256": "591ff1b097ee023652ee932956397e34360ee1a8e8cc903b87b5d881c941e16f"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-1f481704e83b-20261023-v2/checks.json",
+      "sha256": "d1d3e24e2519bce2b2042f7edb0135a7268642fe35a123b558b3e756dd9ac2a7"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-1f481704e83b-20261023-v2/manifest.json",
+      "sha256": "3a130826bc423048860ffe541f8561e6f32046adddde0656d11fa32f78c6ec22"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-1f481704e83b-20261023-v2/records.json",
+      "sha256": "36a54223ecfbd73937835e6ecd7821cd0f5781c97b59ba4729176f596551defb"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-665371f855f8-20261023-v2/checks.json",
+      "sha256": "c587dba891826bf0c80985804ded3fce25f64d771286bf86a1c43a79b3910353"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-665371f855f8-20261023-v2/manifest.json",
+      "sha256": "bef19dd024cf4f049d2c27009d3e67b62a56ef3a3ef7c7a3e68775249c798b24"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-665371f855f8-20261023-v2/records.json",
+      "sha256": "4aaaf2edda844ec5ebead8f087241dda9789597de34ad9afc8beb5f2f7aad31e"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-9244d8064b63-20261023-v2/checks.json",
+      "sha256": "54bdac2b1d9ee527dd09a0e2764af10d68a8f14587121f6722f94d2c571bc935"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-9244d8064b63-20261023-v2/manifest.json",
+      "sha256": "b2f22875055100c56474379d702c2bf1fa38f28adb71c318244022bca0b3abdb"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-9244d8064b63-20261023-v2/records.json",
+      "sha256": "94efec16c7c9ddb4c851b1d35574b9ccbfc48bf6700725fba30323bc8f38ac93"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-a4e040860f1e-20261023-v2/checks.json",
+      "sha256": "833471f4f3cff2d43eab666e71ad573f2464e8d55a99aebb6598d7187d60c5b0"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-a4e040860f1e-20261023-v2/manifest.json",
+      "sha256": "3aa811b63e0cd18fe4ba4e98016a32483c1f9cc7d3f5d397b03caaba4b6012cc"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-a4e040860f1e-20261023-v2/records.json",
+      "sha256": "4fbe1f2d52af8dc6992d0bdfaf869c6cf573345457d0bd9198e268794acb5fed"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-a976904725b2-20261023-v2/checks.json",
+      "sha256": "802656a54968dceefeb29f0892b26c254659baae28e235bdfab99dec3eaa0256"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-a976904725b2-20261023-v2/manifest.json",
+      "sha256": "3e0ea5f6556d4bed8eadf6a3d879aa41eba319d619b1da74d8567d4d6678e2bb"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-a976904725b2-20261023-v2/records.json",
+      "sha256": "d42e30fc67574edc65f0766c95598a43e6c8b55aea05cf377b122ffb8e9a5ead"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-a9b3af235bf1-20261023-v2/checks.json",
+      "sha256": "a79e00c8aa87dcedab81608a1a110d8f9e4a91e3cf260357c99009cc08bee51b"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-a9b3af235bf1-20261023-v2/manifest.json",
+      "sha256": "b8c885eff1a2025c5cbf0a59f852976851b2b91d83a2b1722f76a3dece9610ab"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-a9b3af235bf1-20261023-v2/records.json",
+      "sha256": "7518f66e1e34fb360311b25af267e35509f77493ffd93ebef6e7cfae89e5875b"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-c71a38145aef-20261023-v2/checks.json",
+      "sha256": "c870da87868b7e150f488f11a74a1f56f3f5f23e43ef79307c791e5e5d8c328d"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-c71a38145aef-20261023-v2/manifest.json",
+      "sha256": "05aa876df1fd4c40c14ee041b47ab7198ed4a0f4423e027dbc21b6348a647191"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-c71a38145aef-20261023-v2/records.json",
+      "sha256": "532251992a74a355280fa6347129578894e73f8e4c1ecfc2835b58ca5c8c591d"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-fddc086a2d4f-20261023-v2/checks.json",
+      "sha256": "2353e426af687172e3ac5fb9e27d49054be6133bf83b21b0ce37943b868ed1df"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-fddc086a2d4f-20261023-v2/manifest.json",
+      "sha256": "be098c16f086f1a845d03645ed1ed308bb47782996eaa4290a2caf3d39eb3707"
+    },
+    {
+      "input": "collected/mlcf-final-quarter-fddc086a2d4f-20261023-v2/records.json",
+      "sha256": "3481d38c7a5430b8b4dc7f676bd2ca37bcb395ae06ffa1ee5af13aec4962dfc2"
     },
     {
       "input": "collected/mlcf-h1fy17-statement-faces-20261019-v1/checker-results.json",
@@ -6895,6 +7375,42 @@
       "sha256": "0297fe15e30eb68091d71f0e9c179b139389b891b5129dc4e40d80055ed6db8d"
     },
     {
+      "input": "collected/ogdc-2018-09-30-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "2afc6539515d82d6d0361a35516fba621f0c46b86d95e9b4bd9a6038b74666e5"
+    },
+    {
+      "input": "collected/ogdc-2018-09-30-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "9a3e406e280454e8a0a0a2017f13d686fa9eeb9391d2086f4a8e45f5a7ae6c5b"
+    },
+    {
+      "input": "collected/ogdc-2018-09-30-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "42fa6c3cd4036c314bc0b3b3b91449adc465d56dbb7f2710a3ea2f629c46507b"
+    },
+    {
+      "input": "collected/ogdc-2018-12-31-quarter-full-20261021-v1-f1/checks.json",
+      "sha256": "f61d96e2c015af00a02d4545476ddc9d1ff2a8cec19498b91923cbf2e1e0e896"
+    },
+    {
+      "input": "collected/ogdc-2018-12-31-quarter-full-20261021-v1-f1/manifest.json",
+      "sha256": "773338a60aca3b861b7b7dfb64cb58ebd8b069c5aa58c0d497e712c7f4884675"
+    },
+    {
+      "input": "collected/ogdc-2018-12-31-quarter-full-20261021-v1-f1/records.json",
+      "sha256": "9a6e038cd74557de1b5ea636cb1e7ccc3aa6cb9461e9fc179e2acd631bc1b2f3"
+    },
+    {
+      "input": "collected/ogdc-2019-09-30-quarter-full-20261021-v2-f1/checks.json",
+      "sha256": "c1d729817324329dee9e0c806ce8789f3a7b651f7ada03fc0d88a849568c9316"
+    },
+    {
+      "input": "collected/ogdc-2019-09-30-quarter-full-20261021-v2-f1/manifest.json",
+      "sha256": "4f8e51f98f0f95b008f37e6633acb5aa55e3b59ba64b7bff347ba5bffed8537f"
+    },
+    {
+      "input": "collected/ogdc-2019-09-30-quarter-full-20261021-v2-f1/records.json",
+      "sha256": "719e2338494b23dd03eca74ab00507213253b485eac61b3f015fd80658c036bc"
+    },
+    {
       "input": "collected/ogdc-2020-09-30-quarter-full-20261021-v1-fast20261023v1/checks.json",
       "sha256": "90161ce1b230c320f6e79e9fe1c03a1cc724229a78846450381266a03bc41f31"
     },
@@ -7085,6 +7601,18 @@
     {
       "input": "collected/ogdc-2026-03-31-quarter-full-20261022-hash-successor-v1/records.json",
       "sha256": "00e524c3e6a24e5dd84978d03e16509c54f20f88e957ce76ec0211215b9ea4ed"
+    },
+    {
+      "input": "collected/ogdc-psx-annual-core-wave-20261023-v1-f1/checks.json",
+      "sha256": "5ba469a03e677ceb485583d4e2fd717473eacdbae13f0775315ac1c576161d25"
+    },
+    {
+      "input": "collected/ogdc-psx-annual-core-wave-20261023-v1-f1/manifest.json",
+      "sha256": "c98c36573ea3cc34eeca6e8f83711b53183fc1b09028b6561780eff4b51d28d2"
+    },
+    {
+      "input": "collected/ogdc-psx-annual-core-wave-20261023-v1-f1/records.json",
+      "sha256": "bf8da4516d0ec85a294c5bcbf264358df0fffd6f9f851b317321062273c49fc2"
     },
     {
       "input": "collected/opus-annual-next-wave-20261023-v5-cnergy-p3/checks.json",
@@ -7711,6 +8239,18 @@
       "sha256": "fb347e37b7d69b8ac569232b7bb7ea83707d1dfce35eb1fbbc34888e4be9d3a9"
     },
     {
+      "input": "collected/pso-fy2023-consolidated-gap-operands-20261023-v1-f1/checks.json",
+      "sha256": "04889f0de963dd196f87fb06a0bcc37abcdf15de4d8eb0f2e56e9b970400e01f"
+    },
+    {
+      "input": "collected/pso-fy2023-consolidated-gap-operands-20261023-v1-f1/manifest.json",
+      "sha256": "d8f716c588ede9c7d842520c135a8a08c2d0e86261d206cb43be77f1eab85fd1"
+    },
+    {
+      "input": "collected/pso-fy2023-consolidated-gap-operands-20261023-v1-f1/records.json",
+      "sha256": "fb0ab325a46b1a0245623e5d4fe02d4160a8c8545d3f40547b56aa89c39c526c"
+    },
+    {
       "input": "collected/pso-fy23-annual-floor-existing-source-selection-20261020-v1/checks.json",
       "sha256": "fe1539c03f0d22cb7c0f05b4235da46a6b73aa4360fdd5651839b7b10408a494"
     },
@@ -7721,6 +8261,18 @@
     {
       "input": "collected/pso-fy23-annual-floor-existing-source-selection-20261020-v1/records.json",
       "sha256": "dbe2d5361fcd87b7842cedae8b8a468eb2802fbf7e205d0dadcc3dfdcc0240ca"
+    },
+    {
+      "input": "collected/pso-fy23-fy25-annual-gap-20261023-v1-a2/checks.json",
+      "sha256": "810e7138cbf4fed84c827b89af2957cd8286edf43e1d6eac93cb46f382d43eea"
+    },
+    {
+      "input": "collected/pso-fy23-fy25-annual-gap-20261023-v1-a2/manifest.json",
+      "sha256": "9d9acb25fb47cb744f002145e0b0eb0551f0cf54363d2f5bb8d5c750de457618"
+    },
+    {
+      "input": "collected/pso-fy23-fy25-annual-gap-20261023-v1-a2/records.json",
+      "sha256": "30d1679987ffa45b8f4d099d777c5d9a2417de8afa8bec67445f7eb34bb947f7"
     },
     {
       "input": "collected/pso-fy24-annual-delivery-20261019-v2/checks.json",
@@ -8751,6 +9303,18 @@
       "sha256": "4721328305f2da9dc5119a7a6d997c809032047b621ca2de7f8a859824200ead"
     },
     {
+      "input": "collected/ubl-fy2018-fy2019-core-ready-20261023-v1-a2/checks.json",
+      "sha256": "e4396d92f9be27cdae5563466ea281c51a76ac66be7fb98d5997318d49106994"
+    },
+    {
+      "input": "collected/ubl-fy2018-fy2019-core-ready-20261023-v1-a2/manifest.json",
+      "sha256": "0579ad5e3b575a238b5ca9f2a9945406ffbb06eafcb8221eed72edf0510c6fdf"
+    },
+    {
+      "input": "collected/ubl-fy2018-fy2019-core-ready-20261023-v1-a2/records.json",
+      "sha256": "08724ce4d1c96cfb9e3f95e10e28043c2cf3b2e4b8648879a4764402bbece70f"
+    },
+    {
       "input": "collected/ubl-hy2017-reviewed-20261016/checks.json",
       "sha256": "c3f93974f31a43a78b21a66d0402790fc0f2a7989290d73647829e87435c518b"
     },
@@ -8809,9 +9373,9 @@
   ],
   "status_counts": {
     "admitted_checked": 550,
-    "collected_checked": 1739
+    "collected_checked": 1942
   },
   "stocks": 20,
-  "superseded_batches": 170,
+  "superseded_batches": 213,
   "version": 1
 }

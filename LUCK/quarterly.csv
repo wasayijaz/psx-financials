@@ -1,5 +1,6 @@
-statement,line_item,reported_label,basis,unit,currency,2020-09-30|quarter,2020-12-31|quarter,2021-09-30|quarter,2021-12-31|half_year,2021-12-31|quarter,2022-09-30|quarter,2022-12-31|half_year,2022-12-31|quarter
-balance_sheet,total_equity,SHARE CAPITAL AND RESERVES (total of the rows above),standalone,PKR,PKR,,,116477846000,118961873000,,132392148000,133984739000,
-income_statement,basic_eps,Earnings per share - basic and diluted (PKR),standalone,PKR/share,PKR,6.89,7.16,10.15,,7.71,11.91,,10.18
-income_statement,profit_after_tax,Profit after taxation,standalone,PKR,PKR,2226449000,2314724000,3283860000,,2490632000,3852413000,,3276206000
-income_statement,revenue,Net sales,standalone,PKR,PKR,14335130000,15740364000,16915233000,,20633383000,19743334000,,25589747000
+statement,line_item,reported_label,basis,unit,currency,2017-12-31|half_year,2017-12-31|quarter,2018-09-30|quarter,2018-12-31|half_year,2018-12-31|quarter,2019-03-31|nine_months,2019-03-31|quarter,2019-09-30|quarter,2019-12-31|half_year,2019-12-31|quarter,2020-03-31|nine_months,2020-03-31|quarter,2020-09-30|quarter,2020-12-31|quarter,2021-09-30|quarter,2021-12-31|half_year,2021-12-31|quarter,2022-09-30|quarter,2022-12-31|half_year,2022-12-31|quarter
+balance_sheet,total_assets,TOTAL ASSETS,standalone,PKR,PKR,,,,,,,,,128675030000,,,,,,,,,,,
+balance_sheet,total_equity,SHARE CAPITAL AND RESERVES (total of the rows above),standalone,PKR,PKR,,,,,,,,93165448000,94152273000,,98603121000,,,,116477846000,118961873000,,132392148000,133984739000,
+income_statement,basic_eps,Earnings per share - basic and diluted,standalone,PKR/share,PKR,,,7.71,17.01,9.3,25.65,8.64,2.96,5.99,3.03,9.08,3.09,6.89,7.16,10.15,,7.71,11.91,,10.18
+income_statement,profit_after_tax,Profit after taxation,standalone,PKR,PKR,6547133000,3529850000,2492831000,5500789000,3007958000,8293938000,2793149000,955845000,1936576000,980732000,2935416000,998840000,2226449000,2314724000,3283860000,,2490632000,3852413000,,3276206000
+income_statement,revenue,Net sales,standalone,PKR,PKR,23253828000,12050047000,11405068000,24955075000,13550007000,37521084000,12566009000,9628976000,21211380000,11582404000,32448046000,11236666000,14335130000,15740364000,16915233000,,20633383000,19743334000,,25589747000

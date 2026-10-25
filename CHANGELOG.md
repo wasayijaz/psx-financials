@@ -21,3 +21,7 @@ Facts: 2200. SHA-256 of facts.csv: `e28c647523befe322253dd228fdf6dec79dce0869b88
 ## Export — 2026-10-23
 
 Facts: 2289. SHA-256 of facts.csv: `a2d926e90490b056ecdfd4b7d0180a86045c398550dccad5c7ffb81dca3f7be5`.
+
+## Export — 2026-10-25
+
+Facts: 2492. SHA-256 of facts.csv: `5ce95772e3887a4a0665d2d96cccb525f57268178c6ea5193c1d00fda21b6b82`.

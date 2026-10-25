@@ -5,25 +5,25 @@ Coverage counts individual reported line items, not complete statements. Blank c
 | Symbol | Annual years | Quarter ends | Half-year ends | Nine-month ends | Statements | Admitted | Collected | Missing publication observations |
 |---|---|---|---|---|---|---:|---:|---:|
 | ATRL | 2024, 2025, 2026 | 2024-09-30, 2025-03-31, 2025-09-30, 2026-03-31 | none | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement, other | 59 | 49 | 955 |
-| BOP | 2024, 2025 | 2024-06-30, 2024-09-30, 2025-03-31, 2025-06-30, 2025-09-30, 2026-03-31 | 2025-06-30 | 2024-09-30, 2025-09-30 | balance_sheet, cash_flow, income_statement | 24 | 212 | 326 |
-| CNERGY | 2025 | 2024-12-31, 2025-03-31, 2025-12-31, 2026-03-31 | 2024-12-31, 2025-12-31 | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement | 0 | 171 | 935 |
-| DGKC | 2026 | 2025-03-31, 2026-03-31 | none | 2025-03-31, 2026-03-31 | balance_sheet, income_statement, other | 7 | 13 | 483 |
-| ENGROH | none | none | none | none | none | 0 | 0 | 53 |
-| FFC | 2024, 2025 | 2023-03-31, 2023-06-30, 2023-09-30, 2024-03-31, 2024-06-30, 2024-09-30, 2025-03-31, 2026-03-31 | 2023-06-30, 2024-06-30 | 2023-09-30, 2024-09-30 | balance_sheet, income_statement | 8 | 386 | 16 |
+| BOP | 2024, 2025 | 2024-06-30, 2024-09-30, 2025-03-31, 2025-06-30, 2025-09-30, 2026-03-31 | 2025-06-30 | 2024-09-30, 2025-09-30 | balance_sheet, cash_flow, income_statement | 24 | 212 | 331 |
+| CNERGY | 2025 | 2024-12-31, 2025-03-31, 2025-12-31, 2026-03-31 | 2024-12-31, 2025-12-31 | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement | 0 | 171 | 941 |
+| DGKC | 2026 | 2017-09-30, 2017-12-31, 2018-03-31, 2018-09-30, 2018-12-31, 2019-03-31, 2019-09-30, 2019-12-31, 2020-03-31, 2025-03-31, 2026-03-31 | 2017-12-31, 2018-12-31, 2019-12-31 | 2018-03-31, 2019-03-31, 2020-03-31, 2025-03-31, 2026-03-31 | balance_sheet, income_statement, other | 7 | 63 | 581 |
+| ENGROH | none | none | none | none | none | 0 | 0 | 77 |
+| FFC | 2024, 2025 | 2017-09-30, 2018-03-31, 2018-09-30, 2019-03-31, 2023-03-31, 2023-06-30, 2023-09-30, 2024-03-31, 2024-06-30, 2024-09-30, 2025-03-31, 2026-03-31 | 2023-06-30, 2024-06-30 | 2018-09-30, 2023-09-30, 2024-09-30 | balance_sheet, income_statement | 8 | 400 | 16 |
 | GAL | 2024, 2025 | 2024-12-31, 2025-12-31 | 2025-12-31 | none | balance_sheet, cash_flow, income_statement, other | 7 | 61 | 58 |
 | HBL | none | none | none | none | none | 0 | 0 | 675 |
-| HUBC | 2025, 2026 | none | none | none | balance_sheet, cash_flow, income_statement | 74 | 10 | 270 |
-| LUCK | none | 2020-09-30, 2020-12-31, 2021-09-30, 2021-12-31, 2022-09-30, 2022-12-31 | 2021-12-31, 2022-12-31 | none | balance_sheet, income_statement | 0 | 22 | 713 |
+| HUBC | 2025, 2026 | none | none | none | balance_sheet, cash_flow, income_statement | 74 | 10 | 629 |
+| LUCK | none | 2017-12-31, 2018-09-30, 2018-12-31, 2019-03-31, 2019-09-30, 2019-12-31, 2020-03-31, 2020-09-30, 2020-12-31, 2021-09-30, 2021-12-31, 2022-09-30, 2022-12-31 | 2017-12-31, 2018-12-31, 2019-12-31, 2021-12-31, 2022-12-31 | 2019-03-31, 2020-03-31 | balance_sheet, income_statement | 0 | 60 | 729 |
 | MARI | 2025 | none | none | none | balance_sheet | 1 | 0 | 1207 |
 | MEBL | none | none | none | none | none | 0 | 0 | 369 |
-| MLCF | 2022, 2023, 2024, 2025, 2026 | 2024-09-30, 2024-12-31, 2025-03-31, 2025-09-30, 2025-12-31, 2026-03-31 | 2024-12-31, 2025-12-31 | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement, other | 172 | 361 | 281 |
+| MLCF | 2022, 2023, 2024, 2025, 2026 | 2017-12-31, 2018-12-31, 2024-09-30, 2024-12-31, 2025-03-31, 2025-09-30, 2025-12-31, 2026-03-31 | 2017-12-31, 2018-12-31, 2024-12-31, 2025-12-31 | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement, other | 172 | 442 | 283 |
 | NBP | 2023, 2024, 2025 | none | none | none | balance_sheet, cash_flow, income_statement, other | 0 | 254 | 1419 |
 | NRL | 2024, 2025, 2026 | none | none | none | balance_sheet, income_statement | 54 | 9 | 526 |
-| OGDC | 2024, 2025, 2026 | 2024-09-30, 2025-03-31, 2025-09-30, 2026-03-31 | none | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement, other | 50 | 20 | 0 |
+| OGDC | 2024, 2025, 2026 | 2017-09-30, 2017-12-31, 2018-09-30, 2018-12-31, 2019-09-30, 2024-09-30, 2025-03-31, 2025-09-30, 2026-03-31 | 2017-12-31, 2018-12-31 | 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement, other | 50 | 40 | 4 |
 | PPL | 2024, 2025 | 2025-03-31, 2026-03-31 | none | 2025-03-31, 2026-03-31 | income_statement, other | 0 | 36 | 178 |
 | PRL | 2024, 2025, 2026 | none | none | none | balance_sheet, cash_flow, income_statement | 65 | 6 | 1292 |
-| PSO | 2024, 2025 | 2017-09-30, 2017-12-31, 2018-03-31, 2018-09-30, 2018-12-31, 2019-03-31, 2019-09-30, 2019-12-31, 2020-03-31, 2025-03-31, 2026-03-31 | 2017-12-31, 2018-12-31, 2019-12-31 | 2018-03-31, 2019-03-31, 2020-03-31, 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement, other | 0 | 122 | 279 |
-| UBL | 2024, 2025 | none | none | none | balance_sheet, income_statement | 29 | 7 | 304 |
+| PSO | 2024, 2025 | 2017-09-30, 2017-12-31, 2018-03-31, 2018-09-30, 2018-12-31, 2019-03-31, 2019-09-30, 2019-12-31, 2020-03-31, 2025-03-31, 2026-03-31 | 2017-12-31, 2018-12-31, 2019-12-31 | 2018-03-31, 2019-03-31, 2020-03-31, 2025-03-31, 2026-03-31 | balance_sheet, cash_flow, income_statement, other | 0 | 122 | 383 |
+| UBL | 2024, 2025 | none | none | none | balance_sheet, income_statement | 29 | 7 | 312 |
 
 ## Gaps and exclusions
 
@@ -39,33 +39,33 @@ Exact period-by-statement coverage: [ATRL/README.md](ATRL/README.md).
 
 ### BOP
 
-Missing publication date: **326** observations. Fiscal year end: 12-31. At least one line is present from each primary statement.
+Missing publication date: **331** observations. Fiscal year end: 12-31. At least one line is present from each primary statement.
 
-annual_floor_not_checked: 28; missing_or_future_retrieval_date: 4; missing_publication_date: 389; not_eligible_reconciliation: 227; outside_historical_statement_scope: 46
+annual_floor_not_checked: 32; missing_or_future_retrieval_date: 4; missing_publication_date: 392; not_eligible_reconciliation: 233; outside_historical_statement_scope: 46
 
 Exact period-by-statement coverage: [BOP/README.md](BOP/README.md).
 
 ### CNERGY
 
-Missing publication date: **935** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
+Missing publication date: **941** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
 
-annual_floor_not_checked: 7; duplicate_or_admitted_precedence: 9; incomplete_batch_envelope: 143; missing_publication_date: 1389; not_eligible_reconciliation: 139; outside_historical_statement_scope: 3; superseded_batch: 261
+annual_floor_not_checked: 32; duplicate_or_admitted_precedence: 9; incomplete_batch_envelope: 143; missing_publication_date: 1371; not_eligible_reconciliation: 169; outside_historical_statement_scope: 3; superseded_batch: 261
 
 Exact period-by-statement coverage: [CNERGY/README.md](CNERGY/README.md).
 
 ### DGKC
 
-Missing publication date: **483** observations. Fiscal year end: 06-30. Absent statements: cash_flow
+Missing publication date: **581** observations. Fiscal year end: 06-30. Absent statements: cash_flow
 
-annual_floor_not_checked: 3; duplicate_or_admitted_precedence: 7; missing_or_future_retrieval_date: 99; missing_publication_date: 593; missing_unit_or_currency: 11; not_eligible_reconciliation: 2137; raw_value_not_numeric: 2
+annual_floor_not_checked: 7; duplicate_or_admitted_precedence: 22; missing_or_future_retrieval_date: 132; missing_publication_date: 742; missing_unit_or_currency: 11; not_eligible_reconciliation: 2250; raw_value_not_numeric: 2
 
 Exact period-by-statement coverage: [DGKC/README.md](DGKC/README.md).
 
 ### ENGROH
 
-Missing publication date: **53** observations. Fiscal year end: 12-31. Absent statements: balance_sheet, cash_flow, income_statement
+Missing publication date: **77** observations. Fiscal year end: 12-31. Absent statements: balance_sheet, cash_flow, income_statement
 
-invalid_number: 6; missing_or_future_retrieval_date: 38; missing_publication_date: 61; missing_unit_or_currency: 260; outside_historical_statement_scope: 4
+invalid_number: 6; missing_or_future_retrieval_date: 38; missing_publication_date: 101; missing_unit_or_currency: 260; outside_historical_statement_scope: 4
 
 Exact period-by-statement coverage: [ENGROH/README.md](ENGROH/README.md).
 
@@ -73,7 +73,7 @@ Exact period-by-statement coverage: [ENGROH/README.md](ENGROH/README.md).
 
 Missing publication date: **16** observations. Fiscal year end: 12-31. Absent statements: cash_flow
 
-collected_conflict: 8; duplicate_or_admitted_precedence: 55; missing_or_future_retrieval_date: 173; missing_publication_date: 23; not_eligible_reconciliation: 524; superseded_batch: 21
+collected_conflict: 8; duplicate_or_admitted_precedence: 55; missing_or_future_retrieval_date: 173; missing_publication_date: 23; not_eligible_reconciliation: 532; superseded_batch: 21
 
 Exact period-by-statement coverage: [FFC/README.md](FFC/README.md).
 
@@ -95,17 +95,17 @@ Exact period-by-statement coverage: [HBL/README.md](HBL/README.md).
 
 ### HUBC
 
-Missing publication date: **270** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
+Missing publication date: **629** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
 
-duplicate_or_admitted_precedence: 89; missing_publication_date: 352; not_eligible_reconciliation: 56; superseded_batch: 32
+annual_floor_not_checked: 13; duplicate_or_admitted_precedence: 89; missing_publication_date: 918; not_eligible_reconciliation: 265; superseded_batch: 32
 
 Exact period-by-statement coverage: [HUBC/README.md](HUBC/README.md).
 
 ### LUCK
 
-Missing publication date: **713** observations. Fiscal year end: 06-30. Absent statements: cash_flow
+Missing publication date: **729** observations. Fiscal year end: 06-30. Absent statements: cash_flow
 
-annual_floor_not_checked: 13; duplicate_or_admitted_precedence: 6; incomplete_batch_envelope: 1; missing_or_future_retrieval_date: 53; missing_publication_date: 885; missing_unit_or_currency: 2; not_eligible_reconciliation: 761; outside_historical_statement_scope: 5
+annual_floor_not_checked: 19; duplicate_or_admitted_precedence: 10; incomplete_batch_envelope: 1; missing_or_future_retrieval_date: 53; missing_publication_date: 906; missing_unit_or_currency: 2; not_eligible_reconciliation: 795; outside_historical_statement_scope: 5
 
 Exact period-by-statement coverage: [LUCK/README.md](LUCK/README.md).
 
@@ -127,9 +127,9 @@ Exact period-by-statement coverage: [MEBL/README.md](MEBL/README.md).
 
 ### MLCF
 
-Missing publication date: **281** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
+Missing publication date: **283** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
 
-annual_floor_not_checked: 5; duplicate_or_admitted_precedence: 104; missing_or_future_retrieval_date: 1702; missing_publication_date: 291; missing_unit_or_currency: 6; not_eligible_reconciliation: 1670; outside_historical_statement_scope: 4; raw_value_not_numeric: 1; superseded_batch: 370
+annual_floor_not_checked: 5; duplicate_or_admitted_precedence: 108; missing_or_future_retrieval_date: 1672; missing_publication_date: 319; missing_unit_or_currency: 6; not_eligible_reconciliation: 1722; outside_historical_statement_scope: 4; raw_value_not_numeric: 1; superseded_batch: 370
 
 Exact period-by-statement coverage: [MLCF/README.md](MLCF/README.md).
 
@@ -151,9 +151,9 @@ Exact period-by-statement coverage: [NRL/README.md](NRL/README.md).
 
 ### OGDC
 
-Missing publication date: **0** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
+Missing publication date: **4** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
 
-duplicate_or_admitted_precedence: 21; incomplete_batch_envelope: 242; missing_or_future_retrieval_date: 116; not_eligible_reconciliation: 346
+duplicate_or_admitted_precedence: 22; incomplete_batch_envelope: 242; missing_or_future_retrieval_date: 116; missing_publication_date: 8; not_eligible_reconciliation: 358
 
 Exact period-by-statement coverage: [OGDC/README.md](OGDC/README.md).
 
@@ -175,16 +175,16 @@ Exact period-by-statement coverage: [PRL/README.md](PRL/README.md).
 
 ### PSO
 
-Missing publication date: **279** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
+Missing publication date: **383** observations. Fiscal year end: 06-30. At least one line is present from each primary statement.
 
-annual_floor_not_checked: 26; arithmetic_failed_or_unsupported: 816; collected_conflict: 12; duplicate_or_admitted_precedence: 9; held_or_rejected_batch: 114; incomplete_batch_envelope: 413; missing_or_future_retrieval_date: 179; missing_publication_date: 356; not_eligible_reconciliation: 274; raw_value_not_numeric: 6; superseded_batch: 62
+annual_floor_not_checked: 20; arithmetic_failed_or_unsupported: 816; collected_conflict: 12; duplicate_or_admitted_precedence: 9; held_or_rejected_batch: 114; incomplete_batch_envelope: 413; missing_or_future_retrieval_date: 179; missing_publication_date: 576; not_eligible_reconciliation: 346; raw_value_not_numeric: 6; superseded_batch: 62
 
 Exact period-by-statement coverage: [PSO/README.md](PSO/README.md).
 
 ### UBL
 
-Missing publication date: **304** observations. Fiscal year end: 12-31. Absent statements: cash_flow
+Missing publication date: **312** observations. Fiscal year end: 12-31. Absent statements: cash_flow
 
-annual_floor_not_checked: 40; duplicate_or_admitted_precedence: 5; missing_or_future_retrieval_date: 112; missing_publication_date: 329; not_eligible_reconciliation: 457; outside_historical_statement_scope: 31; raw_value_not_numeric: 2
+annual_floor_not_checked: 40; duplicate_or_admitted_precedence: 5; missing_or_future_retrieval_date: 112; missing_publication_date: 341; not_eligible_reconciliation: 458; outside_historical_statement_scope: 31; raw_value_not_numeric: 2
 
 Exact period-by-statement coverage: [UBL/README.md](UBL/README.md).

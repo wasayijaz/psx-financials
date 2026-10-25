@@ -1,8 +1,12 @@
-statement,line_item,reported_label,basis,unit,currency,2025-03-31|quarter,2026-03-31|nine_months,2026-03-31|quarter
-balance_sheet,total_equity,Total equity,consolidated,PKR,PKR,,115927604000,
-income_statement,basic_eps,Earnings per share (basic and diluted - in Rupees),consolidated,PKR/share,PKR,4.79,,6.17
-income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,2190697000,,2878469000
-income_statement,profit_after_tax_attributable,Equity holders of the parent,consolidated,PKR,PKR,2098691000,,2704135000
-income_statement,profit_after_tax_non_controlling,Non-controling interest,consolidated,PKR,PKR,92006000,,174334000
-income_statement,revenue,Revenue,consolidated,PKR,PKR,20069334000,,22309971000
-other,issued_ordinary_shares,"Issued, subscribed and paid up share capital 438,119,118 (June 30, 2025: 438,119,118) ordinary shares of Rs 10 each",consolidated,shares,PKR,,438119118,
+statement,line_item,reported_label,basis,unit,currency,2017-09-30|quarter,2017-12-31|half_year,2017-12-31|quarter,2018-03-31|nine_months,2018-03-31|quarter,2018-09-30|quarter,2018-12-31|half_year,2018-12-31|quarter,2019-03-31|nine_months,2019-03-31|quarter,2019-09-30|quarter,2019-12-31|half_year,2019-12-31|quarter,2020-03-31|nine_months,2020-03-31|quarter,2025-03-31|quarter,2026-03-31|nine_months,2026-03-31|quarter
+balance_sheet,total_equity,Total equity,consolidated,PKR,PKR,,,,,,,,,,,,,,,,,115927604000,
+balance_sheet,total_equity,CAPITAL AND RESERVES (unlabeled printed total),standalone,PKR,PKR,,,,,,77814094000,74479814000,,75907461000,,68499666000,73418600000,,64665466000,,,,
+income_statement,basic_eps,Earnings per share (basic and diluted - in Rupees),consolidated,PKR/share,PKR,,,,,,,,,,,,,,,,4.79,,6.17
+income_statement,basic_eps,(Loss)/earnings per share (basic and diluted - in Rupees),standalone,PKR/share,PKR,,8.52,2.05,11.34,2.82,0.95,3.98,3.02,5.99,2.02,-3.26,-1.93,1.33,-4.22,-2.29,,,
+income_statement,profit_after_tax,Profit for the period,consolidated,PKR,PKR,,,,,,,,,,,,,,,,2190697000,,2878469000
+income_statement,profit_after_tax,(Loss) / Profit for the period,standalone,PKR,PKR,2837428000,3733855000,896427000,4969829000,1235974000,417823000,1741789000,1323966000,2624800000,883011000,-1428057000,-847058000,581001000,-1850157000,-1003099000,,,
+income_statement,profit_after_tax_attributable,Equity holders of the parent,consolidated,PKR,PKR,,,,,,,,,,,,,,,,2098691000,,2704135000
+income_statement,profit_after_tax_non_controlling,Non-controling interest,consolidated,PKR,PKR,,,,,,,,,,,,,,,,92006000,,174334000
+income_statement,revenue,Revenue,consolidated,PKR,PKR,,,,,,,,,,,,,,,,20069334000,,22309971000
+income_statement,revenue,Sales,standalone,PKR,PKR,7527449000,15763670000,8236221000,23375208000,7611538000,8185893000,19767205000,11581312000,30375649000,10608444000,9069445000,20888257000,11818812000,30570783000,9682526000,,,
+other,issued_ordinary_shares,"Issued, subscribed and paid up share capital 438,119,118 (June 30, 2025: 438,119,118) ordinary shares of Rs 10 each",consolidated,shares,PKR,,,,,,,,,,,,,,,,,438119118,
